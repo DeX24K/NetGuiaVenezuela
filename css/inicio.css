@@ -1,0 +1,463 @@
+/* ==========================================================================
+1. VARIABLES DE PALETA DE COLORES (Almacén Central)
+   ========================================================================== */
+:root {
+    --color-principal: #00b4d8;       /* Turquesa brillante para enlaces/botones */
+    --color-principal-hover: #0077b6; /* Turquesa oscuro para interacciones */
+    --color-oscuro: #1d2d44;          /* Azul marino profundo corporativo */
+    --color-texto: #333333;           /* Gris oscuro ultra legible */
+    --color-fondo: #f8f9fa;           /* Blanco grisáceo suave */
+    --color-blanco: #ffffff;
+    --fuente-global: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==========================================================================
+2. RESET GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-global);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+.ico {
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+3. CABECERA (.cabecera)
+   ========================================================================== */
+.cabecera {
+    background-color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cabecera__logo {
+    font-size: 1.5rem;
+    color: var(--color-oscuro);
+    font-weight: 600;
+}
+
+.cabecera__logo strong {
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+/* ==========================================================================
+4. MENÚ DE NAVEGACIÓN (.menu)
+   ========================================================================== */
+.menu__lista {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu__enlace {
+    text-decoration: none;
+    color: var(--color-oscuro);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.menu__enlace:hover {
+    color: var(--color-principal);
+}
+
+/* ==========================================================================
+5. SECCIÓN HERO (.hero)
+   ========================================================================== */
+.hero {
+    background: linear-gradient(135deg, var(--color-oscuro) 0%, #0d1b2a 100%);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero__titulo {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero__subtitulo {
+    font-size: 1.1rem;
+    color: #e0e1dd;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+6. BUSCADOR SIMULADO (.buscador-simulado)
+   ========================================================================== */
+.buscador-simulado {
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.buscador-simulado__input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.buscador-simulado__button {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buscador-simulado__boton:hover {
+    background-color: var(--color-principal-hover);
+}
+
+/* ==========================================================================
+7. SECCIÓN CATEGORÍAS (.categorias)
+   ========================================================================== */
+.categorias {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.categorias__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* ==========================================================================
+8. TARJETAS DE GUÍAS (.tarjeta-guia)
+   ========================================================================== */
+.tarjeta-guia {
+    background-color: var(--color-blanco);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-guia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-guia__titulo {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    color: var(--color-oscuro);
+}
+
+.tarjeta-guia__descripcion {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.tarjeta-guia__enlace {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-principal);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.tarjeta-guia__enlace:hover {
+    color: var(--color-oscuro);
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+9. NUEVO FOOTER PROFESIONAL (.footer)
+   ========================================================================== */
+.footer {
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+    padding: 4rem 5% 1.5rem 5%;
+    margin-top: 5rem;
+    font-size: 0.95rem;
+}
+
+/* Contenedor en Grid de 3 columnas */
+.footer__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* La primera columna es más ancha */
+    gap: 40px;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria sutil */
+}
+
+.footer__titulo {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-blanco);
+}
+
+.footer__titulo strong {
+    color: var(--color-principal);
+}
+
+.footer__descripcion {
+    color: #a5a5a5;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    max-width: 350px;
+}
+
+.footer__subtitulo {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: var(--color-blanco);
+    position: relative;
+}
+
+/* Listas de enlaces */
+.footer__lista {
+    list-style: none;
+}
+
+.footer__lista li {
+    margin-bottom: 0.8rem;
+}
+
+.footer__enlace {
+    color: #a5a5a5;
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: inline-block;
+}
+
+.footer__enlace:hover {
+    color: var(--color-principal);
+    padding-left: 4px; /* Efecto sutil de desplazamiento al pasar el mouse */
+}
+
+/* Barra inferior de derechos de autor */
+.footer__barra-inferior {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.footer__copyright {
+    color: #7a7a7a;
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================
+ADAPTACIÓN MÓVIL (Media Query)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .footer__contenedor {
+        grid-template-columns: 1fr; /* Pasa de 3 columnas a 1 sola en fila */
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer__descripcion {
+        margin: 0 auto;
+    }
+    
+    .footer__enlace:hover {
+        padding-left: 0; /* Desactivamos el desplazamiento en móvil */
+    }
+}
+
+/* ==========================================================================
+10. ESTILOS RESPONSIVE (Para Teléfonos Celulares)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* El menú y el logo se apilarán uno abajo del otro en vez de ir de lado */
+    .cabecera {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu__lista {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Achicamos un poco el tamaño de la letra del título principal */
+    .hero__titulo {
+        font-size: 1.8rem;
+    }
+
+    /* El buscador simulado pasa de fila a columna para que no se desborde */
+    .buscador-simulado {
+        flex-direction: column;
+        box-shadow: none;
+        gap: 12px;
+        background: transparent;
+    }
+
+    .buscador-simulado__input {
+        border-radius: 8px;
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .buscador-simulado__button {
+        padding: 0.8rem;
+        border-radius: 8px;
+        width: 100%;
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+}
+/* Contenedor del buscador dentro del Hero */
+.hero__buscador-container {
+    position: relative; /* Obligatorio para que los resultados floten bien */
+    max-width: 600px;
+    margin: 2rem auto 0 auto;
+    width: 100%;
+}
+
+/* La barra de búsqueda física */
+.buscador-real {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 50px; /* Estilo píldora moderno */
+    padding: 6px 6px 6px 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Cuando el usuario hace clic para escribir */
+.buscador-real:focus-within {
+    border-color: #3182ce;
+    box-shadow: 0 10px 15px -3px rgba(49, 130, 206, 0.15);
+}
+
+.buscador-real__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.05rem;
+    color: #2d3748;
+    background: transparent;
+}
+
+.buscador-real__button {
+    background-color: #3182ce; /* Pon aquí el color principal de tu web */
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buscador-real__button:hover {
+    background-color: #2b6cb0;
+}
+
+/* ==================== CAJA DE RESULTADOS FLOTANTES ==================== */
+.buscador-real__resultados {
+    position: absolute;
+    top: 115%; /* Se posiciona justo debajo de la barra */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 100;
+    display: none; /* Oculto por defecto hasta que escriban */
+    border: 1px solid #e2e8f0;
+    text-align: left; /* Evita que herede el centrado del Hero */
+}
+
+/* Cada opción encontrada */
+.buscador-real__item {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #2d3748;
+    border-bottom: 1px solid #f7fafc;
+    transition: background-color 0.2s;
+}
+
+.buscador-real__item:last-child {
+    border-bottom: none;
+}
+
+.buscador-real__item:hover {
+    background-color: #f7fafc;
+}
+
+.buscador-real__item h4 {
+    margin: 0 0 0.2rem 0;
+    color: #3182ce;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.buscador-real__item p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #718096;
+    line-height: 1.4;
+}
+
+/* Mensaje de Alerta */
+.buscador-real__sin-resultados {
+    padding: 16px;
+    color: #718096;
+    font-size: 0.95rem;
+}
+/* Estilos para el nuevo enlace del logo */
+.cabecera__logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Separa la imagen del texto un poquito */
+    text-decoration: none;
+    color: inherit; /* Mantiene el color original del texto */
+}
+
+/* Control de tamaño de la imagen del logo */
+.cabecera__logo-img {
+    height: 50px; /* Controla la altura. Puedes subirlo a 45px o 50px según veas */
+    width: auto;  /* Mantiene la proporción perfecta sin estirarse */
+    display: block;
+}
+
+/* Ajuste opcional para el texto por si usas la Opción A */
+.cabecera__logo-texto {
+    font-size: 1.3rem;
+}

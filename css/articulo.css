@@ -1,0 +1,445 @@
+/* ==========================================================================
+1. VARIABLES DE PALETA DE COLORES (Reutilizamos la identidad)
+   ========================================================================== */
+:root {
+    --color-principal: #00b4d8;       /* Turquesa brillante */
+    --color-principal-hover: #0077b6; /* Turquesa oscuro */
+    --color-oscuro: #1d2d44;          /* Azul marino profundo */
+    --color-texto: #2b2d42;           /* Gris oscuro suave para lectura larga */
+    --color-fondo: #f8f9fa;           /* Fondo grisáceo claro */
+    --color-blanco: #ffffff;
+    --color-alerta-fondo: #fff3cd;    /* Amarillo suave para advertencias */
+    --color-alerta-borde: #ffeba2;
+    --color-alerta-texto: #664d03;
+    --fuente-global: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==========================================================================
+2. RESET GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-global);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.8; /* Espaciado amplio para que no canse la vista */
+}
+
+/* ==========================================================================
+3. CABECERA DEL ARTÍCULO (.cabecera-articulo)
+   ========================================================================== */
+.cabecera-articulo {
+    background-color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cabecera-articulo__volver {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.cabecera-articulo__volver:hover {
+    color: var(--color-principal-hover);
+}
+
+.cabecera-articulo__logo {
+    font-size: 1.3rem;
+    color: var(--color-oscuro);
+}
+
+.cabecera-articulo__logo strong {
+    color: var(--color-principal);
+}
+
+/* ==========================================================================
+4. BLOQUE CONTENEDOR DEL ARTÍCULO (.articulo)
+   ========================================================================== */
+.articulo {
+    max-width: 800px; /* Ancho óptimo de lectura para blogs profesionales */
+    margin: 3rem auto;
+    background-color: #bad1f5;
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    border: 1px solid #e9ecef;
+}
+
+/* Header del post */
+.articulo__header {
+    border-bottom: 2px solid #f1f3f5;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.articulo__categoria {
+    display: inline-block;
+    color: var(--color-principal-hover);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.articulo__titulo {
+    font-size: 2.2rem;
+    color: var(--color-oscuro);
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+}
+
+.articulo__fecha {
+    font-size: 0.85rem;
+    color: #868e96;
+}
+
+/* Elementos del cuerpo de texto */
+.articulo__contenido p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.articulo__introduccion {
+    font-size: 1.2rem !important;
+    color: #495057;
+    font-weight: 500;
+}
+
+.articulo__subtitulo {
+    font-size: 1.5rem;
+    color: var(--color-oscuro);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Caja de Alerta Especial */
+.articulo__alerta {
+    background-color: var(--color-alerta-fondo);
+    border-left: 5px solid var(--color-principal); /* Destaca con el turquesa */
+    border-top: 1px solid var(--color-alerta-borde);
+    border-right: 1px solid var(--color-alerta-borde);
+    border-bottom: 1px solid var(--color-alerta-borde);
+    padding: 1.2rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    color: var(--color-alerta-texto);
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+/* Media Query interna para que el artículo no se pegue a los bordes en teléfonos */
+@media (max-width: 768px) {
+    .articulo {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .articulo__titulo {
+        font-size: 1.7rem;
+    }
+}
+
+/* ==========================================================================
+5. PIE DE PÁGINA REUTILIZADO (.pie-pagina)
+   ========================================================================== */
+.pie-pagina {
+    background-color: var(--color-oscuro);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    margin-top: 5rem;
+}
+
+.pie-pagina__creditos {
+    color: var(--color-blanco);
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+6. ESTILOS DE TABLAS (Para Guías y Equivalencias)
+   ========================================================================== */
+
+/* Contenedor que evita que la tabla rompa el diseño móvil */
+.articulo__tabla-contenedor {
+    width: 100%;
+    overflow-x: auto; /* Activa la barra de desplazamiento horizontal solo si es necesario */
+    margin: 2rem 0;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.articulo__tabla {
+    width: 100%;
+    border-collapse: collapse; /* Elimina los dobles bordes feos */
+    text-align: left;
+    font-size: 0.95rem;
+    min-width: 600px; /* Asegura que la tabla mantenga su forma y se pueda leer bien en móvil */
+}
+
+/* Estilos de la cabecera de la tabla */
+.articulo__tabla thead {
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+}
+
+.articulo__tabla th {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+/* Estilos de las celdas del cuerpo */
+.articulo__tabla td {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    color: #495057;
+}
+
+/* Efecto de filas alternas (una blanca, una gris claro) para facilitar la lectura */
+.articulo__tabla tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Efecto hover al pasar el mouse por encima de una fila */
+.articulo__tabla tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* ==========================================================================
+Nuevos estilos para el contenido extendido del artículo
+   ========================================================================== */
+
+/* Párrafos estándar del artículo */
+.articulo__texto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 1.25rem;
+}
+
+/* Subtítulos de nivel 3 (los que van dentro de los pasos) */
+.articulo__subtitulo-interno {
+    font-size: 1.3rem;
+    color: #1a365d; /* Ajusta este color al azul de tu paleta */
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+/* Estilos generales para las listas (ul y ol) */
+.articulo__lista {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+/* Elementos de la lista */
+.articulo__lista-item {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+/* Ajuste específico por si usas viñetas cuadradas o círculos */
+ul.articulo__lista {
+    list-style-type: disc;
+}
+
+ol.articulo__lista--ordenada {
+    list-style-type: decimal;
+}
+
+/* Estilo para los bloques de código (como los enlaces URL que pusimos) */
+.articulo__contenido code {
+    background-color: #f7fafc;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #e53e3e;
+    font-size: 0.95rem;
+}
+
+/* ==========================================================================
+Estilos del Buscador Interactivo de Motos
+   ========================================================================== */
+
+.buscador-motos {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin: 2rem 0;
+}
+
+.buscador-motos__filtro {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* El menú desplegable */
+.buscador-motos__select {
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #cbd5e0;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #2d3748;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.buscador-motos__select:focus {
+    border-color: #1a365d; /* Cambia al azul oscuro de tu menú */
+}
+
+.buscador-motos__placeholder {
+    color: #718096;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+    background: #f7fafc;
+    border-radius: 6px;
+    border: 1px dashed #cbd5e0;
+}
+
+/* Estructura de la tabla dinámica que inyecta JS */
+.tabla-repuestos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.tabla-repuestos th {
+    background-color: #1a365d; /* Azul de tu cabecera */
+    color: #ffffff;
+    text-align: left;
+    padding: 0.75rem;
+    font-weight: 600;
+}
+
+.tabla-repuestos td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+}
+
+.tabla-repuestos tr:hover {
+    background-color: #f7fafc;
+}
+
+/* Etiqueta resaltada para el repuesto compatible */
+.tag-compatible {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+/* Etiqueta para resaltar el precio en color verde suave */
+.tag-precio {
+    background-color: #f0fff4;
+    color: #38a169;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    border: 1px solid #c6f6d5;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Base para las etiquetas de financiamiento */
+.tag-financiado {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.2rem;
+}
+
+/* Color Morado/Azul característico de Cashea */
+.tag-financiado--cashea {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+    border: 1px solid #e9d5ff;
+}
+
+/* Color Naranja/Teal característico de Krece */
+.tag-financiado--krece {
+    background-color: #fff7ed;
+    color: #c2410c;
+    border: 1px solid #ffedd5;
+}
+/* Contenedor de filtros en línea */
+.buscador-motos__filtros-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* En tablets y PC se ponen uno al lado del otro */
+@media (min-width: 768px) {
+    .buscador-motos__filtros-grupo {
+        flex-direction: row;
+    }
+    .buscador-motos__filtro {
+        flex: 1;
+    }
+}
+
+/* Diseño de la Tarjeta del Resultado Único */
+.tarjeta-resultado {
+    background-color: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.tarjeta-resultado__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tarjeta-resultado__titulo {
+    font-size: 1.25rem;
+    color: #1a365d;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Efecto de aparición suave */
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
