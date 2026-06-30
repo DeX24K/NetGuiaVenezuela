@@ -1,5 +1,5 @@
 /* ==========================================================================
-1. VARIABLES DE PALETA DE COLORES (Reutilizamos la identidad)
+1. VARIABLES DE PALETA DE COLORES (Con soporte nativo para Modo Oscuro)
    ========================================================================== */
 :root {
     --color-principal: #00b4d8;       /* Turquesa brillante */
@@ -8,10 +8,31 @@
     --color-texto: #2b2d42;           /* Gris oscuro suave para lectura larga */
     --color-fondo: #f8f9fa;           /* Fondo grisáceo claro */
     --color-blanco: #ffffff;
+    --color-card: #ffffff;            /* Fondo para el contenedor del artículo */
+    --color-border: #e9ecef;
+    
     --color-alerta-fondo: #fff3cd;    /* Amarillo suave para advertencias */
     --color-alerta-borde: #ffeba2;
     --color-alerta-texto: #664d03;
     --fuente-global: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    --radius-lg: 12px;
+    --radius-md: 8px;
+    --shadow-premium: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+/* Cuando se active el modo oscuro, estas variables cambian automáticamente */
+[data-theme="dark"] {
+    --color-fondo: #0a111c;
+    --color-blanco: #111c2e;
+    --color-card: #15233a;
+    --color-oscuro: #f8f9fa;
+    --color-texto: #e2e8f0;
+    --color-border: rgba(255, 255, 255, 0.06);
+    
+    --color-alerta-fondo: rgba(255, 243, 205, 0.05);
+    --color-alerta-borde: rgba(255, 235, 162, 0.2);
+    --color-alerta-texto: #ffe082;
 }
 
 /* ==========================================================================
@@ -28,6 +49,7 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
     line-height: 1.8;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ==========================================================================
@@ -40,6 +62,8 @@ body {
     align-items: center;
     padding: 1.2rem 5%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .cabecera-articulo__volver {
@@ -67,17 +91,19 @@ body {
 4. BLOQUE CONTENEDOR DEL ARTÍCULO (.articulo)
    ========================================================================== */
 .articulo {
-    max-width: 800px;
+    max-width: 800px; 
     margin: 3rem auto;
-    background-color: var(--color-blanco); /* ¡Cambiado a blanco impecable! */
+    background-color: var(--color-card); /* Usa variable para cambiar en modo oscuro */
     padding: 3rem 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e9ecef;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-premium);
+    border: 1px solid var(--color-border);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Header del post */
 .articulo__header {
-    border-bottom: 2px solid #f1f3f5;
+    border-bottom: 2px solid var(--color-border);
     padding-bottom: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -101,9 +127,10 @@ body {
 
 .articulo__fecha {
     font-size: 0.85rem;
-    color: #868e96;
+    color: var(--color-muted);
 }
 
+/* Elementos del cuerpo de texto */
 .articulo__contenido p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
@@ -111,7 +138,8 @@ body {
 
 .articulo__introduccion {
     font-size: 1.2rem !important;
-    color: #495057;
+    color: var(--color-texto);
+    opacity: 0.9;
     font-weight: 500;
 }
 
@@ -123,19 +151,21 @@ body {
     font-weight: 700;
 }
 
+/* Caja de Alerta Especial */
 .articulo__alerta {
     background-color: var(--color-alerta-fondo);
-    border-left: 5px solid var(--color-principal);
+    border-left: 5px solid var(--color-principal); 
     border-top: 1px solid var(--color-alerta-borde);
     border-right: 1px solid var(--color-alerta-borde);
     border-bottom: 1px solid var(--color-alerta-borde);
     padding: 1.2rem 1.5rem;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
     color: var(--color-alerta-texto);
     margin: 2rem 0;
     font-size: 1rem;
 }
 
+/* Media Query interna para que el artículo no se pegue a los bordes en teléfonos */
 @media (max-width: 768px) {
     .articulo {
         margin: 1rem;
@@ -164,22 +194,23 @@ body {
 }
 
 /* ==========================================================================
-6. ESTILOS DE TABLAS
+6. ESTILOS DE TABLAS (Para Guías y Equivalencias)
    ========================================================================== */
 .articulo__tabla-contenedor {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: auto; 
     margin: 2rem 0;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
 }
 
 .articulo__tabla {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; 
     text-align: left;
     font-size: 0.95rem;
-    min-width: 600px;
+    min-width: 600px; 
+    background-color: var(--color-blanco);
 }
 
 .articulo__tabla thead {
@@ -194,28 +225,29 @@ body {
 
 .articulo__tabla td {
     padding: 1rem;
-    border-bottom: 1px solid #e9ecef;
-    color: #495057;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-texto);
 }
 
 .articulo__tabla tbody tr:nth-child(even) {
-    background-color: #f8f9fa;
+    background-color: var(--color-fondo);
 }
 
 .articulo__tabla tbody tr:hover {
-    background-color: #f1f3f5;
+    background-color: rgba(0, 180, 216, 0.05);
 }
 
+/* Nuevos estilos para el contenido extendido del artículo */
 .articulo__texto {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #333333;
+    color: var(--color-texto);
     margin-bottom: 1.25rem;
 }
 
 .articulo__subtitulo-interno {
     font-size: 1.3rem;
-    color: var(--color-oscuro);
+    color: var(--color-oscuro); 
     margin-top: 2rem;
     margin-bottom: 0.75rem;
     font-weight: 600;
@@ -230,7 +262,7 @@ body {
 .articulo__lista-item {
     font-size: 1.05rem;
     line-height: 1.6;
-    color: #4a5568;
+    color: var(--color-texto);
     margin-bottom: 0.5rem;
 }
 
@@ -243,23 +275,25 @@ ol.articulo__lista--ordenada {
 }
 
 .articulo__contenido code {
-    background-color: #f7fafc;
+    background-color: var(--color-fondo);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     font-family: monospace;
     color: #e53e3e;
     font-size: 0.95rem;
+    border: 1px solid var(--color-border);
 }
 
 /* ==========================================================================
-Buscador de Motos e Interacciones Dinámicas
+7. ESTILOS DEL BUSCADOR INTERACTIVO DE MOTOS (Clases Originales Intactas)
    ========================================================================== */
 .buscador-motos {
-    background-color: #ffffff;
+    background-color: var(--color-blanco);
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: var(--radius-md);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     margin: 2rem 0;
+    border: 1px solid var(--color-border);
 }
 
 .buscador-motos__filtro {
@@ -272,32 +306,60 @@ Buscador de Motos e Interacciones Dinámicas
 .buscador-motos__select {
     padding: 0.75rem 1rem;
     font-size: 1.1rem;
-    border: 2px solid #cbd5e0;
+    border: 2px solid var(--color-border);
     border-radius: 6px;
-    background-color: #fff;
-    color: #2d3748;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     outline: none;
     cursor: pointer;
     transition: border-color 0.2s ease;
 }
 
 .buscador-motos__select:focus {
-    border-color: var(--color-oscuro);
+    border-color: var(--color-principal); 
 }
 
 .buscador-motos__placeholder {
-    color: #718096;
+    color: var(--color-muted);
     font-style: italic;
     text-align: center;
     padding: 2rem;
-    background: #f7fafc;
+    background: var(--color-fondo);
     border-radius: 6px;
-    border: 1px dashed #cbd5e0;
+    border: 1px dashed var(--color-border);
 }
 
+/* Las tablas inyectadas por JavaScript mantienen sus nombres exactos */
+.tabla-repuestos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: var(--color-blanco);
+}
+
+.tabla-repuestos th {
+    background-color: var(--color-oscuro); 
+    color: var(--color-blanco);
+    text-align: left;
+    padding: 0.75rem;
+    font-weight: 600;
+}
+
+.tabla-repuestos td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-texto);
+}
+
+.tabla-repuestos tr:hover {
+    background-color: var(--color-fondo);
+}
+
+/* Etiquetas e indicadores de resultados */
 .tag-compatible {
-    background-color: #ebf8ff;
-    color: #2b6cb0;
+    background-color: rgba(0, 180, 216, 0.1);
+    color: var(--color-principal);
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-weight: bold;
@@ -316,6 +378,12 @@ Buscador de Motos e Interacciones Dinámicas
     white-space: nowrap;
 }
 
+[data-theme="dark"] .tag-precio {
+    background-color: rgba(56, 161, 105, 0.1);
+    color: #81e6d9;
+    border-color: rgba(129, 230, 217, 0.3);
+}
+
 .tag-financiado {
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
@@ -331,10 +399,22 @@ Buscador de Motos e Interacciones Dinámicas
     border: 1px solid #e9d5ff;
 }
 
+[data-theme="dark"] .tag-financiado--cashea {
+    background-color: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    border-color: rgba(168, 85, 247, 0.4);
+}
+
 .tag-financiado--krece {
     background-color: #fff7ed;
     color: #c2410c;
     border: 1px solid #ffedd5;
+}
+
+[data-theme="dark"] .tag-financiado--krece {
+    background-color: rgba(249, 115, 22, 0.15);
+    color: #fbcfe8;
+    border-color: rgba(249, 115, 22, 0.4);
 }
 
 .buscador-motos__filtros-grupo {
@@ -354,8 +434,8 @@ Buscador de Motos e Interacciones Dinámicas
 }
 
 .tarjeta-resultado {
-    background-color: #f8fafc;
-    border: 2px solid #e2e8f0;
+    background-color: var(--color-fondo);
+    border: 2px solid var(--color-border);
     border-radius: 8px;
     padding: 1.5rem;
     margin-top: 1rem;
@@ -366,7 +446,7 @@ Buscador de Motos e Interacciones Dinámicas
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 2px solid var(--color-border);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     flex-wrap: wrap;
@@ -387,4 +467,154 @@ Buscador de Motos e Interacciones Dinámicas
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
     to { opacity: 1; transform: translateY(0); }
+}
+/* ==========================================================================
+   7. ESTILOS DEL BUSCADOR INTERACTIVO (Diseño Moderno)
+   ========================================================================== */
+.buscador-motos {
+    background-color: var(--color-blanco);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-premium);
+    margin: 3rem 0;
+    border: 1px solid var(--color-border);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decoración superior sutil para darle carácter */
+.buscador-motos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-principal), var(--color-principal-hover));
+}
+
+.buscador-motos__filtro {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* El select ahora es más elegante */
+.buscador-motos__select {
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+}
+
+.buscador-motos__select:hover {
+    border-color: var(--color-principal);
+}
+
+.buscador-motos__select:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 4px rgba(0, 180, 216, 0.1);
+}
+
+/* Tabla de repuestos con estilo "limpio" */
+.tabla-repuestos {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1.5rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+}
+
+.tabla-repuestos th {
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+    text-align: left;
+    padding: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+.tabla-repuestos td {
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-texto);
+    font-size: 0.95rem;
+}
+
+.tabla-repuestos tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-repuestos tr:hover {
+    background-color: rgba(0, 180, 216, 0.03);
+}
+
+/* Tarjeta de resultado con efecto de elevación */
+.tarjeta-resultado {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin-top: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-resultado:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transform: translateY(-2px);
+}
+
+.tarjeta-resultado__header {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.tarjeta-resultado__titulo {
+    font-size: 1.5rem;
+    color: var(--color-oscuro);
+    font-weight: 800;
+}
+
+/* Etiquetas (Píldoras mejoradas) */
+.tag-compatible {
+    background: rgba(0, 180, 216, 0.1);
+    color: var(--color-principal);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.tag-precio {
+    background: #e6fffa;
+    color: #0d9488;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 700;
+    border: 1px solid #ccfbf1;
+}
+
+.tag-financiado--cashea {
+    background: #f5f3ff;
+    color: #7c3aed;
+    border: 1px solid #ddd6fe;
+}
+
+.tag-financiado--krece {
+    background: #fff7ed;
+    color: #ea580c;
+    border: 1px solid #fed7aa;
 }
