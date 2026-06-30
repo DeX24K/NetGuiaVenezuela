@@ -1,18 +1,72 @@
 /* ==========================================================================
-1. VARIABLES DE PALETA DE COLORES (Almacén Central)
+   1. VARIABLES DE PALETA DE COLORES (Identidad Original Centralizada)
    ========================================================================== */
 :root {
-    --color-principal: #00b4d8;       /* Turquesa brillante para enlaces/botones */
-    --color-principal-hover: #0077b6; /* Turquesa oscuro para interacciones */
-    --color-oscuro: #1d2d44;          /* Azul marino profundo corporativo */
-    --color-texto: #333333;           /* Gris oscuro ultra legible */
-    --color-fondo: #f8f9fa;           /* Blanco grisáceo suave */
+    /* Tu Paleta Fiel del Reset Original */
+    --color-fondo: #f8f9fa;           
     --color-blanco: #ffffff;
+    --color-header: rgba(255, 255, 255, 0.85);
+    --color-card: #ffffff;
+    --color-border: #e9ecef;          
+    
+    /* Textos Originales */
+    --color-oscuro: #1d2d44;          
+    --color-texto: #333333;           
+    --color-muted: #6c757d;           
+    
+    /* Tus Turquesas Identitarios */
+    --color-principal: #00b4d8;       
+    --color-principal-hover: #0077b6; 
+    --color-principal-alpha: rgba(0, 180, 216, 0.06);
+    
+    /* Fuentes */
     --fuente-global: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Esquinas Unificadas y Consistentes */
+    --radius-lg: 16px;                /* Ligeramente más curvo para dar suavidad */
+    --radius-md: 10px;                 
+    --radius-sm: 6px;
+    
+    /* Sombra multicapa translúcida (Evita el look sucio o pesado) */
+    --shadow-premium: 0 1px 2px rgba(29, 45, 68, 0.02), 
+                    0 4px 16px rgba(29, 45, 68, 0.04), 
+                    0 12px 24px rgba(29, 45, 68, 0.02);
+    /* ... tus otras variables ... */
+    
+    /* Variables exclusivas para el Footer en Modo Claro */
+    --bg-footer: #111c2e;             /* Un azul marino profundo súper elegante */
+    --color-texto-footer: #ffffff;    /* Texto blanco para que resalte */
+    --color-muted-footer: #94a3b8;    /* Gris suave para descripciones y enlaces */
+
 }
 
 /* ==========================================================================
-2. RESET GENERAL
+   🚨 MODO OSCURO ENERGIZADO (Con contrastes vibrantes)
+   ========================================================================== */
+[data-theme="dark"] {
+    --color-fondo: #0a111c;           
+    --color-blanco: #111c2e;          
+    --color-header: rgba(10, 17, 28, 0.85);
+    --color-card: #15233a;            
+    --color-border: rgba(255, 255, 255, 0.06);
+    
+    --color-oscuro: #f8f9fa;          
+    --color-texto: #e2e8f0;           
+    --color-muted: #94a3b8;
+    
+    --color-principal: #00b4d8;       
+    --color-principal-hover: #90e0ef; 
+    --color-principal-alpha: rgba(0, 180, 216, 0.12);
+    
+    --shadow-premium: 0 4px 20px rgba(0, 0, 0, 0.3), 0 15px 35px rgba(0, 0, 0, 0.2);
+    
+    --bg-footer: #070c14;
+    --color-texto-footer: #f8f9fa;
+    --color-muted-footer: #64748b;
+}
+
+/* ==========================================================================
+   2. RESET GENERAL Y OPTIMIZACIÓN
    ========================================================================== */
 * {
     margin: 0;
@@ -25,21 +79,50 @@ body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .ico {
     border-radius: 50%;
 }
 
 /* ==========================================================================
-3. CABECERA (.cabecera)
+   3. CABECERA (.cabecera - Efecto Cristal Flotante)
    ========================================================================== */
 .cabecera {
-    background-color: var(--color-blanco);
+    background-color: var(--color-header);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.2rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.cabecera__logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabecera__logo-img {
+    height: 45px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.cabecera__logo-link:hover .cabecera__logo-img {
+    transform: rotate(-5px) scale(1.05); /* El logo "reacciona" sutilmente */
 }
 
 .cabecera__logo {
@@ -54,12 +137,13 @@ body {
 }
 
 /* ==========================================================================
-4. MENÚ DE NAVEGACIÓN (.menu)
+   4. MENÚ DE NAVEGACIÓN (.menu)
    ========================================================================== */
 .menu__lista {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 24px;
+    align-items: center;
 }
 
 .menu__enlace {
@@ -67,151 +151,313 @@ body {
     color: var(--color-oscuro);
     font-weight: 600;
     font-size: 0.95rem;
-    transition: color 0.3s ease;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.2s ease;
 }
 
 .menu__enlace:hover {
     color: var(--color-principal);
 }
 
+/* Subrayado animado súper fino */
+.menu__enlace::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-principal);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__enlace:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 /* ==========================================================================
-5. SECCIÓN HERO (.hero)
+   5. SECCIÓN HERO (.hero - ¡Magia de Iluminación Ambiental!)
    ========================================================================== */
 .hero {
-    background: linear-gradient(135deg, var(--color-oscuro) 0%, #0d1b2a 100%);
+    /* Combinación de luces radiales turquesas sobre tu degradado oscuro original */
+    background: radial-gradient(circle at 85% 15%, rgba(0, 180, 216, 0.22), transparent 40%),
+                radial-gradient(circle at 15% 85%, rgba(0, 119, 182, 0.15), transparent 40%),
+                linear-gradient(135deg, #1d2d44 0%, #0d1b2a 100%);
     color: var(--color-blanco);
     text-align: center;
-    padding: 5rem 1rem;
-}
-
-.hero__titulo {
-    font-size: 2.3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.hero__subtitulo {
-    font-size: 1.1rem;
-    color: #e0e1dd;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ==========================================================================
-6. BUSCADOR SIMULADO (.buscador-simulado)
-   ========================================================================== */
-.buscador-simulado {
-    display: flex;
-    max-width: 550px;
-    margin: 0 auto;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    border-radius: 8px;
+    padding: 6.5rem 1rem;
+    position: relative;
     overflow: hidden;
 }
 
-.buscador-simulado__input {
-    flex: 1;
-    padding: 1rem;
-    border: none;
-    outline: none;
-    font-size: 1rem;
+.hero__titulo {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
-.buscador-simulado__button {
-    background-color: var(--color-principal);
-    color: var(--color-blanco);
-    border: none;
-    padding: 0 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.hero__subtitulo {
+    font-size: 1.15rem;
+    color: #e0e1dd;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
 }
 
-.buscador-simulado__boton:hover {
-    background-color: var(--color-principal-hover);
+.hero__buscador-container {
+    position: relative;
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Ajuste del Hero en Modo Oscuro para que la luz sea más neón */
+[data-theme="dark"] .hero {
+    background: radial-gradient(circle at 85% 15%, rgba(0, 180, 216, 0.25), transparent 45%),
+                radial-gradient(circle at 15% 85%, rgba(17, 28, 46, 0.7), transparent 50%),
+                linear-gradient(135deg, #111c2e 0%, #0a111c 100%);
 }
 
 /* ==========================================================================
-7. SECCIÓN CATEGORÍAS (.categorias)
+   6. LA BARRA DE BÚSQUEDA INTERACTIVA
+   ========================================================================== */
+.buscador-real {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md); 
+    padding: 6px 6px 6px 18px;
+    box-shadow: var(--shadow-premium);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.buscador-real:focus-within {
+    border-color: var(--color-principal);
+    /* Aura de expansión al hacer focus */
+    box-shadow: 0 0 0 4px var(--color-principal-alpha), var(--shadow-premium);
+}
+
+.buscador-real__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.05rem;
+    color: var(--color-oscuro);
+    background: transparent;
+}
+
+.buscador-real__input::placeholder {
+    color: var(--color-muted);
+    opacity: 0.7;
+}
+
+.buscador-real__button {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px 26px;
+    border-radius: var(--radius-sm); 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.buscador-real__button:hover {
+    background-color: var(--color-principal-hover);
+}
+
+.buscador-real__button:active {
+    transform: scale(0.97); /* Feedback táctil al presionar */
+}
+
+/* RESULTADOS FLOTANTES */
+.buscador-real__resultados {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    background-color: var(--color-blanco);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-premium);
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 100;
+    display: none;
+    border: 1px solid var(--color-border);
+    text-align: left;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.buscador-real__item {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: var(--color-texto);
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.2s ease;
+}
+
+.buscador-real__item:last-child {
+    border-bottom: none;
+}
+
+.buscador-real__item:hover {
+    background-color: var(--color-principal-alpha);
+}
+
+.buscador-real__item h4 {
+    margin: 0 0 0.2rem 0;
+    color: var(--color-principal);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   7. SECCIÓN CATEGORÍAS (.categorias)
    ========================================================================== */
 .categorias {
     max-width: 1200px;
-    margin: 4rem auto;
+    margin: 5rem auto;
     padding: 0 2rem;
 }
 
 .categorias__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 32px; /* Espaciado un pelo más amplio para que respire */
 }
 
 /* ==========================================================================
-8. TARJETAS DE GUÍAS (.tarjeta-guia)
+8. TARJETAS DE GUÍAS (.tarjeta-guia - ¡Contenedores Llenos de Vida!)
    ========================================================================== */
 .tarjeta-guia {
-    background-color: var(--color-blanco);
-    padding: 2.5rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    border: 1px solid #e9ecef;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--color-card);
+    padding: 2.8rem 2.2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-premium);
+    border: 1px solid var(--color-border);
+    position: relative;
+    overflow: hidden; /* Obligatorio para esconder los efectos internos */
+    
+    /* Curva elástica de resorte en el transform */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                border-color 0.3s ease, 
+                box-shadow 0.4s ease, 
+                background-color 0.3s ease;
+}
+
+/* Magia: La línea láser de energía superior */
+.tarjeta-guia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--color-principal), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
 }
 
 .tarjeta-guia:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px); /* Sube con un ligero rebote orgánico */
+    border-color: rgba(0, 180, 216, 0.3);
+    /* Brillo sutil del color principal alrededor de la tarjeta */
+    box-shadow: 0 15px 30px rgba(0, 180, 216, 0.08), var(--shadow-premium);
+}
+
+/* Activación del láser al pasar el mouse */
+.tarjeta-guia:hover::before {
+    transform: scaleX(1);
 }
 
 .tarjeta-guia__titulo {
     font-size: 1.35rem;
     margin-bottom: 1rem;
     color: var(--color-oscuro);
+    font-weight: 700;
 }
 
 .tarjeta-guia__descripcion {
-    color: #6c757d;
+    color: var(--color-muted);
     font-size: 0.95rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 
 .tarjeta-guia__enlace {
     display: inline-block;
     text-decoration: none;
     color: var(--color-principal);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.95rem;
     transition: color 0.2s ease;
 }
 
-.tarjeta-guia__enlace:hover {
-    color: var(--color-oscuro);
-    text-decoration: underline;
+/* Magia: Agregamos una flecha interactiva por CSS que se estira sola */
+.tarjeta-guia__enlace::after {
+    content: ' ➔';
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tarjeta-guia:hover .tarjeta-guia__enlace {
+    color: var(--color-principal-hover);
+}
+
+/* Al pasar el mouse sobre la tarjeta, la flecha salta a la derecha */
+.tarjeta-guia:hover .tarjeta-guia__enlace::after {
+    transform: translateX(5px);
+
+}
+/* ==========================================================================
+MODIFICADORES PARA IMÁGENES DE FONDO (Modo Claro)
+   ========================================================================== */
+.tarjeta-guia--saren {
+    /* El degradado blanco/grisáceo suaviza la foto para que el texto oscuro resalte */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.96)), 
+                      url('/img/tramit.png'); /* Pon aquí la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+.tarjeta-guia--gtu {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.96)), 
+                      url('../img/gtu-bg.jpg'); /* Pon aquí la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
 }
 
 /* ==========================================================================
-9. NUEVO FOOTER PROFESIONAL (.footer)
+   9. NUEVO FOOTER PROFESIONAL (.footer)
    ========================================================================== */
 .footer {
-    background-color: var(--color-oscuro);
+    background-color: var(--bg-footer);
     color: var(--color-blanco);
-    padding: 4rem 5% 1.5rem 5%;
-    margin-top: 5rem;
+    padding: 5rem 5% 2rem 5%;
+    margin-top: 6rem;
     font-size: 0.95rem;
+    border-top: 1px solid var(--color-border);
+    transition: background-color 0.3s ease, border-top 0.3s ease;
 }
 
-/* Contenedor en Grid de 3 columnas */
 .footer__contenedor {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr; /* La primera columna es más ancha */
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 40px;
     padding-bottom: 3rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria sutil */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .footer__titulo {
@@ -235,10 +481,8 @@ body {
     font-size: 1.1rem;
     margin-bottom: 1.2rem;
     color: var(--color-blanco);
-    position: relative;
 }
 
-/* Listas de enlaces */
 .footer__lista {
     list-style: none;
 }
@@ -250,16 +494,15 @@ body {
 .footer__enlace {
     color: #a5a5a5;
     text-decoration: none;
-    transition: color 0.2s ease, padding-left 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
     display: inline-block;
 }
 
 .footer__enlace:hover {
     color: var(--color-principal);
-    padding-left: 4px; /* Efecto sutil de desplazamiento al pasar el mouse */
+    transform: translateX(4px); /* Se mueve de lado suavemente en vez de saltar */
 }
 
-/* Barra inferior de derechos de autor */
 .footer__barra-inferior {
     max-width: 1200px;
     margin: 0 auto;
@@ -272,30 +515,30 @@ body {
     font-size: 0.85rem;
 }
 
-/* ==========================================================================
-ADAPTACIÓN MÓVIL (Media Query)
-   ========================================================================== */
-@media (max-width: 768px) {
-    .footer__contenedor {
-        grid-template-columns: 1fr; /* Pasa de 3 columnas a 1 sola en fila */
-        gap: 30px;
-        text-align: center;
-    }
-
-    .footer__descripcion {
-        margin: 0 auto;
-    }
-    
-    .footer__enlace:hover {
-        padding-left: 0; /* Desactivamos el desplazamiento en móvil */
-    }
+/* INTERRUPTOR DEL TEMA */
+.btn-tema {
+    background: transparent;
+    border: none;
+    color: var(--color-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.1s ease;
+}
+.btn-tema:hover {
+    color: var(--color-principal);
+    background-color: var(--color-principal-alpha);
+}
+.btn-tema:active {
+    transform: scale(0.9);
 }
 
 /* ==========================================================================
-10. ESTILOS RESPONSIVE (Para Teléfonos Celulares)
+   10. ESTILOS RESPONSIVE (Para Teléfonos Celulares)
    ========================================================================== */
 @media (max-width: 768px) {
-    /* El menú y el logo se apilarán uno abajo del otro en vez de ir de lado */
     .cabecera {
         flex-direction: column;
         gap: 15px;
@@ -308,156 +551,25 @@ ADAPTACIÓN MÓVIL (Media Query)
         justify-content: center;
     }
 
-    /* Achicamos un poco el tamaño de la letra del título principal */
+    .hero {
+        padding: 4.5rem 1rem;
+    }
+
     .hero__titulo {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
-    /* El buscador simulado pasa de fila a columna para que no se desborde */
-    .buscador-simulado {
-        flex-direction: column;
-        box-shadow: none;
-        gap: 12px;
-        background: transparent;
+    .footer__contenedor {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
     }
 
-    .buscador-simulado__input {
-        border-radius: 8px;
-        width: 100%;
-        padding: 1rem;
-
+    .footer__descripcion {
+        margin: 0 auto;
     }
-
-    .buscador-simulado__button {
-        padding: 0.8rem;
-        border-radius: 8px;
-        width: 100%;
-        font-size: 1.05rem;
-        font-weight: 700;
+    
+    .footer__enlace:hover {
+        transform: none;
     }
-}
-/* Contenedor del buscador dentro del Hero */
-.hero__buscador-container {
-    position: relative; /* Obligatorio para que los resultados floten bien */
-    max-width: 600px;
-    margin: 2rem auto 0 auto;
-    width: 100%;
-}
-
-/* La barra de búsqueda física */
-.buscador-real {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    border: 2px solid #e2e8f0;
-    border-radius: 50px; /* Estilo píldora moderno */
-    padding: 6px 6px 6px 18px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-/* Cuando el usuario hace clic para escribir */
-.buscador-real:focus-within {
-    border-color: #3182ce;
-    box-shadow: 0 10px 15px -3px rgba(49, 130, 206, 0.15);
-}
-
-.buscador-real__input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 1.05rem;
-    color: #2d3748;
-    background: transparent;
-}
-
-.buscador-real__button {
-    background-color: #3182ce; /* Pon aquí el color principal de tu web */
-    color: #ffffff;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.buscador-real__button:hover {
-    background-color: #2b6cb0;
-}
-
-/* ==================== CAJA DE RESULTADOS FLOTANTES ==================== */
-.buscador-real__resultados {
-    position: absolute;
-    top: 115%; /* Se posiciona justo debajo de la barra */
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
-    max-height: 280px;
-    overflow-y: auto;
-    z-index: 100;
-    display: none; /* Oculto por defecto hasta que escriban */
-    border: 1px solid #e2e8f0;
-    text-align: left; /* Evita que herede el centrado del Hero */
-}
-
-/* Cada opción encontrada */
-.buscador-real__item {
-    display: block;
-    padding: 14px 20px;
-    text-decoration: none;
-    color: #2d3748;
-    border-bottom: 1px solid #f7fafc;
-    transition: background-color 0.2s;
-}
-
-.buscador-real__item:last-child {
-    border-bottom: none;
-}
-
-.buscador-real__item:hover {
-    background-color: #f7fafc;
-}
-
-.buscador-real__item h4 {
-    margin: 0 0 0.2rem 0;
-    color: #3182ce;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.buscador-real__item p {
-    margin: 0;
-    font-size: 0.85rem;
-    color: #718096;
-    line-height: 1.4;
-}
-
-/* Mensaje de Alerta */
-.buscador-real__sin-resultados {
-    padding: 16px;
-    color: #718096;
-    font-size: 0.95rem;
-}
-/* Estilos para el nuevo enlace del logo */
-.cabecera__logo-link {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Separa la imagen del texto un poquito */
-    text-decoration: none;
-    color: inherit; /* Mantiene el color original del texto */
-}
-
-/* Control de tamaño de la imagen del logo */
-.cabecera__logo-img {
-    height: 50px; /* Controla la altura. Puedes subirlo a 45px o 50px según veas */
-    width: auto;  /* Mantiene la proporción perfecta sin estirarse */
-    display: block;
-}
-
-/* Ajuste opcional para el texto por si usas la Opción A */
-.cabecera__logo-texto {
-    font-size: 1.3rem;
 }

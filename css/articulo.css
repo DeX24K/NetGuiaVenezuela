@@ -27,7 +27,7 @@ body {
     font-family: var(--fuente-global);
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    line-height: 1.8; /* Espaciado amplio para que no canse la vista */
+    line-height: 1.8;
 }
 
 /* ==========================================================================
@@ -67,16 +67,15 @@ body {
 4. BLOQUE CONTENEDOR DEL ARTÍCULO (.articulo)
    ========================================================================== */
 .articulo {
-    max-width: 800px; /* Ancho óptimo de lectura para blogs profesionales */
+    max-width: 800px;
     margin: 3rem auto;
-    background-color: #bad1f5;
+    background-color: var(--color-blanco); /* ¡Cambiado a blanco impecable! */
     padding: 3rem 2.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border: 1px solid #e9ecef;
 }
 
-/* Header del post */
 .articulo__header {
     border-bottom: 2px solid #f1f3f5;
     padding-bottom: 1.5rem;
@@ -105,7 +104,6 @@ body {
     color: #868e96;
 }
 
-/* Elementos del cuerpo de texto */
 .articulo__contenido p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
@@ -125,10 +123,9 @@ body {
     font-weight: 700;
 }
 
-/* Caja de Alerta Especial */
 .articulo__alerta {
     background-color: var(--color-alerta-fondo);
-    border-left: 5px solid var(--color-principal); /* Destaca con el turquesa */
+    border-left: 5px solid var(--color-principal);
     border-top: 1px solid var(--color-alerta-borde);
     border-right: 1px solid var(--color-alerta-borde);
     border-bottom: 1px solid var(--color-alerta-borde);
@@ -139,7 +136,6 @@ body {
     font-size: 1rem;
 }
 
-/* Media Query interna para que el artículo no se pegue a los bordes en teléfonos */
 @media (max-width: 768px) {
     .articulo {
         margin: 1rem;
@@ -168,13 +164,11 @@ body {
 }
 
 /* ==========================================================================
-6. ESTILOS DE TABLAS (Para Guías y Equivalencias)
+6. ESTILOS DE TABLAS
    ========================================================================== */
-
-/* Contenedor que evita que la tabla rompa el diseño móvil */
 .articulo__tabla-contenedor {
     width: 100%;
-    overflow-x: auto; /* Activa la barra de desplazamiento horizontal solo si es necesario */
+    overflow-x: auto;
     margin: 2rem 0;
     border: 1px solid #e9ecef;
     border-radius: 8px;
@@ -182,13 +176,12 @@ body {
 
 .articulo__tabla {
     width: 100%;
-    border-collapse: collapse; /* Elimina los dobles bordes feos */
+    border-collapse: collapse;
     text-align: left;
     font-size: 0.95rem;
-    min-width: 600px; /* Asegura que la tabla mantenga su forma y se pueda leer bien en móvil */
+    min-width: 600px;
 }
 
-/* Estilos de la cabecera de la tabla */
 .articulo__tabla thead {
     background-color: var(--color-oscuro);
     color: var(--color-blanco);
@@ -199,28 +192,20 @@ body {
     font-weight: 600;
 }
 
-/* Estilos de las celdas del cuerpo */
 .articulo__tabla td {
     padding: 1rem;
     border-bottom: 1px solid #e9ecef;
     color: #495057;
 }
 
-/* Efecto de filas alternas (una blanca, una gris claro) para facilitar la lectura */
 .articulo__tabla tbody tr:nth-child(even) {
     background-color: #f8f9fa;
 }
 
-/* Efecto hover al pasar el mouse por encima de una fila */
 .articulo__tabla tbody tr:hover {
     background-color: #f1f3f5;
 }
 
-/* ==========================================================================
-Nuevos estilos para el contenido extendido del artículo
-   ========================================================================== */
-
-/* Párrafos estándar del artículo */
 .articulo__texto {
     font-size: 1.1rem;
     line-height: 1.7;
@@ -228,23 +213,20 @@ Nuevos estilos para el contenido extendido del artículo
     margin-bottom: 1.25rem;
 }
 
-/* Subtítulos de nivel 3 (los que van dentro de los pasos) */
 .articulo__subtitulo-interno {
     font-size: 1.3rem;
-    color: #1a365d; /* Ajusta este color al azul de tu paleta */
+    color: var(--color-oscuro);
     margin-top: 2rem;
     margin-bottom: 0.75rem;
     font-weight: 600;
 }
 
-/* Estilos generales para las listas (ul y ol) */
 .articulo__lista {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
 }
 
-/* Elementos de la lista */
 .articulo__lista-item {
     font-size: 1.05rem;
     line-height: 1.6;
@@ -252,7 +234,6 @@ Nuevos estilos para el contenido extendido del artículo
     margin-bottom: 0.5rem;
 }
 
-/* Ajuste específico por si usas viñetas cuadradas o círculos */
 ul.articulo__lista {
     list-style-type: disc;
 }
@@ -261,7 +242,6 @@ ol.articulo__lista--ordenada {
     list-style-type: decimal;
 }
 
-/* Estilo para los bloques de código (como los enlaces URL que pusimos) */
 .articulo__contenido code {
     background-color: #f7fafc;
     padding: 0.2rem 0.4rem;
@@ -272,9 +252,8 @@ ol.articulo__lista--ordenada {
 }
 
 /* ==========================================================================
-Estilos del Buscador Interactivo de Motos
+Buscador de Motos e Interacciones Dinámicas
    ========================================================================== */
-
 .buscador-motos {
     background-color: #ffffff;
     padding: 1.5rem;
@@ -290,7 +269,6 @@ Estilos del Buscador Interactivo de Motos
     gap: 0.5rem;
 }
 
-/* El menú desplegable */
 .buscador-motos__select {
     padding: 0.75rem 1rem;
     font-size: 1.1rem;
@@ -304,7 +282,7 @@ Estilos del Buscador Interactivo de Motos
 }
 
 .buscador-motos__select:focus {
-    border-color: #1a365d; /* Cambia al azul oscuro de tu menú */
+    border-color: var(--color-oscuro);
 }
 
 .buscador-motos__placeholder {
@@ -317,33 +295,6 @@ Estilos del Buscador Interactivo de Motos
     border: 1px dashed #cbd5e0;
 }
 
-/* Estructura de la tabla dinámica que inyecta JS */
-.tabla-repuestos {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
-.tabla-repuestos th {
-    background-color: #1a365d; /* Azul de tu cabecera */
-    color: #ffffff;
-    text-align: left;
-    padding: 0.75rem;
-    font-weight: 600;
-}
-
-.tabla-repuestos td {
-    padding: 0.75rem;
-    border-bottom: 1px solid #e2e8f0;
-    color: #4a5568;
-}
-
-.tabla-repuestos tr:hover {
-    background-color: #f7fafc;
-}
-
-/* Etiqueta resaltada para el repuesto compatible */
 .tag-compatible {
     background-color: #ebf8ff;
     color: #2b6cb0;
@@ -352,7 +303,7 @@ Estilos del Buscador Interactivo de Motos
     font-weight: bold;
     font-size: 0.9rem;
 }
-/* Etiqueta para resaltar el precio en color verde suave */
+
 .tag-precio {
     background-color: #f0fff4;
     color: #38a169;
@@ -365,7 +316,6 @@ Estilos del Buscador Interactivo de Motos
     white-space: nowrap;
 }
 
-/* Base para las etiquetas de financiamiento */
 .tag-financiado {
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
@@ -375,20 +325,18 @@ Estilos del Buscador Interactivo de Motos
     margin: 0 0.2rem;
 }
 
-/* Color Morado/Azul característico de Cashea */
 .tag-financiado--cashea {
     background-color: #f3e8ff;
     color: #6b21a8;
     border: 1px solid #e9d5ff;
 }
 
-/* Color Naranja/Teal característico de Krece */
 .tag-financiado--krece {
     background-color: #fff7ed;
     color: #c2410c;
     border: 1px solid #ffedd5;
 }
-/* Contenedor de filtros en línea */
+
 .buscador-motos__filtros-grupo {
     display: flex;
     flex-direction: column;
@@ -396,7 +344,6 @@ Estilos del Buscador Interactivo de Motos
     margin-bottom: 1.5rem;
 }
 
-/* En tablets y PC se ponen uno al lado del otro */
 @media (min-width: 768px) {
     .buscador-motos__filtros-grupo {
         flex-direction: row;
@@ -406,7 +353,6 @@ Estilos del Buscador Interactivo de Motos
     }
 }
 
-/* Diseño de la Tarjeta del Resultado Único */
 .tarjeta-resultado {
     background-color: #f8fafc;
     border: 2px solid #e2e8f0;
@@ -429,12 +375,11 @@ Estilos del Buscador Interactivo de Motos
 
 .tarjeta-resultado__titulo {
     font-size: 1.25rem;
-    color: #1a365d;
+    color: var(--color-oscuro);
     margin: 0;
     font-weight: bold;
 }
 
-/* Efecto de aparición suave */
 .animate-fade-in {
     animation: fadeIn 0.3s ease-in-out;
 }

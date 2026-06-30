@@ -1,68 +1,94 @@
-// Tu índice de contenido indexado para NetGuiaVenezuela
-    const indicePaginas = [
-        {
-            titulo: "Guía de Repuestos y Equivalencias para Motos",
-            descripcion: "Descubre qué repuestos de marcas japonesas le sirven a tu moto china (Owen, SBR, Horse) y dónde comprarlos con Cashea/Krece.",
-            url: "guia-repuestos-motos.html",
-            palabrasClave: ["motos", "repuestos", "owen", "bera", "sbr", "horse", "toro", "jaguar", "pastillas", "frenos", "cashea", "krece", "equivalencias", "moto"]
-        },
-        {
-            titulo: "Guía de Trámites Legales (SAREN y GTU)",
-            descripcion: "Paso a paso para citas del SAREN, legalizaciones universitarias en el GTU y apostillas sin perder tiempo.",
-            url: "guia-gtu-sarem.html",
-            palabrasClave: ["saren", "gtu", "apostilla", "legalizar", "titulo", "universidad", "partida de nacimiento", "tramites", "citas", "registro"]
-        },
-        {
-            titulo: "Guía de Finanzas Digitales (Binance y Zinli)",
-            descripcion: "Tutorial completo para mover tus fondos en Binance P2P, recargar Zinli desde Venezuela y proteger tus ingresos.",
-            url: "guia-binance-zinli.html",
-            palabrasClave: ["binance", "zinli", "p2p", "dolares", "recargar", "bolivares", "pagos", "tarjeta", "cripto"]
-        }
-    ];
+// El índice de contenido indexado para NetGuiaVenezuela
+const indicePaginas = [
+    {
+        titulo: "Guía de Repuestos y Equivalencias para Motos",
+        descripcion: "Descubre qué repuestos de marcas japonesas le sirven a tu moto china (Owen, SBR, Horse) y dónde comprarlos con Cashea/Krece.",
+        url: "guia-repuestos-motos.html",
+        palabrasClave: ["motos", "repuestos", "owen", "bera", "sbr", "horse", "toro", "jaguar", "pastillas", "frenos", "cashea", "krece", "equivalencias", "moto"]
+    },
+    {
+        titulo: "Guía de Trámites Legales (SAREN y GTU)",
+        descripcion: "Paso a paso para citas del SAREN, legalizaciones universitarias en el GTU y apostillas sin perder tiempo.",
+        url: "guia-gtu-sarem.html",
+        palabrasClave: ["saren", "gtu", "apostilla", "legalizar", "titulo", "universidad", "partida de nacimiento", "tramites", "citas", "registro"]
+    },
+    {
+        titulo: "Guía de Finanzas Digitales (Binance y Zinli)",
+        descripcion: "Tutorial completo para mover tus fondos en Binance P2P, recargar Zinli desde Venezuela y proteger tus ingresos.",
+        url: "guia-binance-zinli.html",
+        palabrasClave: ["binance", "zinli", "p2p", "dolares", "recargar", "bolivares", "pagos", "tarjeta", "cripto"]
+    }
+];
 
-    const inputBusqueda = document.getElementById('input-busqueda');
-    const cajaResultados = document.getElementById('resultados-busqueda-caja');
+const inputBusqueda = document.getElementById('input-busqueda');
+const cajaResultados = document.getElementById('resultados-busqueda-caja');
 
-    inputBusqueda.addEventListener('input', function() {
-        const textoUsuario = this.value.toLowerCase().trim();
-        
-        if (textoUsuario.length === 0) {
-            cajaResultados.innerHTML = '';
-            cajaResultados.style.display = 'none';
-            return;
-        }
-
-        const resultadosFiltrados = indicePaginas.filter(pagina => {
-            return pagina.titulo.toLowerCase().includes(textoUsuario) || 
-                pagina.descripcion.toLowerCase().includes(textoUsuario) || 
-                pagina.palabrasClave.some(palabra => palabra.includes(textoUsuario));
-        });
-
+inputBusqueda.addEventListener('input', function() {
+    const textoUsuario = this.value.toLowerCase().trim();
+    
+    if (textoUsuario.length === 0) {
         cajaResultados.innerHTML = '';
-        
-        if (resultadosFiltrados.length > 0) {
-            cajaResultados.style.display = 'block';
-            resultadosFiltrados.forEach(pagina => {
-                cajaResultados.innerHTML += `
-                    <a href="${pagina.url}" class="buscador-real__item">
-                        <h4>${pagina.titulo}</h4>
-                        <p>${pagina.descripcion}</p>
-                    </a>
-                `;
-            });
-        } else {
-            cajaResultados.style.display = 'block';
-            cajaResultados.innerHTML = `
-                <div class="buscador-real__sin-resultados">
-                    ❌ No encontramos guías para "<strong>${this.value}</strong>". ¡Pronto la añadiremos!
-                </div>
-            `;
-        }
+        cajaResultados.style.display = 'none';
+        return;
+    }
+
+    const resultadosFiltrados = indicePaginas.filter(pagina => {
+        return pagina.titulo.toLowerCase().includes(textoUsuario) || 
+            pagina.descripcion.toLowerCase().includes(textoUsuario) || 
+            pagina.palabrasClave.some(palabra => palabra.includes(textoUsuario));
     });
 
-    // Cerrar si hacen clic fuera
-    document.addEventListener('click', function(evento) {
-        if (!inputBusqueda.contains(evento.target) && !cajaResultados.contains(evento.target)) {
-            cajaResultados.style.display = 'none';
-        }
-    });
+    cajaResultados.innerHTML = '';
+    
+    if (resultadosFiltrados.length > 0) {
+        cajaResultados.style.display = 'block';
+        let htmlAcumulado = ''; // Optimización de rendimiento
+        
+        resultadosFiltrados.forEach(pagina => {
+            htmlAcumulado += `
+                <a href="${pagina.url}" class="buscador-real__item">
+                    <h4>${pagina.titulo}</h4>
+                    <p>${pagina.descripcion}</p>
+                </a>
+            `;
+        });
+        cajaResultados.innerHTML = htmlAcumulado;
+    } else {
+        cajaResultados.style.display = 'block';
+        cajaResultados.innerHTML = `
+            <div class="buscador-real__sin-resultados">
+                ❌ No encontramos guías para "<strong>${this.value}</strong>". ¡Pronto la añadiremos!
+            </div>
+        `;
+    }
+});
+
+// Cerrar si hacen clic fuera
+document.addEventListener('click', function(evento) {
+    if (!inputBusqueda.contains(evento.target) && !cajaResultados.contains(evento.target)) {
+        cajaResultados.style.display = 'none';
+    }
+});
+
+// ==========================================================================
+/* EFFECT: Placeholder Dinámico para animar la barra de búsqueda */
+// ==========================================================================
+const frasesSugeridas = [
+    '¿Buscas repuestos para tu Owen?',
+    '¿Cómo pedir cita en el SAREN?',
+    '¿Cómo recargar Zinli con Binance?',
+    '¿Qué repuesto japonés le sirve a tu moto?',
+    '¿Cómo registrar tu título en el GTU?'
+];
+
+let fraseIndex = 0;
+
+function rotarPlaceholder() {
+    if (inputBusqueda) {
+        inputBusqueda.setAttribute('placeholder', frasesSugeridas[fraseIndex]);
+        fraseIndex = (fraseIndex + 1) % frasesSugeridas.length;
+    }
+}
+
+rotarPlaceholder();
+setInterval(rotarPlaceholder, 3500);
