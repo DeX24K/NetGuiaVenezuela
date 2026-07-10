@@ -2,7 +2,6 @@
    1. VARIABLES DE PALETA DE COLORES (Identidad Original Centralizada)
    ========================================================================== */
 :root {
-    /* Tu Paleta Fiel del Reset Original */
     --color-fondo: #f8f9fa;           
     --color-blanco: #ffffff;
     --color-header: rgba(255, 255, 255, 0.85);
@@ -23,25 +22,23 @@
     --fuente-global: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     /* Esquinas Unificadas y Consistentes */
-    --radius-lg: 16px;                /* Ligeramente más curvo para dar suavidad */
+    --radius-lg: 16px;                
     --radius-md: 10px;                 
     --radius-sm: 6px;
     
-    /* Sombra multicapa translúcida (Evita el look sucio o pesado) */
+    /* Sombra multicapa translúcida */
     --shadow-premium: 0 1px 2px rgba(29, 45, 68, 0.02), 
                     0 4px 16px rgba(29, 45, 68, 0.04), 
                     0 12px 24px rgba(29, 45, 68, 0.02);
-    /* ... tus otras variables ... */
     
     /* Variables exclusivas para el Footer en Modo Claro */
-    --bg-footer: #111c2e;             /* Un azul marino profundo súper elegante */
-    --color-texto-footer: #ffffff;    /* Texto blanco para que resalte */
-    --color-muted-footer: #94a3b8;    /* Gris suave para descripciones y enlaces */
-
+    --bg-footer: #111c2e;             
+    --color-texto-footer: #ffffff;    
+    --color-muted-footer: #94a3b8;    
 }
 
 /* ==========================================================================
-🚨 MODO OSCURO ENERGIZADO (Con contrastes vibrantes)
+   MODO OSCURO ENERGIZADO (Con contrastes vibrantes)
    ========================================================================== */
 [data-theme="dark"] {
     --color-fondo: #0a111c;           
@@ -122,7 +119,7 @@ body {
 }
 
 .cabecera__logo-link:hover .cabecera__logo-img {
-    transform: rotate(-5px) scale(1.05); /* El logo "reacciona" sutilmente */
+    transform: rotate(-5px) scale(1.05); 
 }
 
 .cabecera__logo {
@@ -160,7 +157,6 @@ body {
     color: var(--color-principal);
 }
 
-/* Subrayado animado súper fino */
 .menu__enlace::after {
     content: '';
     position: absolute;
@@ -180,10 +176,9 @@ body {
 }
 
 /* ==========================================================================
-   5. SECCIÓN HERO (.hero - ¡Magia de Iluminación Ambiental!)
+   5. SECCIÓN HERO (.hero)
    ========================================================================== */
 .hero {
-    /* Combinación de luces radiales turquesas sobre tu degradado oscuro original */
     background: radial-gradient(circle at 85% 15%, rgba(0, 180, 216, 0.22), transparent 40%),
                 radial-gradient(circle at 15% 85%, rgba(0, 119, 182, 0.15), transparent 40%),
                 linear-gradient(135deg, #1d2d44 0%, #0d1b2a 100%);
@@ -218,7 +213,6 @@ body {
     width: 100%;
 }
 
-/* Ajuste del Hero en Modo Oscuro para que la luz sea más neón */
 [data-theme="dark"] .hero {
     background: radial-gradient(circle at 85% 15%, rgba(0, 180, 216, 0.25), transparent 45%),
                 radial-gradient(circle at 15% 85%, rgba(17, 28, 46, 0.7), transparent 50%),
@@ -241,7 +235,6 @@ body {
 
 .buscador-real:focus-within {
     border-color: var(--color-principal);
-    /* Aura de expansión al hacer focus */
     box-shadow: 0 0 0 4px var(--color-principal-alpha), var(--shadow-premium);
 }
 
@@ -275,10 +268,9 @@ body {
 }
 
 .buscador-real__button:active {
-    transform: scale(0.97); /* Feedback táctil al presionar */
+    transform: scale(0.97); 
 }
 
-/* RESULTADOS FLOTANTES */
 .buscador-real__resultados {
     position: absolute;
     top: calc(100% + 8px);
@@ -321,7 +313,7 @@ body {
 }
 
 /* ==========================================================================
-7. SECCIÓN CATEGORÍAS (.categorias)
+   7. SECCIÓN CATEGORÍAS (.categorias - Malla Homologada)
    ========================================================================== */
 .categorias {
     max-width: 1200px;
@@ -332,25 +324,16 @@ body {
 .categorias__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px; /* Espaciado un pelo más amplio para que respire */
-
-/* El degradado blanco/grisáceo suaviza la foto para que el texto oscuro resalte */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.96)), 
-                      url('/img/tramit.png'); /* Pon aquí la ruta de tu imagen */
-    background-size: cover;
-    background-position: center;
+    gap: 32px; 
 }
 
 /* ==========================================================================
-8. TARJETAS DE GUÍAS (.tarjeta-guia - ¡Contenedores Llenos de Vida!)
-   ========================================================================== */
-/* ==========================================================================
-   TARJETAS GUÍA: ESTRUCTURA PREMIUM
+   8. TARJETAS DE GUÍAS (.tarjeta-guia - Filtro de Contraste Premium)
    ========================================================================== */
 .tarjeta-guia {
     position: relative;
     padding: 2.5rem;
-    border-radius: 20px; /* Más redondeado para un look moderno */
+    border-radius: 20px; 
     min-height: 350px;
     display: flex;
     flex-direction: column;
@@ -358,27 +341,37 @@ body {
     overflow: hidden;
     color: #ffffff;
     
-    /* Efecto de profundidad inicial */
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    
-    /* Centrado perfecto de imagen */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     
-    /* Transición suave */
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 2px solid rgba(255, 255, 255, 0.1); /* Borde sutil que da "vida" */
+    border: 2px solid rgba(255, 255, 255, 0.1); 
 }
 
-/* Efecto Hover: La tarjeta "levita" y brilla */
+/* Capa oscura translúcida para legibilidad perfecta */
+.tarjeta-guia::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.78) 100%);
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
 .tarjeta-guia:hover {
     transform: translateY(-10px);
     border-color: #00b4d8;
     box-shadow: 0 20px 40px rgba(0, 180, 216, 0.2);
 }
 
-/* El Láser Superior (Tu efecto favorito) */
+.tarjeta-guia:hover::after {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.88) 100%);
+}
+
+/* El Láser Superior Animado */
 .tarjeta-guia::before {
     content: '';
     position: absolute;
@@ -387,52 +380,53 @@ body {
     background: #00b4d8;
     transform: scaleX(0);
     transition: transform 0.5s ease;
-    z-index: 2;
+    z-index: 3; 
 }
 .tarjeta-guia:hover::before { transform: scaleX(1); }
 
-/* LEGIBILIDAD: El truco final sin filtros oscuros */
+/* Empuje de prioridad sobre la capa oscura */
 .tarjeta-guia__titulo, 
-.tarjeta-guia__descripcion {
+.tarjeta-guia__descripcion,
+.tarjeta-guia__enlace {
     position: relative;
-    z-index: 2;
+    z-index: 2; 
     color: #ffffff;
-    /* Sombras multicapa para que el texto resalte sobre cualquier color */
-    text-shadow: 0 4px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.4);
 }
 
 .tarjeta-guia__titulo {
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.tarjeta-guia__descripcion {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    color: #e2e8f0; 
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .tarjeta-guia__enlace {
-    position: relative;
-    z-index: 2;
     display: inline-block;
     color: #00b4d8;
     font-weight: 700;
     text-decoration: none;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
 }
 
 .tarjeta-guia:hover .tarjeta-guia__enlace {
     color: #ffffff;
+    transform: translateX(4px);
 }
-/* ==========================================================================
-MODIFICADORES PARA IMÁGENES DE FONDO (Modo Claro)
-========================================================================= */
 
-/* Asegúrate de que esto coincida con la ubicación real de tus fotos */
+/* Modificadores para imágenes de fondo (Rutas Relativas Oficiales) */
 #tramites { background-image: url('../img/tramites.png'); }
 #motos { background-image: url('../img/motos.png'); }
 #finanzas { background-image: url('../img/billeteras.png'); }
 
-
 /* ==========================================================================
-9. NUEVO FOOTER PROFESIONAL (.footer)
+   9. NUEVO FOOTER PROFESIONAL (.footer)
    ========================================================================== */
 .footer {
     background-color: var(--bg-footer);
@@ -494,7 +488,7 @@ MODIFICADORES PARA IMÁGENES DE FONDO (Modo Claro)
 
 .footer__enlace:hover {
     color: var(--color-principal);
-    transform: translateX(4px); /* Se mueve de lado suavemente en vez de saltar */
+    transform: translateX(4px); 
 }
 
 .footer__barra-inferior {
@@ -528,10 +522,6 @@ MODIFICADORES PARA IMÁGENES DE FONDO (Modo Claro)
 .btn-tema:active {
     transform: scale(0.9);
 }
-
-
-
-
 
 /* ==========================================================================
    10. ESTILOS RESPONSIVE (Para Teléfonos Celulares)
