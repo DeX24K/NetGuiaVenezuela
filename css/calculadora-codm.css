@@ -1,0 +1,171 @@
+/* ==========================================================================
+   ESTILOS COMPONENTE: CALCULADORA DE RULETAS CODM (Gamer Vibe)
+   ========================================================================== */
+:root {
+    --color-codm-oro: #f9a825;       /* Dorado Legendario */
+    --color-codm-mitico: #ff3d00;    /* Rojo Mítico */
+    --color-codm-dark: #111827;      /* Fondo oscuro premium */
+    --color-codm-card: #1f2937;      /* Gris contenedores */
+    --color-codm-border: #374151;    /* Bordes */
+    --radius-md: 8px;                /* Caídas seguras de bordes */
+    --radius-lg: 12px;
+}
+
+.calc-codm {
+    background-color: var(--color-codm-dark);
+    border: 2px solid var(--color-codm-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin: 2.5rem 0;
+    color: #f3f4f6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+}
+
+.calc-codm__opciones {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.calc-codm__campo {
+    display: block;
+    margin-bottom: 1.2rem;
+}
+
+.calc-codm__label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #9ca3af;
+    margin-bottom: 0.5rem;
+}
+
+.calc-codm__select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    background-color: var(--color-codm-card);
+    border: 2px solid var(--color-codm-border);
+    color: #ffffff;
+    border-radius: var(--radius-md);
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.calc-codm__select:hover, 
+.calc-codm__select:focus {
+    border-color: var(--color-codm-oro);
+    background-color: #253341;
+}
+
+.calc-codm__maxeo-box {
+    background-color: #1a2232;
+    border: 1px dashed var(--color-codm-mitico);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+}
+
+.calc-codm__maxeo-box--oculto {
+    display: none;
+}
+
+.calc-codm__checkbox-label {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e5e7eb;
+    cursor: pointer;
+}
+
+.calc-codm__checkbox {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.calc-codm__pantalla {
+    background-color: var(--color-codm-card);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    border: 1px solid var(--color-codm-border);
+}
+
+.calc-codm__total-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: var(--radius-md);
+    border-left: 5px solid var(--color-codm-oro);
+    margin-bottom: 1.5rem;
+}
+
+.calc-codm__total-box--mitica {
+    border-left-color: var(--color-codm-mitico);
+}
+
+.calc-codm__total-titulo {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 0.5rem 0;
+}
+
+.calc-codm__total-numero {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--color-codm-oro);
+    margin: 0;
+}
+
+.calc-codm__total-numero--mitico {
+    color: var(--color-codm-mitico);
+}
+
+.calc-codm__upgrade-info {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    background-color: rgba(0,0,0,0.3);
+    padding: 0.6rem 0.8rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border-left: 3px solid var(--color-codm-mitico);
+    text-align: left;
+}
+
+.calc-codm__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.calc-codm__tabla th {
+    color: #9ca3af;
+    text-align: left;
+    padding: 0.75rem 0.5rem;
+    border-bottom: 2px solid var(--color-codm-border);
+}
+
+.calc-codm__tabla td {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid #2d3748;
+    color: #e5e7eb;
+}
+
+.calc-codm__tabla tr:last-child td {
+    border-bottom: none;
+}
+
+.calc-codm__highlight {
+    color: var(--color-codm-oro);
+    font-weight: 700;
+}
+
+.calc-codm__highlight--mitico {
+    color: var(--color-codm-mitico);
+    font-weight: 700;
+}

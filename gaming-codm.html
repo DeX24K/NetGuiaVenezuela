@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calculadora de Ruletas CODM 2026 | ¿Cuánto CP cuesta maxear? 🎮</title>
+    <link rel="icon" type="image/png" href="img/xds.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora exacta de CP para ruletas de CODM en Venezuela (10 CP base). Calcula el precio de armas míticas, legendarias reactivas y el costo para maxearlas.">
+    <meta name="keywords" content="calculadora ruletas codm, precio ruleta completa codm venezuela, cuantos cp cuesta ruleta mitica, costo tiros ruleta cod mobile, cp ruleta venezuela 10 cp, maxear arma mitica cp, netguiavenezuela gaming">
+
+    <!-- Open Graph para Redes Sociales -->
+    <meta property="og:site_name" content="NetGuiaVenezuela">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calculadora de CP CODM: Ruletas y Costo de Maxeo (Venezuela)">
+    <meta property="og:description" content="Calcula el costo tiro por tiro de ruletas míticas, personajes y armas legendarias reactivas. ¡Descubre cuánto necesitas para maxearlas!">
+    <meta property="og:url" content="https://netguiavenezuela.com/gaming-codm.html">
+    <meta property="og:image" content="https://netguiavenezuela.com/assets/logo-share.png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/articulos-base.css">
+    <link rel="stylesheet" href="css/calculadora-codm.css">
+</head>
+<body>
+
+    <header class="cabecera-articulo">
+        <a href="index.html" class="cabecera-articulo__volver">← Volver al Inicio</a>
+        <div class="cabecera-articulo__logo">NetGuia<strong>Gaming</strong></div>
+    </header>
+
+    <main class="articulo">
+        <header class="articulo__header">
+            <span class="articulo__categoria">🎮 Call of Duty: Mobile</span>
+            <h1 class="articulo__titulo">Calculadora de Ruletas CODM y Costo de Maxeo (Tarifas 2026)</h1>
+            <p class="articulo__fecha">Actualizado en julio de 2026</p>
+        </header>
+
+        <section class="articulo__contenido">
+            <p class="articulo__introduccion">
+                ¿Planeas conseguir un arma mítica o desbloquear un personaje legendario? En Venezuela contamos con una de las tarifas de CP más bajas del mundo. Usa nuestra herramienta avanzada para calcular el costo exacto de los 10 tiros y, si vas con todo, calcula el precio de las tarjetas o monedas para <strong>maxear tus ítems míticos</strong>.
+            </p>
+
+            <!-- CALCULADORA GAMER -->
+            <div class="calc-codm">
+                <div class="calc-codm__opciones">
+                    <div class="calc-codm__campo">
+                        <label class="calc-codm__label">1. Costo del Primer Tiro (Región):</label>
+                        <select id="select-inicio-cp" class="calc-codm__select">
+                            <option value="" disabled selected>-- Elige el costo de tu primer tiro --</option>
+                            <option value="10">10 CP (Nativo de Venezuela / India / Región Económica)</option>
+                            <option value="20">20 CP (Colombia / Resto de LatAm estándar)</option>
+                            <option value="30">30 CP (Estados Unidos / Cuentas Globales Norteamericanas)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-codm__campo">
+                        <label class="calc-codm__label">2. Tipo de Ruleta Específica:</label>
+                        <select id="select-tipo-ruleta" class="calc-codm__select">
+                            <option value="" disabled selected>-- Selecciona la rareza del ítem --</option>
+                            <option value="legendaria_no_reactiva">Arma Legendaria Común (No Reactiva)</option>
+                            <option value="legendaria_reactiva">Arma Legendaria Reactiva / Personaje Legendario</option>
+                            <option value="mitica_arma">Arma Mítica de Temporada</option>
+                            <option value="mitica_personaje">Personaje Mítico (Ej: Ghost, Spectre, Siren)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Control de Maxeo para Míticos (Oculto al inicio) -->
+                <div id="contenedor-maxeo" class="calc-codm__maxeo-box calc-codm__maxeo-box--oculto">
+                    <label class="calc-codm__checkbox-label">
+                        <input type="checkbox" id="check-maxear" class="calc-codm__checkbox">
+                        ⚡ ¡Quiero Maxearlo! (Suma el costo estimado de Niveles de Miticismo)
+                    </label>
+                </div>
+
+                <!-- Pantalla de Resultados -->
+                <div id="calc-codm-resultado" class="calc-codm__pantalla"></div>
+            </div>
+
+            <div class="articulo__alerta">
+                <strong>💡 DATAZO DE CUENTAS CREADAS EN VENEZUELA:</strong> Si creaste tu cuenta de CODM estando en Venezuela sin usar ningún tipo de VPN, tu ruleta iniciará sí o sí en <strong>10 CP</strong>. Esto coloca a las cuentas venezolanas en el tier de descuento global, costando la mitad de lo que paga un jugador de USA o Europa.
+            </div>
+
+            <h2 class="articulo__subtitulo">Diferencias de costos: Armas Reactivas vs No Reactivas</h2>
+            <p class="articulo__texto">
+                Muchos jugadores se confunden cuando el tiro final les cuesta más de lo planeado. Las <strong>Armas Legendarias No Reactivas</strong> (las más antiguas o sencillas) cierran su último tiro en 1,400 CP (en cuentas de base 10). En cambio, las <strong>armas reactivas</strong> (que cambian de forma con las bajas) y los <strong>personajes legendarios</strong> tienen un tiro final de 1,800 CP.
+            </p>
+
+            <h2 class="articulo__subtitulo">¿Cuánto cuesta realmente maxear un ítem Mítico?</h2>
+            <p class="articulo__texto">
+                Completar la ruleta para obtener el ítem es solo el paso uno. Las armas míticas cuentan con 5 niveles adicionales que desbloquean accesorios estéticos y mejores miras, requiriendo unas 4,670 tarjetas de miticismo. Por su parte, los personajes míticos exigen monedas de miticismo para liberar sus ejecuciones avanzadas, skins de rachas y cambios de color. Activa nuestra casilla de maxeo para calcular el golpe total a tu billetera.
+            </p>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p class="pie-pagina__creditos">&copy; 2026 NetGuiaVenezuela.com - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="javascript/calculadora-codm.js"></script>
+</body>
+</html>
