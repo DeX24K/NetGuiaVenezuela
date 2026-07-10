@@ -81,12 +81,44 @@ body {
 .cabecera-articulo__logo {
     font-size: 1.3rem;
     color: var(--color-oscuro);
+    text-decoration: none;
+    
+}
+.cabecera-articulo--logo__link {
+    text-decoration-line: ;
 }
 
 .cabecera-articulo__logo strong {
     color: var(--color-principal);
 }
 
+/* ==========================================================================
+   3. CABECERA FIJA (Sticky Header)
+   ========================================================================== */
+.cabecera-articulo {
+    background-color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    
+    /* Efecto Sticky */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que flote sobre todo lo demás */
+    
+    /* Estética premium */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px); /* Efecto cristalino al hacer scroll */
+    background-color: rgba(255, 255, 255, 0.9); /* Ligeramente transparente */
+    transition: all 0.3s ease;
+}
+
+/* Ajuste para el modo oscuro */
+[data-theme="dark"] .cabecera-articulo {
+    background-color: rgba(17, 28, 46, 0.9);
+    border-bottom: 1px solid var(--color-border);
+}
 /* ==========================================================================
 4. BLOQUE CONTENEDOR DEL ARTÍCULO (.articulo)
    ========================================================================== */
