@@ -24,6 +24,22 @@ const baseDatosRepuestos = {
             donde: "Cualquier tienda de repuestos de motos a nivel nacional.",
             pagos: ["cashea"],
             detalle: "Tipo espuma/galleta. Filtra mucho mejor el polvo de la ciudad." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$16 - $22", 
+            donde: "Concesionarios oficiales EK y repuesteras grandes en la Av. Lisandro Alvarado (Valencia).",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma manzana de impacto. Te da excelente rendimiento en plano y subidas." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal Motores CG 150cc", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales clave (Bello Monte Caracas / Av. La Limpia Maracaibo).",
+            pagos: ["cashea"],
+            detalle: "Viene listo para montar. Optimiza el consumo de gasolina si el original ya tiene desgaste." 
         }
     ],
     horse: [
@@ -41,7 +57,23 @@ const baseDatosRepuestos = {
             precio: "$5 - $8", 
             donde: "Zonas comerciales principales (Av. La Limpia Maracaibo / Quinta Crespo). Busca marcas reconocidas como Fras-le.",
             pagos: ["cashea", "krece"],
-            detalle: "Busca marca Fras-le (Brasileña) para mayor seguridad y frenado." 
+            detalle: "Busca marca Fras-le (Brasileña) para mayor seguridad y frenado silencioso." 
+        },
+        { 
+            repuesto: "Guaya de Embrague (Cloche)", 
+            marca: "Suzuki GN 125", 
+            precio: "$3 - $5", 
+            donde: "Multimarcas de repuestos de motos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Es totalmente compatible, solo debes validar que el recorrido quede bien graduado en la manilla." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Bera SBR / Toro Jaguar", 
+            precio: "$24 - $32", 
+            donde: "Tiendas oficiales EK y grandes pasajes comerciales de repuestos.",
+            pagos: ["cashea", "krece"],
+            detalle: "Tienen la misma distancia entre ojos. Son ideales si trabajas cargado o haciendo delivery." 
         }
     ],
     bera_sbr: [
@@ -60,6 +92,22 @@ const baseDatosRepuestos = {
             donde: "Tiendas multimarcas grandes y talleres aliados en avenidas principales de tu ciudad.",
             pagos: ["cashea", "krece"],
             detalle: "Tienen la misma medida de ojo a ojo, son más reforzados y aguantan más peso de carga." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Empire Owen / Yamaha YBR", 
+            precio: "$5 - $8", 
+            donde: "Cualquier agente autorizado Bera o repuestera multimarcas de confianza.",
+            pagos: ["krece"],
+            detalle: "Frenado limpio. Se recomienda limpiar el disco con desengrasante al instalarlas." 
+        },
+        { 
+            repuesto: "Kit de Cilindro 150cc", 
+            marca: "Universal CG 150 (Empire/Toro)", 
+            precio: "$35 - $45", 
+            donde: "Distribuidoras Bera oficiales y talleres grandes en Quinta Crespo o Av. Constitución (Maracay).",
+            pagos: ["cashea", "krece"],
+            detalle: "Mismo diámetro y carrera de pasador. Te devuelve la compresión original de fábrica." 
         }
     ],
     toro_jaguar: [
@@ -70,6 +118,22 @@ const baseDatosRepuestos = {
             donde: "Concesionarios oficiales Motos Toro y grandes distribuidores multimarcas.",
             pagos: ["cashea", "krece"],
             detalle: "Es la misma manzana de impacto. La relación original le da muy buen desplace en autopista." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas oficiales Toro y repuesteras eléctricas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Garantiza una combustión óptima y evita los tirones en altas revoluciones." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Empire Horse / Owen GS", 
+            precio: "$4 - $7", 
+            donde: "Concesionarios Toro y zonas comerciales del eje central del país.",
+            pagos: ["cashea", "krece"],
+            detalle: "Calce milimétrico idéntico en la mordaza delantera estándar." 
         }
     ],
     md_tucan: [
@@ -80,6 +144,14 @@ const baseDatosRepuestos = {
             donde: "Locales de repuestos generales en zonas moteras de alta competencia.",
             pagos: ["cashea"],
             detalle: "Son un pelo más reforzados, ideales si usas la moto para delivery o carga pesada." 
+        },
+        { 
+            repuesto: "Kit de Arrastre", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$15 - $21", 
+            donde: "Tiendas multimarcas en la Av. Pedro León Torres (Barquisimeto) y Quinta Crespo.",
+            pagos: ["cashea"],
+            detalle: "La corona asienta perfecto en la manzana trasera del Tucán." 
         }
     ],
     bera_br200: [
@@ -90,6 +162,52 @@ const baseDatosRepuestos = {
             donde: "Tiendas especializadas en Scooters y repuestos de transmisión automática (Bello Monte / Av. Lara Valencia).",
             pagos: ["cashea", "krece"],
             detalle: "Para este scooter, la correa Gates original aguanta mucho más la temperatura del variador." 
+        },
+        { 
+            repuesto: "Dados de Variador (Rollers)", 
+            marca: "Universal Scooter GY6 150cc", 
+            precio: "$6 - $10", 
+            donde: "Talleres especializados en motos automáticas en las principales ciudades.",
+            pagos: ["krece"],
+            detalle: "Usa el peso estándar (14 gramos) para mantener el balance perfecto entre salida y velocidad final." 
+        }
+    ],
+    // NUEVA MOTO ADICIONADA
+    empire_express: [
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Owen", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Empire Keeway y zonas comerciales de repuestos multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida. Los de Horse son un poco más rígidos, perfectos para aguantar la faena diaria de mototaxi o encomiendas." 
+        },
+        { 
+            repuesto: "Bandas de Freno Traseras", 
+            marca: "Suzuki GN 125", 
+            precio: "$5 - $8", 
+            donde: "Cualquier repuestera grande a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Ajustan exacto en la campana trasera de la Express. Te dan un frenado firme sin chirridos." 
+        }
+    ],
+    // NUEVA MOTO ADICIONADA
+    toro_fox: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$15 - $20", 
+            donde: "Tiendas oficiales Motos Toro y grandes distribuidores de repuestos multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "La manzana trasera es compatible, lo que te facilita conseguir repuestos económicos en cualquier esquina." 
+        },
+        { 
+            repuesto: "Farola Delantera (Faro LED)", 
+            marca: "Universal Motos de Foco Redondo 6.5''", 
+            precio: "$18 - $28", 
+            donde: "Tiendas de accesorios de iluminación LED (Av. Baralt / Bello Monte).",
+            pagos: ["cashea"],
+            detalle: "Calza en los mismos soportes laterales del Toro Fox y mejora radicalmente la iluminación nocturna." 
         }
     ]
 };
@@ -140,7 +258,7 @@ selectRepuesto.addEventListener('change', function() {
         }
     });
 
-    // --- NUEVA LÓGICA DE CONTROL DE MÍNIMOS DE COMPRA ---
+    // --- LÓGICA DE CONTROL DE MÍNIMOS DE COMPRA ---
     const preciosExtraidos = item.precio.replace(/[^0-9]/g, ' ').trim().split(/\s+/);
     let textoCuotasCalculadas = '';
     let estiloCajaPlan = 'background-color: #f0fdf4; border: 1px solid #bbf7d0; color: #166534;'; // Estilo verde por defecto
@@ -184,7 +302,6 @@ selectRepuesto.addEventListener('change', function() {
                     ${htmlPagos}
                 </div>
 
-                <!-- CAJA DINÁMICA DE FINANCIAMIENTO (Con control de mínimos) -->
                 <div style="${estiloCajaPlan} padding: 0.9rem; border-radius: 8px; margin-bottom: 1rem;">
                     <p class="articulo__texto" style="margin: 0; font-size: 0.95rem; line-height: 1.5; color: inherit;">
                         ${textoCuotasCalculadas}

@@ -1,0 +1,140 @@
+¿/* ==========================================================================
+   ESTILOS DEDICADOS PARA LA PÁGINA DE BILLETERAS DIGITALES Y BINANCE
+   ========================================================================== */
+
+/* 1. Etiquetas de color personalizadas para los Requisitos de la Tabla */
+.badge-wallet {
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.badge-wallet--cedula {
+    background-color: rgba(0, 180, 216, 0.12);
+    color: var(--color-principal-hover);
+    border: 1px solid rgba(0, 180, 216, 0.2);
+}
+
+.badge-wallet--pasaporte {
+    background-color: rgba(124, 58, 237, 0.1);
+    color: #7c3aed;
+    border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+[data-theme="dark"] .badge-wallet--pasaporte {
+    color: #a78bfa;
+}
+
+/* 2. Pipeline / Flujo de Tarjetas Conectadas P2P */
+.flujo-p2p {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.flujo-p2p__tarjeta {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: var(--shadow-premium);
+    transition: transform 0.2s ease;
+}
+
+.flujo-p2p__tarjeta:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-principal);
+}
+
+.flujo-p2p__numero {
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    width: 28px;
+    height: 28px;
+    background: var(--color-oscuro);
+    color: var(--color-blanco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.flujo-p2p__titulo {
+    font-size: 1.15rem;
+    color: var(--color-oscuro);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    margin-top: 0.2rem;
+}
+
+.flujo-p2p__texto {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin: 0;
+}
+
+/* 3. Contenedor Grid para el Manual de Seguridad */
+.caja-seguridad {
+    background: var(--color-blanco);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: var(--shadow-premium);
+}
+
+.caja-seguridad__item {
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.caja-seguridad__item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.caja-seguridad__item h5 {
+    font-size: 1.1rem;
+    color: #e63946; /* Color de alerta preventivo */
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.caja-seguridad__item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin: 0;
+}
+
+[data-theme="dark"] .caja-seguridad__item h5 {
+    color: #f87171;
+}
+
+/* 4. Variación de color de la Alerta Final (Estilo Finanzas) */
+.articulo__alerta {
+    border-left-color: #0d9488; /* Verde esmeralda para finanzas seguras */
+    background-color: rgba(13, 148, 136, 0.05);
+    color: var(--color-texto);
+}
+
+/* Media Queries para Responsive de los Componentes Finanzas */
+@media (min-width: 768px) {
+    .flujo-p2p {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

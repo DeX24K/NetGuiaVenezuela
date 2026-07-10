@@ -1,0 +1,97 @@
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS PARA LA GUÍA DE TRÁMITES (GTU - SAREN)
+   ========================================================================== */
+
+/* 1. Línea de tiempo interactiva para los subtítulos de Pasos */
+.articulo__contenido .articulo__subtitulo {
+    position: relative;
+    padding-left: 2.5rem;
+    color: var(--color-oscuro);
+}
+
+.articulo__contenido .articulo__subtitulo::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 180, 216, 0.3);
+}
+
+/* 2. Transformación de la lista de Requisitos en un Checklist visual */
+.articulo__lista {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 1.5rem 0;
+}
+
+.articulo__lista-item {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+
+/* Icono de viñeta personalizado para documentos/recaudos */
+ul.articulo__lista .articulo__lista-item::before {
+    content: "📁";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+}
+
+/* 3. Estilizado premium para Pasos Numéricos (Lista Ordenada) */
+ol.articulo__lista--ordenada {
+    counter-reset: paso-counter;
+}
+
+ol.articulo__lista--ordenada .articulo__lista-item {
+    counter-increment: paso-counter;
+    padding-left: 2.2rem;
+}
+
+ol.articulo__lista--ordenada .articulo__lista-item::before {
+    content: counter(paso-counter);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--color-oscuro);
+    color: var(--color-blanco);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* 4. Bloques de Advertencia Legal (Cajas de Alerta específicas para trámites) */
+.articulo__alerta {
+    background-color: var(--color-alerta-fondo);
+    border-left: 5px solid #e63946; /* Rojo de advertencia para trámites rigurosos */
+    border-radius: var(--radius-md);
+    padding: 1.2rem;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.01);
+}
+
+/* 5. Resaltado de fragmentos de código/portales gubernamentales */
+.articulo__contenido code {
+    background-color: rgba(0, 180, 216, 0.08);
+    color: var(--color-principal-hover);
+    padding: 0.15rem 0.4rem;
+    font-weight: 600;
+    border: none;
+}

@@ -1,0 +1,266 @@
+/* ==========================================================================
+   1. VARIABLES DE PALETA DE COLORES (Soporte nativo para Modo Oscuro)
+   ========================================================================== */
+:root {
+    --color-principal: #00b4d8;       /* Turquesa brillante */
+    --color-principal-hover: #0077b6; /* Turquesa oscuro */
+    --color-oscuro: #1d2d44;          /* Azul marino profundo */
+    --color-texto: #2b2d42;           /* Gris oscuro suave para lectura larga */
+    --color-fondo: #f8f9fa;           /* Fondo grisáceo claro */
+    --color-blanco: #ffffff;
+    --color-card: #ffffff;            /* Fondo para el contenedor del artículo */
+    --color-border: #e9ecef;
+    --color-muted: #6c757d;           /* Gris para textos secundarios */
+    
+    --color-alerta-fondo: #fff3cd;    /* Amarillo suave para advertencias */
+    --color-alerta-borde: #ffeba2;
+    --color-alerta-texto: #664d03;
+    --fuente-global: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    --radius-lg: 12px;
+    --radius-md: 8px;
+    --shadow-premium: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="dark"] {
+    --color-fondo: #0a111c;
+    --color-blanco: #111c2e;
+    --color-card: #15233a;
+    --color-oscuro: #f8f9fa;
+    --color-texto: #e2e8f0;
+    --color-border: rgba(255, 255, 255, 0.06);
+    --color-muted: #94a3b8;
+    
+    --color-alerta-fondo: rgba(255, 243, 205, 0.05);
+    --color-alerta-borde: rgba(255, 235, 162, 0.2);
+    --color-alerta-texto: #ffe082;
+}
+
+/* ==========================================================================
+   2. RESET GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-global);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.8;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ==========================================================================
+   3. CABECERA FIJA DEL ARTÍCULO (.cabecera-articulo - Sticky Header)
+   ========================================================================== */
+.cabecera-articulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9); 
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .cabecera-articulo {
+    background-color: rgba(17, 28, 46, 0.9);
+}
+
+.cabecera-articulo__volver {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.cabecera-articulo__volver:hover {
+    color: var(--color-principal-hover);
+}
+
+.cabecera-articulo__logo {
+    font-size: 1.3rem;
+    color: var(--color-oscuro);
+    font-weight: 600;
+}
+
+.cabecera-articulo__logo strong {
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   4. BLOQUE CONTENEDOR DEL ARTÍCULO (.articulo)
+   ========================================================================== */
+.articulo {
+    max-width: 800px; 
+    margin: 3rem auto;
+    background-color: var(--color-card); 
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-premium);
+    border: 1px solid var(--color-border);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articulo__header {
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.articulo__categoria {
+    display: inline-block;
+    color: var(--color-principal-hover);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.articulo__titulo {
+    font-size: 2.2rem;
+    color: var(--color-oscuro);
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+}
+
+.articulo__fecha {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+}
+
+/* Elementos de contenido e hilos de texto */
+.articulo__contenido p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.articulo__introduccion {
+    font-size: 1.2rem !important;
+    color: var(--color-texto);
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.articulo__texto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-texto);
+    margin-bottom: 1.25rem;
+}
+
+.articulo__subtitulo {
+    font-size: 1.5rem;
+    color: var(--color-oscuro);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.articulo__subtitulo-interno {
+    font-size: 1.3rem;
+    color: var(--color-oscuro); 
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+/* Listas y utilidades inline */
+.articulo__lista {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.articulo__lista-item {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin-bottom: 0.5rem;
+}
+
+ul.articulo__lista { list-style-type: disc; }
+ol.articulo__lista--ordenada { list-style-type: decimal; }
+
+.articulo__contenido code {
+    background-color: var(--color-fondo);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #e53e3e;
+    font-size: 0.95rem;
+    border: 1px solid var(--color-border);
+}
+
+/* Bloques de advertencias / Notas destacadas */
+.articulo__alerta {
+    background-color: var(--color-alerta-fondo);
+    border-left: 5px solid var(--color-principal); 
+    border-top: 1px solid var(--color-alerta-borde);
+    border-right: 1px solid var(--color-alerta-borde);
+    border-bottom: 1px solid var(--color-alerta-borde);
+    padding: 1.2rem 1.5rem;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    color: var(--color-alerta-texto);
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+/* Tablas Estáticas de Guías Generales */
+.articulo__tabla-contenedor {
+    width: 100%;
+    overflow-x: auto; 
+    margin: 2rem 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.articulo__tabla {
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: left;
+    font-size: 0.95rem;
+    min-width: 600px; 
+    background-color: var(--color-blanco);
+}
+
+.articulo__tabla thead { background-color: var(--color-oscuro); color: var(--color-blanco); }
+.articulo__tabla th { padding: 1rem; font-weight: 600; }
+.articulo__tabla td { padding: 1rem; border-bottom: 1px solid var(--color-border); color: var(--color-texto); }
+.articulo__tabla tbody tr:nth-child(even) { background-color: var(--color-fondo); }
+.articulo__tabla tbody tr:hover { background-color: rgba(0, 180, 216, 0.05); }
+
+/* ==========================================================================
+   5. PIE DE PÁGINA REUTILIZADO (.pie-pagina)
+   ========================================================================== */
+.pie-pagina {
+    background-color: var(--color-oscuro);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    margin-top: 5rem;
+}
+
+.pie-pagina__creditos {
+    color: var(--color-blanco);
+    opacity: 0.7;
+}
+
+/* Media Query de Estructura Básica */
+@media (max-width: 768px) {
+    .articulo { margin: 1rem; padding: 1.5rem; }
+    .articulo__titulo { font-size: 1.7rem; }
+}
