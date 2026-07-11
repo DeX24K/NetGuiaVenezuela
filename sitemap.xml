@@ -1,8 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://netguiavenezuela.com/</loc>
-        <lastmod>2026-07-11</lastmod>
-        <priority>1.0</priority>
-    </url>
+
+<!-- Página principal -->
+<url>
+    <loc>https://netguiavenezuela.com/index.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>1.0</priority>
+</url>
+
+<!-- Guías -->
+<url>
+    <loc>https://netguiavenezuela.com/gaming-codm.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-binance-zinli.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-gtu-sarem.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-repuestos-motos.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.8</priority>
+</url>
+
+<!-- Otros -->
+<url>
+    <loc>https://netguiavenezuela.com/contacto.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/privacidad.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.3</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/terminos.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.3</priority>
+</url>
+
 </urlset>
