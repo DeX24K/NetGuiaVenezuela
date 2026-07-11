@@ -126,7 +126,7 @@ function obtenerNotaMaxeo(esMitico, checked, valor, tipo) {
     const componente = tipo.includes('personaje') ? 'Monedas de Miticismo' : 'Tarjetas de Miticismo';
     return `
         <div class="calc-codm__upgrade-info">
-            Suma un estimado de <strong>+${valor.toLocaleString()} CP</strong> para conseguir las ${componente} requeridas para llevar el personake/arma a su etapa final (aspectos físicos, miras avanzadas y ejecuciones).
+            Suma un estimado de <strong>+${valor.toLocaleString()} CP</strong> para conseguir las ${componente} requeridas para llevar el personaje/arma a su etapa final (aspectos físicos, efectos de baja, miras avanzadas y ejecuciones).
         </div>
     `;
 }
