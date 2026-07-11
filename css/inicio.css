@@ -562,3 +562,30 @@ body {
         transform: none;
     }
 }
+@media (max-width: 768px) {
+    /* Ajustar el padding general para que el contenido no pegue a los bordes */
+    body {
+        overflow-x: hidden; /* Evita scroll horizontal accidental */
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero__titulo {
+        font-size: 1.7rem; /* Reducir tamaño para que no se corte */
+        line-height: 1.2;
+    }
+
+    /* Asegurar que las tarjetas no fuercen un ancho mayor al de la pantalla */
+    .categorias__grid {
+        grid-template-columns: 1fr; /* Forzar una sola columna */
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .tarjeta-guia {
+        min-height: 250px; /* Reducir altura en móviles */
+        padding: 1.5rem;
+    }
+}
