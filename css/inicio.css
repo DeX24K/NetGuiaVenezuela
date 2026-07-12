@@ -523,33 +523,47 @@ body {
 .btn-tema:active {
     transform: scale(0.9);
 }
+
+/* Contenedor del ticker */
 .ticker-container {
-    background-color: #f8f9fa; /* Color base claro */
-    border-bottom: 1px solid #e0e0e0;
-    padding: 8px 0;
-    font-size: 0.9rem;
-    text-align: center;
+    background-color: #002d5e; /* Azul oscuro corporativo */
+    color: #ffffff;
+    padding: 10px 0;
+    overflow: hidden; /* Esencial para que el texto se mueva sin salirse */
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 3px solid #00d4ff; /* Un toque de color neón para que destaque */
     width: 100%;
 }
 
+/* Animación del movimiento */
 .ticker-content {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    color: #333;
+    display: inline-block;
+    padding-left: 100%; /* Empieza fuera de la pantalla a la derecha */
+    animation: marquee 20s linear infinite; /* Velocidad de 20 segundos */
+}
+
+/* Definición de la animación */
+@keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+/* Estilo de los textos internos */
+.ticker-item {
+    margin-right: 50px; /* Espacio entre tasas */
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .ticker-item strong {
-    color: #007bff; /* Color para resaltar el precio */
+    color: #00d4ff; /* Color resaltado para el número */
 }
 
-/* Ajuste para móvil */
-@media (max-width: 600px) {
-    .ticker-content {
-        gap: 10px;
-        font-size: 0.8rem;
-    }
+.ticker-fecha {
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-left: 10px;
 }
 
 /* ==========================================================================
