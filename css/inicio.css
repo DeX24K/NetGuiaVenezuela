@@ -523,6 +523,34 @@ body {
 .btn-tema:active {
     transform: scale(0.9);
 }
+.ticker-container {
+    background-color: #f8f9fa; /* Color base claro */
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+}
+
+.ticker-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #333;
+}
+
+.ticker-item strong {
+    color: #007bff; /* Color para resaltar el precio */
+}
+
+/* Ajuste para móvil */
+@media (max-width: 600px) {
+    .ticker-content {
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+}
 
 /* ==========================================================================
    10. ESTILOS RESPONSIVE (Para Teléfonos Celulares)
