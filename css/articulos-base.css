@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap');
+
 /* ==========================================================================
    1. VARIABLES DE PALETA DE COLORES (Soporte nativo para Modo Oscuro)
    ========================================================================== */
@@ -304,4 +306,58 @@ ol.articulo__lista--ordenada { list-style-type: decimal; }
 a:focus-visible, button:focus-visible, input:focus-visible {
     outline: 2px solid var(--color-principal);
     outline-offset: 2px;
+}
+
+/* ==========================================================================
+   7. REDISEÑO GLASSMORPHISM + TIPOGRAFÍA MODERNA (V2)
+   ========================================================================== */
+:root {
+    --fuente-titulo: 'Sora', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --radius-lg: 20px;
+}
+
+/* Fondo con destellos suaves en los colores de tu identidad */
+body {
+    background-image: radial-gradient(circle at 15% 10%, rgba(0, 180, 216, 0.1), transparent 40%),
+                      radial-gradient(circle at 85% 90%, rgba(0, 119, 182, 0.08), transparent 45%);
+    background-attachment: fixed;
+}
+
+/* Cabecera de cristal */
+.cabecera-articulo {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+[data-theme="dark"] .cabecera-articulo {
+    background-color: rgba(10, 17, 28, 0.6);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.cabecera-articulo__logo {
+    font-family: var(--fuente-titulo);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+/* Contenedor del artículo como tarjeta de cristal */
+.articulo {
+    background-color: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+}
+[data-theme="dark"] .articulo {
+    background-color: rgba(17, 28, 46, 0.6);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Tipografía de títulos */
+.articulo__titulo,
+.articulo__subtitulo,
+.articulo__subtitulo-interno {
+    font-family: var(--fuente-titulo);
 }

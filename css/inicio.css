@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap');
+
 /* ==========================================================================
    1. VARIABLES DE PALETA DE COLORES (Identidad Original Centralizada)
    ========================================================================== */
 :root {
     --color-fondo: #f8f9fa;           
     --color-blanco: #ffffff;
-    --color-header: rgba(255, 255, 255, 0.85);
+    --color-header: rgba(255, 255, 255, 0.55);
     --color-card: #ffffff;
     --color-border: #e9ecef;          
     
@@ -19,7 +21,8 @@
     --color-principal-alpha: rgba(0, 180, 216, 0.06);
     
     /* Fuentes */
-    --fuente-global: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fuente-global: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fuente-titulo: 'Sora', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     /* Esquinas Unificadas y Consistentes */
     --radius-lg: 16px;                
@@ -677,4 +680,161 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     }
     html { scroll-behavior: auto; }
     .ticker-content { animation: none; }
+}
+
+/* ==========================================================================
+   12. REDISEÑO GLASSMORPHISM + TIPOGRAFÍA MODERNA (V2)
+   ========================================================================== */
+
+/* --- Cabecera flotante tipo píldora de cristal --- */
+.cabecera {
+    max-width: 1300px;
+    width: calc(100% - 32px);
+    margin: 16px auto;
+    padding: 0.9rem 1.8rem;
+    position: sticky;
+    top: 12px;
+    border-bottom: none;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .cabecera {
+    background-color: rgba(10, 17, 28, 0.6);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.cabecera__logo {
+    font-family: var(--fuente-titulo);
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+/* --- Título del hero con tipografía y degradado de texto --- */
+.hero__titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    background: linear-gradient(180deg, #ffffff 0%, #cfefff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff;
+}
+
+/* Esferas de luz flotantes tras el hero */
+.hero::before,
+.hero::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: 0.55;
+    z-index: 0;
+    pointer-events: none;
+}
+.hero::before {
+    width: 340px; height: 340px;
+    background: rgba(0, 180, 216, 0.45);
+    top: -90px; right: 8%;
+    animation: flotar 9s ease-in-out infinite alternate;
+}
+.hero::after {
+    width: 280px; height: 280px;
+    background: rgba(0, 119, 182, 0.45);
+    bottom: -70px; left: 6%;
+    animation: flotar 11s ease-in-out infinite alternate-reverse;
+}
+@keyframes flotar {
+    from { transform: translateY(0) scale(1); }
+    to   { transform: translateY(-26px) scale(1.06); }
+}
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Barra de búsqueda de cristal sobre el hero --- */
+.buscador-real {
+    background-color: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    padding: 6px 6px 6px 22px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+}
+.buscador-real:focus-within {
+    border-color: rgba(0, 212, 255, 0.9);
+    box-shadow: 0 0 0 4px rgba(0, 180, 216, 0.25), 0 14px 40px rgba(0, 0, 0, 0.35);
+}
+.buscador-real__input {
+    color: #ffffff;
+}
+.buscador-real__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+.buscador-real__button {
+    box-shadow: 0 4px 14px rgba(0, 180, 216, 0.45);
+}
+
+.buscador-real__resultados {
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.18);
+}
+[data-theme="dark"] .buscador-real__resultados {
+    background-color: rgba(17, 28, 46, 0.92);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* --- Tarjetas con esquinas más suaves y tipografía de título --- */
+.tarjeta-guia {
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.tarjeta-guia:hover {
+    border-color: #00d4ff;
+    box-shadow: 0 20px 40px rgba(0, 180, 216, 0.25);
+}
+.tarjeta-guia__titulo {
+    font-family: var(--fuente-titulo);
+}
+
+/* --- Footer: línea de neón superior y tipografía --- */
+.footer {
+    position: relative;
+}
+.footer::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00b4d8, #00d4ff, #00b4d8, transparent);
+}
+.footer__titulo,
+.footer__subtitulo {
+    font-family: var(--fuente-titulo);
+}
+
+/* --- Ajustes móviles de la píldora y del hero --- */
+@media (max-width: 768px) {
+    .cabecera {
+        width: calc(100% - 24px);
+        margin: 12px auto;
+        padding: 0.9rem 1.2rem;
+        border-radius: 24px;
+    }
+    .hero__titulo {
+        font-size: 1.9rem;
+    }
 }
