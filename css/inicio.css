@@ -631,3 +631,50 @@ body {
         padding: 1.5rem;
     }
 }
+
+/* ==========================================================================
+   11. MEJORAS VISUALES (Respetan la identidad original)
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Botón de búsqueda tipo píldora, más integrado */
+.buscador-real__button {
+    border-radius: 999px;
+}
+
+/* Foco visible accesible en lugar del contorno por defecto */
+a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 2px solid var(--color-principal);
+    outline-offset: 2px;
+}
+
+/* Entrada sutil de las tarjetas al cargar la página */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: none; }
+}
+
+.tarjeta-guia {
+    animation: aparecer 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.tarjeta-guia:nth-child(2) { animation-delay: 0.08s; }
+.tarjeta-guia:nth-child(3) { animation-delay: 0.16s; }
+.tarjeta-guia:nth-child(4) { animation-delay: 0.24s; }
+
+/* Degradado corporativo más elegante para el ticker */
+.ticker-container {
+    background: linear-gradient(90deg, #002d5e, #00417f, #002d5e);
+}
+
+/* Respeto a usuarios que prefieren menos movimiento (accesibilidad) */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    html { scroll-behavior: auto; }
+    .ticker-content { animation: none; }
+}

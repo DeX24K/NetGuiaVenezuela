@@ -264,3 +264,44 @@ ol.articulo__lista--ordenada { list-style-type: decimal; }
     .articulo { margin: 1rem; padding: 1.5rem; }
     .articulo__titulo { font-size: 1.7rem; }
 }
+
+/* ==========================================================================
+   6. MEJORAS: PÁRRAFOS Y PÁGINAS LEGALES
+   ========================================================================== */
+.articulo > p {
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.articulo > p a {
+    color: var(--color-principal);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.articulo > p a:hover {
+    color: var(--color-principal-hover);
+}
+
+/* Tarjeta destacada para el correo de contacto */
+.articulo__contacto {
+    display: inline-block;
+    background-color: rgba(0, 180, 216, 0.08);
+    border: 1px solid rgba(0, 180, 216, 0.35);
+    padding: 0.9rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.15rem !important;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.articulo__contacto a {
+    text-decoration: none;
+}
+
+/* Foco visible accesible */
+a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 2px solid var(--color-principal);
+    outline-offset: 2px;
+}
