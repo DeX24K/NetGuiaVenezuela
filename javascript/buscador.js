@@ -113,6 +113,54 @@ const indicePaginas = [
         descripcion: "Cómo crear tu perfil en el Sistema Patria, mantener los datos al día, y recibir bonos y beneficios como el CLAP.",
         url: "guia-carnet-patria.html",
         palabrasClave: ["patria", "carnet", "sistema patria", "bonos", "clap", "nucleo familiar", "beneficios", "subsidio"]
+    },
+    {
+        titulo: "Cómo Recargar Zinli desde Venezuela",
+        descripcion: "Métodos para recargar tu billetera Zinli: transferencia, P2P y puntos de pago. Comisiones y consejos.",
+        url: "guia-recargar-zinli.html",
+        palabrasClave: ["zinli", "recargar", "billetera", "transferencia", "saldo", "cargar", "dinero"]
+    },
+    {
+        titulo: "Tarjetas Virtuales para Pagar en Línea",
+        descripcion: "Comparativa de tarjetas virtuales (Zinli, Binance Card) para pagar en plataformas internacionales desde Venezuela.",
+        url: "guia-tarjetas-virtuales.html",
+        palabrasClave: ["tarjeta", "virtual", "visa", "mastercard", "pagar", "online", "zinli", "binance card"]
+    },
+    {
+        titulo: "SOAT e Inspección Vehicular en Venezuela",
+        descripcion: "Seguro Obligatorio SOAT e inspección vehicular: requisitos, costos, dónde tramitarlos y cómo evitar multas.",
+        url: "guia-soat-inspeccion.html",
+        palabrasClave: ["soat", "inspeccion", "vehicular", "seguro", "moto", "carro", "INTT", "multa"]
+    },
+    {
+        titulo: "Cómo Vender una Moto Usada en Venezuela",
+        descripcion: "Guía para vender tu moto usada: fijar precio, documentos, dónde publicar y cómo cerrar la venta con contrato.",
+        url: "guia-vender-moto.html",
+        palabrasClave: ["vender", "moto", "usada", "venta", "contrato", "precio", "segunda mano"]
+    },
+    {
+        titulo: "Cuánto Cuesta Vivir en Venezuela",
+        descripcion: "Estimación del costo de vida mensual: alquiler, alimentación, transporte, servicios y consejos de ahorro.",
+        url: "guia-cuanto-cuesta-vivir.html",
+        palabrasClave: ["costo", "vida", "vivir", "presupuesto", "alquiler", "gastos", "mensual", "familia"]
+    },
+    {
+        titulo: "Cómo Pagar Servicios Públicos en Línea",
+        descripcion: "Guía para pagar electricidad, agua, teléfono e internet desde tu celular o computadora en Venezuela.",
+        url: "guia-servicios-publicos.html",
+        palabrasClave: ["servicios", "publicos", "electricidad", "agua", "pago", "linea", "corpoelec", "factura"]
+    },
+    {
+        titulo: "Cómo Mejorar tu Conexión para Juegos Online",
+        descripcion: "Trucos para reducir el ping y mejorar la estabilidad: DNS, ethernet, ajustes del router y del juego.",
+        url: "gaming-internet-mejorar.html",
+        palabrasClave: ["internet", "ping", "lag", "conexion", "juegos", "online", "dns", "wifi", "router"]
+    },
+    {
+        titulo: "Marcas de Motos más Vendidas en Venezuela",
+        descripcion: "Ranking de marcas de motos (Empire, SBR, Bera, Horse, Yamaha, Honda): precios, repuestos y confiabilidad.",
+        url: "guia-marcas-motos.html",
+        palabrasClave: ["marcas", "motos", "empire", "sbr", "bera", "horse", "yamaha", "honda", "comparativa"]
     }
 ];
 
