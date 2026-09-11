@@ -59,6 +59,60 @@ const indicePaginas = [
         descripcion: "Calcula el costo tiro por tiro de ruletas míticas y legendarias de CODM, y cuánto cuesta maxearlas en Venezuela.",
         url: "gaming-codm.html",
         palabrasClave: ["codm", "call of duty", "ruleta", "cp", "mitica", "legendaria", "gaming", "maxear", "cod mobile"]
+    },
+    {
+        titulo: "Cómo Apostillar Documentos en Venezuela",
+        descripcion: "Apostilla de actas de nacimiento, poderes y certificaciones: qué autoridad la tramita, requisitos y tiempos.",
+        url: "guia-apostillar-documentos.html",
+        palabrasClave: ["apostilla", "apostillar", "documentos", "acta", "poder", "notaria", "certificacion", "la haya", "legalizar"]
+    },
+    {
+        titulo: "Cédula ONIDEX: Primera Vez, Renovación y Reposición",
+        descripcion: "Cómo tramitar tu cédula en ONIDEX: requisitos, citas y pasos para la primera emisión, renovación o reposición.",
+        url: "guia-cita-onidex.html",
+        palabrasClave: ["onidex", "cedula", "identidad", "primera", "renovar", "renovacion", "reposicion", "robo", "extraviada", "identificacion"]
+    },
+    {
+        titulo: "Licencia de Conducir en Venezuela (INTT)",
+        descripcion: "Cómo obtener o renovar la licencia de conducir: requisitos del INTT, pruebas, tasas por categoría y vigencia.",
+        url: "guia-licencia-conducir.html",
+        palabrasClave: ["licencia", "conducir", "intt", "manejar", "renovar", "examen", "categoria", "conductor"]
+    },
+    {
+        titulo: "Cómo Comprar USDT en Venezuela",
+        descripcion: "Compra USDT con bolívares paso a paso por P2P: crear cuenta, elegir oferta, pagar seguro y evitar estafas.",
+        url: "guia-comprar-usdt.html",
+        palabrasClave: ["usdt", "comprar", "p2p", "binance", "cripto", "bolivares", "dolares", "tienda"]
+    },
+    {
+        titulo: "Mantenimiento Básico de Moto 125/150cc",
+        descripcion: "Rutinas de mantenimiento de motos: aceite, cadena, bujía, frenos y llantas según los kilómetros.",
+        url: "guia-mantenimiento-moto.html",
+        palabrasClave: ["mantenimiento", "moto", "aceite", "cadena", "bujia", "frenos", "llantas", "150cc", "125", "mecanica"]
+    },
+    {
+        titulo: "Cómo Matricular una Moto en Venezuela",
+        descripcion: "Matrícula de motos ante el INTT: requisitos, tasas por cilindrada, placas y título de propiedad.",
+        url: "guia-matricular-moto.html",
+        palabrasClave: ["matricular", "matricula", "moto", "placas", "intt", "registro", "titulo", "circular"]
+    },
+    {
+        titulo: "CP Gratis en CODM (2026)",
+        descripcion: "Cómo conseguir CP gratis de forma legítima en Call of Duty Mobile: eventos, códigos oficiales y precauciones.",
+        url: "gaming-cp-gratis.html",
+        palabrasClave: ["cp", "codm", "gratis", "call of duty", "codigo", "canjear", "evento", "recompensa"]
+    },
+    {
+        titulo: "Juegos para Celulares de Gama Baja (2026)",
+        descripcion: "Juegos que corren en Android de gama baja y trucos para optimizar el teléfono y jugar sin cortes.",
+        url: "gaming-gama-baja.html",
+        palabrasClave: ["gama baja", "juegos", "android", "otimizar", "lag", "free fire", "codm", "mlbb", "celular"]
+    },
+    {
+        titulo: "Sistema Patria y el Carnet de la Patria 2026",
+        descripcion: "Cómo crear tu perfil en el Sistema Patria, mantener los datos al día, y recibir bonos y beneficios como el CLAP.",
+        url: "guia-carnet-patria.html",
+        palabrasClave: ["patria", "carnet", "sistema patria", "bonos", "clap", "nucleo familiar", "beneficios", "subsidio"]
     }
 ];
 
