@@ -361,3 +361,67 @@ body {
 .articulo__subtitulo-interno {
     font-family: var(--fuente-titulo);
 }
+
+/* ==========================================================================
+   8. PULIDO FINAL (Misma paleta, sin colores nuevos)
+   ========================================================================== */
+
+/* Resaltado de texto al seleccionar */
+::selection {
+    background: rgba(0, 180, 216, 0.25);
+}
+
+/* Barra de scroll con tu turquesa */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-border); }
+::-webkit-scrollbar-thumb { background: var(--color-principal-hover); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-principal); }
+
+/* Cabecera ancla: el contenido no queda tapado al navegar con enlaces */
+h2, h3, h4 { scroll-margin-top: 130px; }
+
+/* Cabecera píldora flotante, igual que la portada (los artículos respiraban) */
+.cabecera-articulo {
+    width: calc(100% - 32px);
+    max-width: 1300px;
+    margin: 16px auto 0;
+    padding: 0.9rem 1.8rem;
+    top: 12px;
+    border-bottom: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 999px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .cabecera-articulo {
+    background-color: rgba(10, 17, 28, 0.6);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* Detalle turquesa en los subtítulos de los artículos */
+.articulo__subtitulo {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.articulo__subtitulo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.26em;
+    width: 5px;
+    height: 0.74em;
+    background: var(--color-principal);
+    border-radius: 999px;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .cabecera-articulo {
+        width: calc(100% - 24px);
+        margin: 12px auto 0;
+        padding: 0.9rem 1.2rem;
+        border-radius: 24px;
+    }
+}
