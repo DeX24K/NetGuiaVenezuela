@@ -3,53 +3,114 @@
 
 <!-- Página principal -->
 <url>
-    <loc>https://netguiavenezuela.com/index.html</loc>
-    <lastmod>2026-07-11</lastmod>
+    <loc>https://netguiavenezuela.com/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 </url>
 
-<!-- Guías -->
-<url>
-    <loc>https://netguiavenezuela.com/gaming-codm.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <priority>0.8</priority>
-</url>
-
-<url>
-    <loc>https://netguiavenezuela.com/guia-binance-zinli.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <priority>0.8</priority>
-</url>
-
+<!-- Guías: Trámites -->
 <url>
     <loc>https://netguiavenezuela.com/guia-gtu-sarem.html</loc>
     <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-pasaporte.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 
+<!-- Guías: Dólares y aplicaciones -->
+<url>
+    <loc>https://netguiavenezuela.com/guia-binance-zinli.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/tasa-bcv-hoy.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-ahorrar-dolares.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<!-- Guías: Motos y repuestos -->
 <url>
     <loc>https://netguiavenezuela.com/guia-repuestos-motos.html</loc>
     <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<!-- Guías: Gaming -->
+<url>
+    <loc>https://netguiavenezuela.com/gaming-codm.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<!-- Guías: Vivir en Venezuela -->
+<url>
+    <loc>https://netguiavenezuela.com/guia-cashea.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
 
-<!-- Otros -->
+<url>
+    <loc>https://netguiavenezuela.com/guia-sueldo-minimo.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-metro-caracas.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<!-- Información de la web -->
+<url>
+    <loc>https://netguiavenezuela.com/acerca-de.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+</url>
+
 <url>
     <loc>https://netguiavenezuela.com/contacto.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <priority>0.5</priority>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
 </url>
 
 <url>
     <loc>https://netguiavenezuela.com/privacidad.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <priority>0.3</priority>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
 </url>
 
 <url>
     <loc>https://netguiavenezuela.com/terminos.html</loc>
-    <lastmod>2026-07-11</lastmod>
-    <priority>0.3</priority>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
 </url>
 
 </urlset>
