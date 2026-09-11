@@ -335,12 +335,12 @@ body {
    ========================================================================== */
 .tarjeta-guia {
     position: relative;
-    padding: 2.5rem;
-    border-radius: 20px; 
-    min-height: 350px;
+    padding: 2rem 2.2rem;
+    border-radius: 20px;
+    min-height: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     overflow: hidden;
     color: #ffffff;
     
@@ -397,35 +397,51 @@ body {
 }
 
 .tarjeta-guia__titulo {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .tarjeta-guia__descripcion {
-    font-size: 0.95rem;
-    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
     color: #e2e8f0; 
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    line-height: 1.4;
 }
 
 .tarjeta-guia__enlace {
     display: inline-block;
     color: #00b4d8;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 0.88rem;
     text-decoration: none;
     transition: color 0.3s, transform 0.2s;
+    line-height: 1.3;
 }
 
-/* Cuando una tarjeta tiene varios enlaces, los apila con separación */
 .tarjeta-guia__enlace + .tarjeta-guia__enlace {
-    margin-top: 0.7rem;
+    margin-top: 0.4rem;
 }
 
 .tarjeta-guia:hover .tarjeta-guia__enlace {
     color: #ffffff;
     transform: translateX(4px);
+}
+
+.tarjeta-guia__enlace--vermas {
+    margin-top: auto !important;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 0.82rem !important;
+    color: rgba(255,255,255,0.7) !important;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.tarjeta-guia:hover .tarjeta-guia__enlace--vermas {
+    color: #00d4ff !important;
 }
 
 /* Modificadores para imágenes de fondo (Rutas Relativas Oficiales) */
@@ -579,10 +595,18 @@ body {
    10. ESTILOS RESPONSIVE (Para Teléfonos Celulares)
    ========================================================================== */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .cabecera {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+        width: calc(100% - 24px);
+        margin: 12px auto;
+        padding: 0.9rem 1.2rem;
+        border-radius: 24px;
     }
 
     .menu__lista {
@@ -592,11 +616,31 @@ body {
     }
 
     .hero {
-        padding: 4.5rem 1rem;
+        padding: 3rem 1rem;
     }
 
     .hero__titulo {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .categorias__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .tarjeta-guia {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .tarjeta-guia__titulo {
+        font-size: 1.3rem;
+    }
+
+    .tarjeta-guia__enlace {
+        font-size: 0.85rem;
     }
 
     .footer__contenedor {
@@ -608,36 +652,19 @@ body {
     .footer__descripcion {
         margin: 0 auto;
     }
-    
+
     .footer__enlace:hover {
         transform: none;
     }
 }
-@media (max-width: 768px) {
-    /* Ajustar el padding general para que el contenido no pegue a los bordes */
-    body {
-        overflow-x: hidden; /* Evita scroll horizontal accidental */
-    }
 
-    .hero {
-        padding: 3rem 1rem;
-    }
-
-    .hero__titulo {
-        font-size: 1.7rem; /* Reducir tamaño para que no se corte */
-        line-height: 1.2;
-    }
-
-    /* Asegurar que las tarjetas no fuercen un ancho mayor al de la pantalla */
+@media (min-width: 769px) and (max-width: 1024px) {
     .categorias__grid {
-        grid-template-columns: 1fr; /* Forzar una sola columna */
-        gap: 20px;
-        padding: 0 15px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .tarjeta-guia {
-        min-height: 250px; /* Reducir altura en móviles */
-        padding: 1.5rem;
+        min-height: 360px;
     }
 }
 
@@ -830,19 +857,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .footer__titulo,
 .footer__subtitulo {
     font-family: var(--fuente-titulo);
-}
-
-/* --- Ajustes móviles de la píldora y del hero --- */
-@media (max-width: 768px) {
-    .cabecera {
-        width: calc(100% - 24px);
-        margin: 12px auto;
-        padding: 0.9rem 1.2rem;
-        border-radius: 24px;
-    }
-    .hero__titulo {
-        font-size: 1.9rem;
-    }
 }
 
 /* ==========================================================================
