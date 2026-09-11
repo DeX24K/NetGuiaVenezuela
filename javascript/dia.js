@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
         document.documentElement.setAttribute('data-theme', currentTheme);
-        if (currentTheme === 'light') {
-            actualizarIconoA(true);
-        }
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
     }
 
     // 2. Escuchar el click en el botón para alternar el tema
@@ -18,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let theme = document.documentElement.getAttribute('data-theme');
             
             if (theme === 'light') {
-                document.documentElement.removeAttribute('data-theme'); // Vuelve a oscuro (por defecto)
+                document.documentElement.setAttribute('data-theme', 'dark');
                 localStorage.setItem('theme', 'dark');
                 actualizarIconoA(false);
             } else {
