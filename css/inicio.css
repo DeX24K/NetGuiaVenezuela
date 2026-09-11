@@ -1159,3 +1159,75 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
 }
+
+/* ==========================================================================
+   17. PÁGINA "TODAS LAS GUÍAS" (guias.html)
+   ========================================================================== */
+.guias-hero {
+    padding: 3.5rem 1.5rem 3rem;
+}
+
+.guias-contenido {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.guias-seccion__titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--color-oscuro);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--color-principal-alpha);
+}
+
+.guias-seccion__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 12px;
+}
+
+.guia-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.9rem 1.2rem;
+    background: var(--color-blanco);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    box-shadow: var(--shadow-premium);
+}
+
+.guia-link::before {
+    content: '\2192';
+    color: var(--color-principal);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.guia-link:hover {
+    border-color: rgba(0, 180, 216, 0.4);
+    transform: translateX(4px);
+    box-shadow: 0 6px 18px rgba(0, 180, 216, 0.12);
+    color: var(--color-principal-hover);
+}
+
+[data-theme="dark"] .guia-link {
+    background: var(--color-card);
+    border-color: var(--color-border);
+}
+
+[data-theme="dark"] .guias-seccion__titulo {
+    color: var(--color-oscuro);
+}
