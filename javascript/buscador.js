@@ -161,6 +161,36 @@ const indicePaginas = [
         descripcion: "Ranking de marcas de motos (Empire, SBR, Bera, Horse, Yamaha, Honda): precios, repuestos y confiabilidad.",
         url: "guia-marcas-motos.html",
         palabrasClave: ["marcas", "motos", "empire", "sbr", "bera", "horse", "yamaha", "honda", "comparativa"]
+    },
+    {
+        titulo: "Kit GNV (Metano) para Moto en Venezuela (2026)",
+        descripcion: "Cuánto cuesta instalar un kit de gas natural vehicular a una moto, cuánto rinde, requisitos legales y riesgos de seguridad.",
+        url: "guia-gnv-moto.html",
+        palabrasClave: ["gnv", "metano", "gas", "moto", "kit gnv", "bombona", "combustible", "ahorro", "natural"]
+    },
+    {
+        titulo: "Ubii en Venezuela: Cómo Funciona y Créditos (2026)",
+        descripcion: "Billetera digital Ubii: cómo registrarte, recargar, cobrar y acceder a créditos por niveles con sus comisiones.",
+        url: "guia-ubii.html",
+        palabrasClave: ["ubii", "ubiipagos", "billetera", "credito", "dolares", "pagos", "niveles", "fintech"]
+    },
+    {
+        titulo: "Pago Móvil y Biopago en Venezuela (2026)",
+        descripcion: "Cómo activar el pago móvil en tu banco, enviar y recibir dinero, usar Biopago y protegerte de estafas.",
+        url: "guia-pago-movil-biopago.html",
+        palabrasClave: ["pago movil", "biopago", "banco", "transferencia", "telefono", "cobrar", "pagar", "bcv"]
+    },
+    {
+        titulo: "Certificado de Antecedentes Penales en Línea (2026)",
+        descripcion: "Cómo obtener el certificado de antecedentes penales en Venezuela: requisitos, costo, trámite por SAIME y vigencia.",
+        url: "guia-antecedentes-penales.html",
+        palabrasClave: ["antecedentes", "penales", "registro", "saime", "certificado", "judicial", "empleo", "record"]
+    },
+    {
+        titulo: "Dólar Paralelo vs Dólar BCV (2026)",
+        descripcion: "Qué es el dólar paralelo, en qué se diferencia del BCV, cómo se calcula y cómo convertir bolívares con cada tasa.",
+        url: "guia-dolar-paralelo.html",
+        palabrasClave: ["dolar paralelo", "dolar negro", "bcv", "dolar", "paralelo", "tasa", "cambio", "conversion", "bolivares"]
     }
 ];
 
@@ -219,9 +249,12 @@ document.addEventListener('click', function(evento) {
 // ==========================================================================
 const frasesSugeridas = [
     '¿Cuánto está el dolar BCV hoy?',
+    '¿Cuánto está el dólar paralelo?',
+    '¿Kit GNV para moto? ¿Cuánto cuesta?',
+    '¿Cómo funcionan los créditos de Ubii?',
+    '¿Cómo pagar con pago móvil?',
     '¿Buscas repuestos para tu Owen?',
     '¿Cómo pedir cita en el SAREN?',
-    '¿Cómo recargar Zinli con Binance?',
     '¿Cómo renovar el pasaporte?',
     '¿Cómo funciona Cashea?'
 ];
