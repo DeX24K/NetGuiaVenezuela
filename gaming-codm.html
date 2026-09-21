@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Calculadora de Ruletas CODM 2026 | ¿Cuánto CP cuesta maxear? 🎮</title>
-    <link rel="icon" type="image/png" href="img/xds.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calculadora exacta de CP para ruletas de CODM en Venezuela (10 CP base). Calcula el precio de armas míticas, legendarias reactivas y el costo para maxearlas.">
-    <meta name="keywords" content="calculadora ruletas codm, precio ruleta completa codm venezuela, cuantos cp cuesta ruleta mitica, costo tiros ruleta cod mobile, cp ruleta venezuela 10 cp, maxear arma mitica cp, netguiavenezuela gaming">
+    <title>Calculadora de Ruletas CODM 2026 | ¿Cuánto CP cuesta maxear? 🎮</title>
+    <meta name="description" content="Calculadora exacta de CP para ruletas de CODM en Venezuela (10 CP base). Calcula el precio de armas míticas, legendarias reactivas y el costo para maxearlas. Guía completa con tabla de costos, estrategias y consejos para ahorrar CP en Call of Duty Mobile.">
+    <meta name="theme-color" content="#00b4d8">
+    <link rel="stylesheet" href="css/articulos-base.css">
+    <link rel="stylesheet" href="css/articulo-mejoras.css">
+    <link rel="stylesheet" href="css/calculadora-codm.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="img/xds.png">
 
-    <!-- Open Graph para Redes Sociales -->
     <meta property="og:site_name" content="NetGuiaVenezuela">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Calculadora de CP CODM: Ruletas y Costo de Maxeo (Venezuela)">
+    <meta property="og:title" content="Calculadora de Ruletas CODM 2026 | ¿Cuánto CP cuesta maxear?">
     <meta property="og:description" content="Calcula el costo tiro por tiro de ruletas míticas, personajes y armas legendarias reactivas. ¡Descubre cuánto necesitas para maxearlas!">
     <meta property="og:url" content="https://netguiavenezuela.com/gaming-codm.html">
     <meta property="og:image" content="https://netguiavenezuela.com/img/xds.png">
 
     <link rel="canonical" href="https://netguiavenezuela.com/gaming-codm.html">
 
-    <!-- JSON-LD: Datos estructurados para Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -45,39 +47,213 @@
           "image": "https://netguiavenezuela.com/img/xds.png",
           "mainEntityOfPage": "https://netguiavenezuela.com/gaming-codm.html",
           "datePublished": "2026-06-01",
-          "dateModified": "2026-07-11",
+          "dateModified": "2026-09-20",
           "author": { "@id": "https://netguiavenezuela.com/#organization" },
           "publisher": { "@id": "https://netguiavenezuela.com/#organization" },
           "inLanguage": "es"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Cuánto cuesta completar una ruleta legendaria en CODM?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En una cuenta venezolana (10 CP base), una ruleta legendaria común cuesta aproximadamente 3,000-4,000 CP para completar los 10 tiros. Si es una arma reactiva o personaje legendario, el costo total puede llegar a 4,500-6,000 CP. El tiro final cuesta entre 1,400 y 1,800 CP según el tipo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué diferencia hay entre arma legendaria reactiva y no reactiva?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La arma legendaria reactiva cambia de apariencia visual según las bajas que consigas en la partida (por ejemplo, cambia de color o emite efectos al alcanzar 10, 20, 30 bajas). La no reactiva es estática: siempre se ve igual sin importar tu rendimiento. La reactiva cuesta más en la ruleta."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué significa 'maxear' un arma mítica?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Maxear un arma mítica significa completar todos los niveles de miticismo después de desbloquearla. Esto requiere aproximadamente 4,670 tarjetas de miticismo y desbloquea mejoras visuales como miras especiales, animaciones de muerte personalizadas y efectos de partículas. No afecta las estadísticas de daño del arma."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Vale la pena gastar CP en ruletas o mejor esperar ofertas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende de tu presupuesto. Las ruletas de temporada suelen tener mejor relación calidad-precio que las permanentes. Si no tienes prisa, espera a ofertas de aniversario o colaboraciones especiales donde los descuentos pueden ser del 20-30%. Usa siempre la calculadora antes de tirar para no gastar de más."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Los CP de cuentas venezolanas son realmente más baratos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Las cuentas creadas en Venezuela tienen un costo base de 10 CP por tiro, mientras que en Estados Unidos cuesta 30 CP por tiro. Esto significa que completar una ruleta cuesta la mitad o un tercio de lo que paga un jugador norteamericano. Es una de las ventajas geográficas del juego."
+              }
+            }
+          ]
         }
       ]
     }
     </script>
 
-        <!-- Analítica: configuración única en javascript/analytics.js -->
     <script src="javascript/analytics.js" defer></script>
-
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/articulos-base.css">
-    <link rel="stylesheet" href="css/calculadora-codm.css">
 </head>
 <body>
+    <div class="progreso-lectura" id="progreso-lectura"></div>
 
     <header class="cabecera-articulo">
         <a href="index.html" class="cabecera-articulo__volver">← Volver al Inicio</a>
         <div class="cabecera-articulo__logo">NetGuia<strong>Gaming</strong></div>
     </header>
 
+    <nav class="breadcrumbs" aria-label="Migas de pan">
+        <a href="index.html">Inicio</a> &gt;
+        <a href="gaming.html">Gaming</a> &gt;
+        <span>Calculadora CODM</span>
+    </nav>
+
     <main class="articulo">
         <header class="articulo__header">
             <span class="articulo__categoria">🎮 Call of Duty: Mobile</span>
             <h1 class="articulo__titulo">Calculadora de Ruletas CODM y Costo de Maxeo (Tarifas 2026)</h1>
-            <p class="articulo__fecha">Actualizado en julio de 2026</p>
+            <p class="articulo__fecha">Actualizado en septiembre de 2026 · Tiempo de lectura: 14 min</p>
+            <div class="articulo__meta">
+                <span class="articulo__meta-item">🧮 Herramienta interactiva</span>
+                <span class="articulo__meta-item">🔄 Datos actualizados 2026</span>
+            </div>
         </header>
 
+        <div class="articulo__toc" id="toc">
+            <div class="toc-wrapper">
+                <h2 class="toc__titulo">Contenido de la guía</h2>
+                <ul class="toc__lista">
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#que-son-ruletas">¿Qué son las ruletas en CODM?</a></li>
+                    <li><a href="#calculadora">Calculadora de costos</a></li>
+                    <li><a href="#tipos-ruletas">Tipos de ruletas: míticas, legendarias y reactivas</a></li>
+                    <li><a href="#costo-tiro">Costo por tiro: cómo funciona el sistema</a></li>
+                    <li><a href="#cuentas-venezuela">Ventaja de las cuentas venezolanas</a></li>
+                    <li><a href="#maxear">¿Qué significa maxear un ítem?</a></li>
+                    <li><a href="#estrategia">Estrategias para ahorrar CP</a></li>
+                    <li><a href="#errores-comunes">Errores comunes al gastar CP</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
+                    <li><a href="#guias-relacionadas">Guías relacionadas</a></li>
+                </ul>
+            </div>
+        </div>
+
         <section class="articulo__contenido">
+            <h2 id="introduccion" class="articulo__subtitulo">Introducción</h2>
             <p class="articulo__introduccion">
-                ¿Planeas conseguir un arma mítica o desbloquear un personaje legendario? En Venezuela contamos con una de las tarifas de CP más bajas del mundo. Usa nuestra herramienta avanzada para calcular el costo exacto de los 10 tiros y, si vas con todo, calcula el precio de las tarjetas o monedas para <strong>maxear tus ítems míticos</strong>.
+                Call of Duty: Mobile es uno de los juegos de battle royale y shooter más populares del mundo, y en Venezuela cuenta con una comunidad enorme de jugadores. Una de las características más atractivas —y a la vez más costosas— del juego son las ruletas, que te permiten desbloquear armas legendarias, personajes exclusivos y armas míticas con efectos visuales espectaculares. Pero, ¿cuánto cuesta realmente completar una ruleta? ¿Cuánto CP necesitas para maxear un arma mítica? ¿Vale la pena el gasto?
+            </p>
+            <p class="articulo__texto">
+                Nuestra calculadora de ruletas CODM te da las respuestas exactas, tiro por tiro. No es una estimación vaga: calcula el costo real según tu región (10 CP en Venezuela, 20 CP en Colombia, 30 CP en USA) y el tipo de ruleta que quieras completar. Si además quieres maxear tu arma mítica, la herramienta suma el costo de las tarjetas de miticismo necesarias para llegar al nivel máximo. Pero antes de usar la calculadora, es importante que entiendas cómo funciona el sistema de ruletas, cuáles son los diferentes tipos de ítems y qué estrategias puedes usar para ahorrar CP.
+            </p>
+
+            <div class="articulo__alerta">
+                <strong>💡 DATAZO DE CUENTAS CREADAS EN VENEZUELA:</strong> Si creaste tu cuenta de CODM estando en Venezuela sin usar ningún tipo de VPN, tu ruleta iniciará sí o sí en <strong>10 CP</strong>. Esto coloca a las cuentas venezolanas en el tier de descuento global, costando la mitad de lo que paga un jugador de USA o Europa. ¡Aprovecha esta ventaja!
+            </div>
+
+            <h2 id="que-son-ruletas" class="articulo__subtitulo">¿Qué son las ruletas en CODM?</h2>
+            <p class="articulo__texto">
+                Las ruletas son el sistema de monetización principal de Call of Duty: Mobile para obtener cosméticos exclusivos. Funcionan como un sistema de "girar y ganar": cada tiro te da un premio aleatorio de entre los ítems disponibles en la ruleta, y el costo de cada tiro aumenta progresivamente. La idea es que, si giras suficientes veces, terminarás obteniendo todos los ítems de la ruleta, incluido el ítem principal (que suele ser un arma legendaria, mítica o un personaje exclusivo).
+            </p>
+            <p class="articulo__texto">
+                El sistema de ruletas tiene 10 niveles de tiro, cada uno con un costo diferente. Los primeros tiros son muy baratos (10-20 CP), pero el costo crece exponencialmente. El décimo y último tiro cuesta entre 1,400 y 1,800 CP dependiendo del tipo de ítem. Esto significa que completar una ruleta completa requiere una inversión significativa de CP, especialmente si no tienes suerte en los primeros tiros.
+            </p>
+
+            <h3 class="articulo__subtitulo-interno">Ejemplo práctico de cómo funciona una ruleta</h3>
+            <p class="articulo__texto">
+                Imagina que hay una ruleta con una arma legendaria reactiva y 9 ítems más (bajo, lentes, mochila, etc.). El primer tiro cuesta 10 CP y te da un ítem al azar (probablemente uno de los menos valiosos). Si no te tocó el arma, el segundo tiro cuesta 20 CP, y así sucesivamente. Cada tiro elimina el ítem que ya obtuviste de la ruleta, aumentando tus probabilidades de sacar el arma principal. Pero el costo acumulado puede ser engañoso:
+            </p>
+
+            <div class="articulo__tabla-contenedor">
+                <table class="articulo__tabla">
+                    <thead>
+                        <tr>
+                            <th>Tiro</th>
+                            <th>Costo (CP)</th>
+                            <th>Costo acumulado (CP)</th>
+                            <th>Probabilidad de arma</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>20</td>
+                            <td>30</td>
+                            <td>11%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>40</td>
+                            <td>70</td>
+                            <td>12.5%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>80</td>
+                            <td>150</td>
+                            <td>14%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>150</td>
+                            <td>300</td>
+                            <td>16.7%</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>230</td>
+                            <td>530</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>350</td>
+                            <td>880</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>480</td>
+                            <td>1,360</td>
+                            <td>33%</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>680</td>
+                            <td>2,040</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>1,400 - 1,800</td>
+                            <td>3,440 - 3,840</td>
+                            <td>100% (garantizado)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="articulo__texto">
+                Como ves, el costo total para completar una ruleta legendaria común ronda los 3,440 CP en una cuenta venezolana. Si es una ruleta reactiva, el tiro final sube a 1,800 CP, elevando el total a aproximadamente 3,840 CP. Para una ruleta mítica, los costos son aún mayores.
+            </p>
+
+            <h2 id="calculadora" class="articulo__subtitulo">Calculadora de costos</h2>
+            <p class="articulo__texto">
+                Usa nuestra calculadora para obtener el costo exacto de la ruleta que te interesa. Selecciona tu región y el tipo de ítem, y la herramienta calculará el costo tiro por tiro, incluyendo la opción de maxear el arma mítica.
             </p>
 
             <!-- CALCULADORA GAMER -->
@@ -117,18 +293,236 @@
                 <div id="calc-codm-resultado" class="calc-codm__pantalla"></div>
             </div>
 
-            <div class="articulo__alerta">
-                <strong>💡 DATAZO DE CUENTAS CREADAS EN VENEZUELA:</strong> Si creaste tu cuenta de CODM estando en Venezuela sin usar ningún tipo de VPN, tu ruleta iniciará sí o sí en <strong>10 CP</strong>. Esto coloca a las cuentas venezolanas en el tier de descuento global, costando la mitad de lo que paga un jugador de USA o Europa.
-            </div>
-
-            <h2 class="articulo__subtitulo">Diferencias de costos: Armas Reactivas vs No Reactivas</h2>
+            <h2 id="tipos-ruletas" class="articulo__subtitulo">Tipos de ruletas: míticas, legendarias y reactivas</h2>
             <p class="articulo__texto">
-                Muchos jugadores se confunden cuando el tiro final les cuesta más de lo planeado. Las <strong>Armas Legendarias No Reactivas</strong> (las más antiguas o sencillas) cierran su último tiro en 1,400 CP (en cuentas de base 10). En cambio, las <strong>armas reactivas</strong> (que cambian de forma con las bajas) y los <strong>personajes legendarios</strong> tienen un tiro final de 1,800 CP.
+                No todas las ruletas son iguales. El tipo de ítem que contiene determina el costo total, el tiro final y si el arma tiene características especiales. Conocer las diferencias es clave para decidir en qué gastar tu CP.
             </p>
 
-            <h2 class="articulo__subtitulo">¿Cuánto cuesta realmente maxear un ítem Mítico?</h2>
+            <div class="articulo__tabla-contenedor">
+                <table class="articulo__tabla">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Tiro final (CP)</th>
+                            <th>Total estimado (CP)</th>
+                            <th>Características</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Arma Legendaria No Reactiva</strong></td>
+                            <td>1,400</td>
+                            <td>~3,000-3,500</td>
+                            <td>Diseño único, animación de muerte personalizada, efecto de partículas. No cambia con las bajas.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arma Legendaria Reactiva</strong></td>
+                            <td>1,800</td>
+                            <td>~3,800-4,500</td>
+                            <td>Igual que la anterior pero cambia de apariencia al conseguir 10, 20, 30 bajas en la partida.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Personaje Legendario</strong></td>
+                            <td>1,800</td>
+                            <td>~3,800-4,500</td>
+                            <td>Skin exclusiva con animaciones de entrada y ejecución especiales.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Arma Mítica</strong></td>
+                            <td>2,000+</td>
+                            <td>~5,000-8,000</td>
+                            <td>Máximo nivel de exclusividad. Múltiples niveles de mejora, miras especiales, efectos visuales únicos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Personaje Mítico</strong></td>
+                            <td>2,000+</td>
+                            <td>~5,000-8,000</td>
+                            <td>Skin con múltiples colores, ejecuciones avanzadas y efectos de rachas personalizados.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="articulo__alerta">
+                <strong>💡 Consejo:</strong> antes de decidir, revisa si el arma tiene animación de muerte personalizada (las armas legendarias la tienen). Si solo te interesa el diseño y no las animaciones, una arma legendaria no reactiva es más económica. Si quieres el "brillo completo" y el prestige visual, la reactiva o mítica son la opción.
+            </div>
+
+            <h2 id="costo-tiro" class="articulo__subtitulo">Costo por tiro: cómo funciona el sistema de probabilidad</h2>
             <p class="articulo__texto">
-                Completar la ruleta para obtener el ítem es solo el paso uno. Las armas míticas cuentan con 5 niveles adicionales que desbloquean accesorios estéticos y mejores miras, requiriendo unas 4,670 tarjetas de miticismo. Por su parte, los personajes míticos exigen monedas de miticismo para liberar sus ejecuciones avanzadas, skins de rachas y cambios de color. Activa nuestra casilla de maxeo para calcular el golpe total a tu billetera.
+                El sistema de ruletas de CODM utiliza un algoritmo de probabilidad inversa: cada tiro tiene una probabilidad fija de darte el ítem principal, pero esa probabilidad aumenta a medida que eliminas ítems de la ruleta. Los primeros tiros son casi garantía de que obtendrás uno de los ítems de menor valor (bajo, lentes, mochila, etc.), mientras que el arma legendaria o mítica generalmente se obtiene en los últimos 2-3 tiros.
+            </p>
+            <p class="articulo__texto">
+                Esto significa que, en la práctica, la mayoría de los jugadores necesitan entre 8 y 10 tiros para conseguir el arma principal. Solo una minoría muy afortunada la obtiene antes del tiro 7. Por eso es tan importante calcular el costo total antes de empezar a girar: si solo tienes CP para 5 tiros, es mejor guardarlos y esperar a tener suficiente para completar la ruleta completa.
+            </p>
+
+            <h3 class="articulo__subtitulo-interno">Ejemplo real: cuenta venezolana (10 CP base)</h3>
+            <p class="articulo__texto">
+                Supongamos que quieres un arma legendaria reactiva en una cuenta venezolana. Los tiros progresan así: 10, 20, 40, 80, 150, 230, 350, 480, 680, 1,800 CP. El costo total para completar los 10 tiros es de <strong>3,840 CP</strong>. Si compras CP en paquetes, esto equivale aproximadamente a:
+            </p>
+            <ul class="articulo__lista">
+                <li class="articulo__lista-item">1 paquete de 80 CP (~$0.99 USD) = 80 CP</li>
+                <li class="articulo__lista-item">1 paquete de 200 CP (~$1.99 USD) = 200 CP</li>
+                <li class="articulo__lista-item">1 paquete de 500 CP (~$4.99 USD) = 500 CP</li>
+                <li class="articulo__lista-item">1 paquete de 1,000 CP (~$9.99 USD) = 1,000 CP</li>
+                <li class="articulo__lista-item">1 paquete de 2,000+ CP (~$19.99 USD) = 2,080 CP</li>
+            </ul>
+            <p class="articulo__texto">
+                Para llegar a los 3,840 CP, necesitarías comprar paquetes por un total de aproximadamente <strong>$30-35 USD</strong> (en precios de tienda). Sin embargo, los precios varían según la tienda de aplicaciones y las promociones vigentes.
+            </p>
+
+            <h2 id="cuentas-venezuela" class="articulo__subtitulo">Ventaja de las cuentas venezolanas</h2>
+            <p class="articulo__texto">
+                Venezuela se encuentra en una de las regiones con el costo más bajo del mundo para los CP de CODM. Esto se debe a que el juego ajusta los precios de los CP según la capacidad adquisitiva de cada región. Las cuentas creadas en Venezuela sin VPN tienen un costo base de <strong>10 CP por tiro</strong>, mientras que:
+            </p>
+
+            <div class="articulo__tabla-contenedor">
+                <table class="articulo__tabla">
+                    <thead>
+                        <tr>
+                            <th>Región</th>
+                            <th>Costo primer tiro</th>
+                            <th>Costo décimo tiro</th>
+                            <th>Total ruleta legendaria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Venezuela / India</strong></td>
+                            <td>10 CP</td>
+                            <td>1,400-1,800 CP</td>
+                            <td>~3,000-3,840 CP</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Colombia / LatAm</strong></td>
+                            <td>20 CP</td>
+                            <td>2,800-3,600 CP</td>
+                            <td>~6,000-7,680 CP</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Estados Unidos / Europa</strong></td>
+                            <td>30 CP</td>
+                            <td>4,200-5,400 CP</td>
+                            <td>~9,000-11,520 CP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="articulo__alerta">
+                <strong>⚠️ Advertencia:</strong> no uses VPN para cambiar tu región y obtener precios más bajos. Activision detecta las VPN y puede banearte la cuenta permanentemente. La ventaja de precio es legítima si creaste tu cuenta originalmente en Venezuela.
+            </div>
+
+            <h2 id="maxear" class="articulo__subtitulo">¿Qué significa maxear un arma mítica?</h2>
+            <p class="articulo__texto">
+                Completar la ruleta para obtener un arma mítica es solo el paso uno. Las armas míticas tienen un sistema de "miticismo" que consta de 5 niveles adicionales, cada uno desbloquea mejoras visuales y estéticas. No afectan las estadísticas de daño, alcance o cadencia del arma: son puramente cosméticos, pero dan un aspecto espectacular al arma.
+            </p>
+            <ul class="articulo__lista">
+                <li class="articulo__lista-item"><strong>Nivel 1:</strong> mejora la mira por defecto con un diseño personalizado.</li>
+                <li class="articulo__lista-item"><strong>Nivel 2:</strong> añade efectos de partículas al disparar.</li>
+                <li class="articulo__lista-item"><strong>Nivel 3:</strong> mejora la animación de recarga.</li>
+                <li class="articulo__lista-item"><strong>Nivel 4:</strong> añade un efecto visual especial al matar.</li>
+                <li class="articulo__lista-item"><strong>Nivel 5 (máximo):</strong> desbloquea una animación de muerte completamente nueva y efectos de fuego personalizados.</li>
+            </ul>
+
+            <h3 class="articulo__subtitulo-interno">Costo de maxear un arma mítica</h3>
+            <p class="articulo__texto">
+                Para subir un arma mítica al nivel máximo necesitas aproximadamente <strong>4,670 tarjetas de miticismo</strong>. Estas tarjetas se obtienen de varias formas:
+            </p>
+            <ul class="articulo__lista">
+                <li class="articulo__lista-item"><strong>Comprando en la tienda:</strong> las tarjetas de miticismo se pueden comprar con CP directamente. El costo varía pero generalmente ronda los 100-200 CP por paquete de 100 tarjetas.</li>
+                <li class="articulo__lista-item"><strong>Eventos de temporada:</strong> algunos eventos regalan tarjetas de miticismo como recompensa por completar retos.</li>
+                <li class="articulo__lista-item"><strong>Pase de combate:</strong> el pase de combate premium a veces incluye tarjetas de miticismo en niveles avanzados.</li>
+            </ul>
+            <p class="articulo__texto">
+                El costo total estimado para maxear un arma mítica completa (incluyendo la ruleta + niveles de miticismo) ronda los <strong>6,000-8,000 CP</strong> en una cuenta venezolana. Esto puede traducirse en aproximadamente <strong>$50-70 USD</strong> en la tienda.
+            </p>
+
+            <h2 id="estrategia" class="articulo__subtitulo">Estrategias para ahorrar CP</h2>
+            <p class="articulo__texto">
+                Gastar CP de forma inteligente es tan importante como ganarlo. Aquí tienes las mejores estrategias para maximizar tu inversión:
+            </p>
+            <ul class="articulo__lista">
+                <li class="articulo__lista-item"><strong>Espera ofertas de aniversario:</strong> CODM suele lanzar ofertas especiales en su aniversario (octubre) y en colaboraciones importantes. Los descuentos pueden ser del 20-30% en paquetes de CP.</li>
+                <li class="articulo__lista-item"><strong>Usa la calculadora antes de tirar:</strong> calcula el costo total antes de empezar. Si no tienes suficiente CP para completar la ruleta, es mejor guardarlos para otra ocasión.</li>
+                <li class="articulo__lista-item"><strong>Prioriza las ruletas de temporada:</strong> las ruletas que aparecen por tiempo limitado suelen tener mejor relación calidad-precio que las permanentes.</li>
+                <li class="articulo__lista-item"><strong>No gastes en ruletas de bajo nivel:</strong> las armas legendarias son las que mejor se mantienen en el tiempo. Las armas de temporada menos populares pueden quedar en el olvido en pocas temporadas.</li>
+                <li class="articulo__lista-item"><strong>Aprovecha los giros gratis:</strong> algunos eventos regalan 1-2 giros gratuitos en ruletas específicas. Si te toca el arma, ganaste. Si no, no perdiste CP.</li>
+                <li class="articulo__lista-item"><strong>No maxees todas las armas:</strong> maxear un arma mítica es costoso. Hazlo solo con las armas que realmente uses frecuentemente en partidas clasificatorias.</li>
+            </ul>
+
+            <h2 id="errores-comunes" class="articulo__subtitulo">Errores comunes al gastar CP</h2>
+            <p class="articulo__texto">
+                Muchos jugadores cometen errores costosos al interactuar con las ruletas. Evita estos errores para no malgastar tu CP:
+            </p>
+            <ul class="articulo__lista">
+                <li class="articulo__lista-item"><strong>Girar sin tener suficiente CP:</strong> el error más común. Si solo tienes CP para 5 tiros, no empieces una ruleta que requiere 10 para completar. Quedarás con los primeros ítems pero sin el arma principal.</li>
+                <li class="articulo__lista-item"><strong>No verificar la región:</strong> algunos jugadores creen que tienen precios de Venezuela pero en realidad tienen precios de USA porque crearon la cuenta con VPN. Verifica tu costo base antes de planear tu inversión.</li>
+                <li class="articulo__lista-item"><strong>Comprar CP en la tienda sin buscar ofertas:</strong> la tienda oficial tiene precios fijos, pero otros canales (como promociones de Google Play o App Store) pueden tener descuentos. Compara antes de comprar.</li>
+                <li class="articulo__lista-item"><strong>Maxear armas que no usas:</strong> no tiene sentido invertir 4,670 tarjetas de miticismo en un arma que solo usas en partidas ocasionales. Guarda esas tarjetas para tu arma principal.</li>
+                <li class="articulo__lista-item"><strong>Ignorar la calculadora:</strong> muchos jugadores "sienten" cuánto pueden gastar sin calcular realmente. Usa la herramienta y toma una decisión informada.</li>
+            </ul>
+
+            <div class="articulo__alerta">
+                <strong>⚠️ Error grave:</strong> algunos jugadores compran CP por vías no oficiales (grupos de Telegram, WhatsApp, etc.) a precios "más baratos". Estos vendedores suelen usar tarjetas de crédito robadas o fraudes de devolución, lo que resulta en baneos permanentes de la cuenta. Compra CP solo por la tienda oficial de tu dispositivo.
+            </div>
+
+            <div id="compartir" class="compartir">
+                <h3 class="compartir__titulo">¿Te fue útil esta herramienta? Compártela</h3>
+                <div class="compartir__botones">
+                    <a href="https://api.whatsapp.com/send?text=Mira%20esta%20calculadora%20de%20ruletas%20CODM" target="_blank" rel="noopener" class="compartir__btn compartir__btn--whatsapp">WhatsApp</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://netguiavenezuela.com/gaming-codm.html" target="_blank" rel="noopener" class="compartir__btn compartir__btn--facebook">Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?url=https://netguiavenezuela.com/gaming-codm.html&text=Calculadora%20Ruletas%20CODM" target="_blank" rel="noopener" class="compartir__btn compartir__btn--twitter">Twitter</a>
+                </div>
+            </div>
+
+            <div class="articulo__newsletter">
+                <h3 class="articulo__newsletter-titulo">Recibe alertas de ofertas CODM</h3>
+                <p class="articulo__newsletter-texto">Suscríbete para recibir notificaciones cuando haya ofertas especiales de CP o ruletas en CODM.</p>
+                <form class="articulo__newsletter-form" action="#" method="post">
+                    <input type="email" placeholder="Tu correo electrónico" required class="articulo__newsletter-input">
+                    <button type="submit" class="articulo__newsletter-btn">Suscribirme</button>
+                </form>
+            </div>
+
+            <div class="articulo__alerta">
+                <strong>📚 Guías relacionadas:</strong>
+                <ul>
+                    <li><a href="gaming-cp-gratis.html">Cómo conseguir CP gratis en CODM (formas legítimas)</a></li>
+                    <li><a href="gaming-gama-baja.html">Juegos que corren en celulares de gama baja</a></li>
+                    <li><a href="gaming-internet-mejorar.html">Cómo mejorar tu conexión para gaming online</a></li>
+                </ul>
+            </div>
+
+            <h2 id="faq" class="articulo__subtitulo">Preguntas frecuentes</h2>
+
+            <h3 class="articulo__subtitulo-interno">¿Cuánto cuesta completar una ruleta legendaria en CODM?</h3>
+            <p class="articulo__texto">
+                En una cuenta venezolana (10 CP base), una ruleta legendaria común cuesta aproximadamente 3,000-3,500 CP para completar los 10 tiros. Si es una arma reactiva o personaje legendario, el costo total puede llegar a 3,800-4,500 CP. El tiro final cuesta entre 1,400 y 1,800 CP según el tipo. Usa nuestra calculadora para obtener el costo exacto.
+            </p>
+
+            <h3 class="articulo__subtitulo-interno">¿Qué diferencia hay entre arma legendaria reactiva y no reactiva?</h3>
+            <p class="articulo__texto">
+                La arma legendaria reactiva cambia de apariencia visual según las bajas que consigas en la partida: al alcanzar 10, 20 y 30 bajas, el arma emite efectos visuales diferentes (cambios de color, brillo, partículas). La no reactiva es estática: siempre se ve igual sin importar tu rendimiento. La reactiva cuesta aproximadamente 400 CP más en el tiro final.
+            </p>
+
+            <h3 class="articulo__subtitulo-interno">¿Qué significa 'maxear' un arma mítica?</h3>
+            <p class="articulo__texto">
+                Maxear un arma mítica significa completar los 5 niveles de miticismo, que desbloquean mejoras visuales como miras personalizadas, efectos de partículas, animaciones de recarga y una animación de muerte completamente nueva. No afecta las estadísticas de daño: es puramente cosmético. Cuesta aproximadamente 4,670 tarjetas de miticismo adicionales.
+            </p>
+
+            <h3 class="articulo__subtitulo-interno">¿Vale la pena gastar CP en ruletas o mejor esperar ofertas?</h3>
+            <p class="articulo__texto">
+                Depende de tu presupuesto y de la urgencia que tengas. Las ruletas de temporada suelen tener mejor relación calidad-precio que las permanentes. Si no tienes prisa, espera a ofertas de aniversario (octubre) o colaboraciones especiales donde los descuentos pueden ser del 20-30%. Usa siempre la calculadora antes de tirar para no gastar de más.
+            </p>
+
+            <h3 class="articulo__subtitulo-interno">¿Los CP de cuentas venezolanas son realmente más baratos?</h3>
+            <p class="articulo__texto">
+                Sí. Las cuentas creadas en Venezuela tienen un costo base de 10 CP por tiro, mientras que en Estados Unidos cuesta 30 CP por tiro. Esto significa que completar una ruleta cuesta la mitad o un tercio de lo que paga un jugador norteamericano. Es una de las ventajas geográficas del juego y una de las razones por las que muchos jugadores venezolanos pueden tener armas legendarias sin gastar fortunas.
+            </p>
+
+            <h3 class="articulo__subtitulo-interno">¿Cuánto cuesta en dólares completar una ruleta legendaria?</h3>
+            <p class="articulo__texto">
+                En una cuenta venezolana, completar una ruleta legendaria reactiva cuesta aproximadamente $30-35 USD en CP, según los precios de la tienda. Esto puede variar según las ofertas vigentes y la tienda de aplicaciones que uses. Para armas míticas con maxeo completo, el costo puede llegar a $50-70 USD.
             </p>
         </section>
     </main>
@@ -138,9 +532,13 @@
     </footer>
 
     <script src="javascript/calculadora-codm.js"></script>
-
     <script src="javascript/cookies.js" defer></script>
-
+    <script src="javascript/articulo-mejoras.js" defer></script>
     <script src="javascript/scrolltop.js" defer></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
 </body>
 </html>
