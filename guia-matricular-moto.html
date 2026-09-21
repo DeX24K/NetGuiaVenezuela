@@ -6,7 +6,10 @@
     <title>Cómo Matricular una Moto en Venezuela 2026: Requisitos y Costos (INTT)</title>
     <meta name="description" content="Pasos para matricular una moto en Venezuela 2026 ante el INTT: requisitos, boleta de tasas por cilindrada, placas y título de propiedad. Guía paso a paso.">
     <link rel="stylesheet" href="css/articulos-base.css">
+    <link rel="stylesheet" href="css/articulo-mejoras.css">
     <link rel="icon" type="image/png" href="img/xds.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00b4d8">
 
     <meta property="og:site_name" content="NetGuiaVenezuela">
     <meta property="og:type" content="article">
@@ -57,17 +60,42 @@
     <script src="javascript/analytics.js" defer></script>
 </head>
 <body>
+    <div class="progreso-lectura"></div>
+
     <header class="cabecera-articulo">
         <a href="index.html" class="cabecera-articulo__volver">← Volver al Inicio</a>
         <div class="cabecera-articulo__logo">NetGuia<strong>Motos</strong></div>
     </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span class="breadcrumbs__sep">›</span>
+        <a href="guias.html#seccion-motos">Motos</a>
+        <span class="breadcrumbs__sep">›</span>
+        <span>Matricular una Moto</span>
+    </nav>
 
     <main class="articulo">
         <header class="articulo__header">
             <span class="articulo__categoria">🏍️ Guías de Compra y Repuestos</span>
             <h1 class="articulo__titulo">Cómo Matricular una Moto en Venezuela (2026)</h1>
             <p class="articulo__fecha">Actualizado en septiembre de 2026</p>
+            <div class="articulo__meta">
+                <span class="articulo__meta-item"><span class="articulo__meta-icon">📅</span> Septiembre 2026</span>
+            </div>
         </header>
+
+        <div class="articulo__toc">
+            <div class="articulo__toc-titulo">Contenido</div>
+            <ul class="articulo__toc-lista"></ul>
+        </div>
+
+        <div class="toc-wrapper">
+            <div class="articulo__toc">
+                <div class="articulo__toc-titulo">En esta guía</div>
+                <ul class="articulo__toc-lista"></ul>
+            </div>
+        </div>
 
         <section class="articulo__contenido">
             <p class="articulo__introduccion">
@@ -119,6 +147,14 @@
             <h3 class="articulo__subtitulo-interno">¿Pierdo el trámite si vendo la moto antes de recibir el título?</h3>
             <p class="articulo__texto">Es mejor esperar a tener el título a tu nombre para formalizar la venta. Sin título registrado, la venta se complica y el comprador validará el estatus antes de pagarte.</p>
         </section>
+
+        <div class="compartir"></div>
+
+        <div class="articulo__newsletter">
+            <div class="articulo__newsletter-titulo">¿Te fue útil esta guía?</div>
+            <p class="articulo__newsletter-texto">Compártela con alguien que la necesite y explora nuestras otras guías.</p>
+            <a href="guias.html" style="display:inline-block;background:var(--color-principal);color:#fff;padding:10px 24px;border-radius:999px;text-decoration:none;font-weight:700;font-size:0.9rem;">Ver todas las guías →</a>
+        </div>
     </main>
 
     <footer class="pie-pagina">
@@ -126,7 +162,12 @@
     </footer>
 
     <script src="javascript/cookies.js" defer></script>
-
+    <script src="javascript/articulo-mejoras.js" defer></script>
     <script src="javascript/scrolltop.js" defer></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+    }
+    </script>
 </body>
 </html>

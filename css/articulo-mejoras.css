@@ -1,0 +1,235 @@
+/* ==========================================================================
+   ARTÍCULO MEJORAS - Progreso, TOC, Compartir, Breadcrumbs
+   ========================================================================== */
+
+/* --- Progress Bar --- */
+.progreso-lectura {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-principal), #90e0ef);
+    z-index: 9999;
+    transition: width 0.1s linear;
+}
+
+/* --- Breadcrumbs --- */
+.breadcrumbs {
+    max-width: 800px;
+    margin: 1rem auto 0;
+    padding: 0 2.5rem;
+    font-size: 0.82rem;
+    color: var(--color-muted);
+}
+
+.breadcrumbs a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs__sep {
+    margin: 0 6px;
+    opacity: 0.5;
+}
+
+/* --- Reading Time + Meta --- */
+.articulo__meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.articulo__meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.82rem;
+    color: var(--color-muted);
+}
+
+.articulo__meta-icon {
+    font-size: 0.9rem;
+}
+
+/* --- Share Buttons --- */
+.compartir {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.compartir__label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.compartir__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.compartir__btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.compartir__btn--whatsapp { background: #25D366; }
+.compartir__btn--twitter { background: #1DA1F2; }
+.compartir__btn--telegram { background: #0088cc; }
+
+/* --- Table of Contents (TOC) --- */
+.toc-wrapper {
+    display: none;
+}
+
+.articulo__toc {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.articulo__toc-titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-oscuro);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.articulo__toc-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.articulo__toc-lista li {
+    margin-bottom: 0.3rem;
+}
+
+.articulo__toc-lista a {
+    display: block;
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 0.88rem;
+    padding: 4px 0 4px 12px;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
+    line-height: 1.4;
+}
+
+.articulo__toc-lista a:hover,
+.articulo__toc-lista a.activo {
+    color: var(--color-principal);
+    border-left-color: var(--color-principal);
+    background: var(--color-principal-alpha);
+    border-radius: 0 6px 6px 0;
+}
+
+.articulo__toc-lista .toc-h3 {
+    padding-left: 24px;
+    font-size: 0.84rem;
+}
+
+/* --- TOC Flotante (desktop sidebar) --- */
+@media (min-width: 1100px) {
+    .toc-wrapper {
+        display: block;
+        position: fixed;
+        top: 100px;
+        left: calc(50% + 440px);
+        width: 220px;
+        z-index: 100;
+    }
+
+    .articulo__toc {
+        background: transparent;
+        border: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .articulo__toc-titulo {
+        font-size: 0.75rem;
+        color: var(--color-muted);
+    }
+
+    .articulo__toc-lista a {
+        font-size: 0.78rem;
+        padding: 3px 0 3px 10px;
+    }
+}
+
+/* --- Newsletter CTA en artículos --- */
+.articulo__newsletter {
+    background: linear-gradient(135deg, #1d2d44 0%, #0d1b2a 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    margin: 2.5rem 0;
+    color: #fff;
+}
+
+.articulo__newsletter-titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.articulo__newsletter-texto {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 1rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .breadcrumbs {
+        padding: 0 1rem;
+        font-size: 0.78rem;
+    }
+
+    .compartir {
+        flex-wrap: wrap;
+    }
+
+    .articulo__meta {
+        gap: 0.6rem;
+    }
+
+    .articulo__toc {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+    }
+
+    .articulo__newsletter {
+        padding: 1.5rem 1.2rem;
+        border-radius: 12px;
+    }
+}
