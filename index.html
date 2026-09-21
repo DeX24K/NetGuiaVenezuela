@@ -66,7 +66,12 @@
             <span class="cabecera__logo-texto">NetGuia<strong>Venezuela</strong></span>
         </a>
     </div>
-    <nav class="menu">
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+    </button>
+    <nav class="menu" id="menu-principal">
         <ul class="menu__lista">
             <li><a href="guia-gtu-sarem.html" class="menu__enlace">Trámites</a></li>
             <li><a href="guia-repuestos-motos.html" class="menu__enlace">Motos</a></li>
@@ -104,6 +109,25 @@
     </div>
 </section>
 
+<section class="stats-bar animar-entrada">
+    <div class="stats-bar__item">
+        <div class="stats-bar__numero" data-contar="32">0</div>
+        <div class="stats-bar__label">Guías</div>
+    </div>
+    <div class="stats-bar__item">
+        <div class="stats-bar__numero" data-contar="5">0</div>
+        <div class="stats-bar__label">Categorías</div>
+    </div>
+    <div class="stats-bar__item">
+        <div class="stats-bar__numero" data-contar="100">0</div>
+        <div class="stats-bar__label">% Gratis</div>
+    </div>
+    <div class="stats-bar__item">
+        <div class="stats-bar__numero" data-contar="2026">0</div>
+        <div class="stats-bar__label">Actualizado</div>
+    </div>
+</section>
+
 <nav class="categorias-bar">
     <a href="#tramites" class="categorias-bar__chip">
         <span class="categorias-bar__icon">📄</span>
@@ -127,7 +151,7 @@
     </a>
 </nav>
 
-<main class="categorias">
+<main class="categorias animar-entrada">
     <div class="categorias__grid">
 
         <article class="tarjeta-guia" id="tramites">
@@ -208,7 +232,7 @@
     </div>
 </main>
 
-<section class="destacadas">
+<section class="destacadas animar-entrada">
     <div class="destacadas__header">
         <h2 class="destacadas__titulo">Guías más buscadas</h2>
         <a href="guias.html" class="destacadas__ver-todas">Ver todas →</a>
@@ -245,7 +269,7 @@
     </div>
 </section>
 
-<section class="cta-banner">
+<section class="cta-banner animar-entrada">
     <div class="cta-banner__contenido">
         <h2 class="cta-banner__titulo">Tu guía completa de Venezuela</h2>
         <p class="cta-banner__texto">32+ guías prácticas para resolver trámites, mover tu dinero y entender el día a día.</p>
@@ -289,6 +313,7 @@
     </div>
 </footer>
 
+<script src="javascript/ui.js" defer></script>
 <script src="javascript/cookies.js" defer></script>
 <script src="javascript/scrolltop.js" defer></script>
 </body>
