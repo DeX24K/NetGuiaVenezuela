@@ -209,6 +209,330 @@ const baseDatosRepuestos = {
             pagos: ["cashea"],
             detalle: "Calza en los mismos soportes laterales del Toro Fox y mejora radicalmente la iluminación nocturna." 
         }
+    ],
+    yamaha_ybr: [
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal CG150 (mismo diámetro)", 
+            precio: "$12 - $18", 
+            donde: "Repuesteras multimarcas y talleres especializados en Yamaha (Quinta Crespo / Bello Monte).",
+            pagos: ["cashea", "krece"],
+            detalle: "El motor YBR comparte medidas con el CG150. Usa pistón de 57mm para mantener la compresión original." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Empire Owen", 
+            precio: "$4 - $7", 
+            donde: "Agencias Yamaha y tiendas multimarcas de confianza.",
+            pagos: ["cashea"],
+            detalle: "Calzan en la mordaza estándar del YBR. Limpia el disco con desengrasante antes de instalar." 
+        },
+        { 
+            repuesto: "Kit de Cilindro 150cc", 
+            marca: "Universal CG150 (Yamaha/Axis)", 
+            precio: "$35 - $50", 
+            donde: "Distribuidoras oficiales Yamaha y grandes repuesteras del eje central.",
+            pagos: ["cashea", "krece"],
+            detalle: "Mismo diámetro de 57mm. Incluye pistón, aros y clip. Devuelve la potencia de fábrica." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal Yamaha 150cc", 
+            precio: "$3 - $5", 
+            donde: "Cualquier tienda de repuestos de motos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo cada 2,000 km. Usar filtro de buena marca evita desgaste prematuro del motor." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$25 - $35", 
+            donde: "Concesionarios Yamaha y tiendas de amortiguadores especializados.",
+            pagos: ["cashea", "krece"],
+            detalle: "Los de Horse son más rígidos, ideales para carga. Los Bera son más suaves para ciudad." 
+        }
+    ],
+    honda_cg: [
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal CG125/150", 
+            precio: "$10 - $16", 
+            donde: "Repuesteras Honda y talleres multimarcas en todas las ciudades principales.",
+            pagos: ["cashea"],
+            detalle: "El Honda CG es la moto más común de Venezuela. Los repuestos universales CG le sirven perfecto." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 428 (Horse/Did)", 
+            precio: "$14 - $20", 
+            donde: "Tiendas oficiales Honda y mayoristas de cadenas (Av. Lisandro Alvarado).",
+            pagos: ["cashea", "krece"],
+            detalle: "Relación 428 es la estándar. Cadena DID o RK aguantan más que las genéricas." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos (Bello Monte / Av. La Limpia).",
+            pagos: ["cashea"],
+            detalle: "Si tu Honda CG tiene tirones o no arranca bien, el carburador es casi siempre el culpable." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK CR8EH-9", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras eléctricas y tiendas de motos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "La CR8EH-9 es la bujía estándar del CG. Cámbiala cada 5,000 km para mantener el consumo bajo." 
+        },
+        { 
+            repuesto: "Switch de Encendido", 
+            marca: "Universal Honda CG125/150", 
+            precio: "$8 - $14", 
+            donde: "Repuesteras eléctricas especializadas en motos.",
+            pagos: ["cashea"],
+            detalle: "Incluye llave, candado y cables. Si tu llave no gira o el interruptor falla, es hora de cambiarlo." 
+        }
+    ],
+    suzuki_gn: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 428 (Horse/DID)", 
+            precio: "$14 - $20", 
+            donde: "Repuesteras multimarcas y concesionarios Suzuki.",
+            pagos: ["cashea", "krece"],
+            detalle: "La Suzuki GN 125 usa relación 428 igual que las motos chinas. Cadena DID recomendada." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 (originales)", 
+            precio: "$5 - $8", 
+            donde: "Agencias oficiales Suzuki y tiendas multimarcas de confianza.",
+            pagos: ["cashea"],
+            detalle: "Las originales Suzuki frenan mejor que las genéricas. Si no consigues, las de Owen calzan también." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Tiendas oficiales Suzuki y grandes pasajes comerciales.",
+            pagos: ["cashea", "krece"],
+            detalle: "La GN tiene buena caña trasera. Los amortiguadores aftermarket le dan más confort en carretera." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Suzuki GN 125 (originales)", 
+            precio: "$3 - $5", 
+            donde: "Concesionarios Suzuki y repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "El filtro de GN es tipo espuma. Límpialo cada 3,000 km y reemplázalo cada 10,000 km." 
+        }
+    ],
+    bera_storm: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$15 - $20", 
+            donde: "Concesionarios Bera y tiendas multimarcas en avenidas principales.",
+            pagos: ["cashea", "krece"],
+            detalle: "La Storm usa la misma relación estándar. Compatible con todas las marcas 428." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Empire Owen / Yamaha YBR", 
+            precio: "$5 - $8", 
+            donde: "Tiendas oficiales Bera y repuesteras de frenos especializados.",
+            pagos: ["cashea"],
+            detalle: "La mordaza de la Storm es igual a la del YBR. Calzan sin problemas." 
+        },
+        { 
+            repuesto: "Kit de Cilindro 150cc", 
+            marca: "Universal CG150 (Bera/Toro)", 
+            precio: "$35 - $45", 
+            donde: "Distribuidoras Bera oficiales y talleres grandes.",
+            pagos: ["cashea", "krece"],
+            detalle: "Mismo motor CG150. El kit completo incluye pistón, aros, cilindro y empaques." 
+        },
+        { 
+            repuesto: "Faro LED Delantero", 
+            marca: "Universal 7 pulgadas", 
+            precio: "$20 - $30", 
+            donde: "Tiendas de accesorios LED y repuestos de iluminación.",
+            pagos: ["cashea"],
+            detalle: "Calza con soportes estándar. Mejora la visibilidad nocturna un 300%." 
+        }
+    ],
+    keeway_rkr: [
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal CG150", 
+            precio: "$12 - $18", 
+            donde: "Repuesteras Keeway y tiendas multimarcas (Av. Constitución Maracay).",
+            pagos: ["cashea"],
+            detalle: "El RKR150 usa motor CG. Los repuestos universales le funcionan perfecto." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse 428", 
+            precio: "$15 - $20", 
+            donde: "Concesionarios Keeway y mayoristas de cadenas.",
+            pagos: ["cashea", "krece"],
+            detalle: "Relación 428 estándar. Cadena de 106 eslabones." 
+        },
+        { 
+            repuesto: "Pastillas de Freno", 
+            marca: "Suzuki GN 125", 
+            precio: "$4 - $7", 
+            donde: "Tiendas multimarcas a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "La mordaza del RKR es compatible con las pastillas de la GN 125." 
+        }
+    ],
+    yamaha_fz: [
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal 150cc", 
+            precio: "$14 - $20", 
+            donde: "Repuesteras Yamaha y talleres especializados.",
+            pagos: ["cashea", "krece"],
+            detalle: "El FZ150 tiene motor algo diferente al CG. Asegúrate de indicar modelo exacto al comprar." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Yamaha FZ150 (originales)", 
+            precio: "$6 - $10", 
+            donde: "Agencias Yamaha y tiendas de frenos especializados.",
+            pagos: ["cashea"],
+            detalle: "Las originales Yamaha frenan excelente. Las genéricas también sirven pero duran menos." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Yamaha FZ150 (originales) / Bera", 
+            precio: "$28 - $40", 
+            donde: "Concesionarios Yamaha y tiendas de amortiguadores.",
+            pagos: ["cashea", "krece"],
+            detalle: "El FZ usa amortiguadores más largos que el CG. No uses los de otra moto sin verificar medida." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Yamaha 150cc", 
+            precio: "$3 - $6", 
+            donde: "Cualquier tienda de repuestos de motos.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo cada 2,000 km. Usa siempre filtro de marca para proteger el motor." 
+        }
+    ],
+    empire_gt: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Empire Keeway y tiendas multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "La GT comparte repuestos con el Owen. Misma relación, misma compatible." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Owen", 
+            precio: "$4 - $7", 
+            donde: "Agencias Empire y repuesteras de frenos.",
+            pagos: ["cashea"],
+            detalle: "Las pastillas GN calzan perfecto en la mordaza de la GT." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la GT falla en frío o gasta mucha gasolina, el carburador es lo primero que debes revisar." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Empire y grandes pasajes comerciales.",
+            pagos: ["cashea", "krece"],
+            detalle: "Los Horse son más duraderos para uso intensivo de delivery." 
+        }
+    ],
+    toro_drak: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$15 - $20", 
+            donde: "Tiendas oficiales Toro y distribuidores multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "La Drak usa la misma relación estándar que todas las 150cc." 
+        },
+        { 
+            repuesto: "Pastillas de Freno", 
+            marca: "Empire Horse / Owen", 
+            precio: "$4 - $7", 
+            donde: "Concesionarios Toro y zonas comerciales.",
+            pagos: ["cashea"],
+            detalle: "Compatible con las pastillas de la mayoría de motos 150cc chinas." 
+        },
+        { 
+            repuesto: "Faro LED Delantero", 
+            marca: "Universal 7 pulgadas", 
+            precio: "$20 - $30", 
+            donde: "Tiendas de accesorios LED.",
+            pagos: ["cashea"],
+            detalle: "La Drak tiene soporte estándar para faros redondos de 7 pulgadas." 
+        }
+    ],
+    md_arizona: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$14 - $20", 
+            donde: "Tiendas MD y repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "La Arizona comparte la misma cadena 428 que la mayoría de motos venezolanas." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125", 
+            precio: "$4 - $7", 
+            donde: "Repuesteras de frenos y tiendas de motos.",
+            pagos: ["cashea"],
+            detalle: "Las pastillas GN son las más fáciles de conseguir y calzan en la Arizona." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Toro", 
+            precio: "$22 - $30", 
+            donde: "Locales de repuestos generales en zonas moteras.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar. Los Horse son más reforzados para carga." 
+        }
+    ],
+    honda_navi: [
+        { 
+            repuesto: "Correa de Transmisión", 
+            marca: "Gates PowerLink (GY6 110cc)", 
+            precio: "$10 - $15", 
+            donde: "Tiendas especializadas en scooters y motos automáticas.",
+            pagos: ["cashea"],
+            detalle: "La Navi usa transmisión CVT como los scooters. La correa Gates dura más que las genéricas." 
+        },
+        { 
+            repuesto: "Dados de Variador (Rollers)", 
+            marca: "Universal GY6 110cc", 
+            precio: "$5 - $8", 
+            donde: "Talleres especializados en motos automáticas.",
+            pagos: ["cashea"],
+            detalle: "Usa dados de 7-9 gramos para mantener el balance entre salida y velocidad final." 
+        },
+        { 
+            repuesto: "Pastillas de Freno", 
+            marca: "Honda Navi (originales)", 
+            precio: "$5 - $8", 
+            donde: "Agencias Honda y tiendas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "La Navi tiene freno delantero a disco y trasero a tambor. Asegúrate de pedir la medida correcta." 
+        }
     ]
 };
 
