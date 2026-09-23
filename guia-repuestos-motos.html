@@ -158,6 +158,75 @@
                 <figcaption class="articulo__pie-foto">Repuestos compatibles para motocicletas en el mercado venezolano</figcaption>
             </figure>
 
+            <!-- BUSCADOR DE EQUIVALENCIAS - SECCIÓN DESTACADA -->
+            <div class="buscador-hero">
+                <h2 class="buscador-hero__titulo">Busca el repuesto perfecto para tu <span>moto</span></h2>
+                <p class="buscador-hero__subtitulo">Selecciona tu modelo y encuentra equivalencias, precios y dónde comprar con financiamiento</p>
+                
+                <div class="buscador-hero__stats">
+                    <span class="buscador-hero__stat"><span class="buscador-hero__stat-icon">🏍️</span> 30 motos</span>
+                    <span class="buscador-hero__stat"><span class="buscador-hero__stat-icon">🔧</span> 100+ repuestos</span>
+                    <span class="buscador-hero__stat"><span class="buscador-hero__stat-icon">💳</span> Cashea y Krece</span>
+                    <span class="buscador-hero__stat"><span class="buscador-hero__stat-icon">🇻🇪</span> Todo Venezuela</span>
+                </div>
+
+                <div class="buscador-motos">
+                    <div class="buscador-motos__icono">🔍</div>
+                    <div class="buscador-motos__encabezado">
+                        <h3>Encuentra tu repuesto ahora</h3>
+                        <p>Elige tu moto y el repuesto que necesitas. Te mostramos el precio, dónde comprar y cómo financiar.</p>
+                    </div>
+
+                    <div class="buscador-motos__filtros-grupo">
+                        <div class="buscador-motos__filtro">
+                            <label for="select-moto"><strong>1. Modelo de moto:</strong></label>
+                            <select id="select-moto" class="buscador-motos__select">
+                                <option value="">-- Elige un modelo --</option>
+                                <option value="owen">Empire Owen GS 150</option>
+                                <option value="horse">Empire Horse RL / New Horse 150cc</option>
+                                <option value="bera_sbr">Bera SBR 150 / Socialista</option>
+                                <option value="toro_jaguar">Toro Jaguar 150</option>
+                                <option value="md_tucan">MD Haojin Tucán 150</option>
+                                <option value="bera_br200">Bera BR 200 / Milan (Scooter)</option>
+                                <option value="empire_express">Empire Keeway Express 150</option>
+                                <option value="toro_fox">Toro Fox 150</option>
+                                <option value="yamaha_ybr">Yamaha YBR 125 / 150</option>
+                                <option value="honda_cg">Honda CG 125 / 150</option>
+                                <option value="suzuki_gn">Suzuki GN 125</option>
+                                <option value="bera_storm">Bera Storm 150</option>
+                                <option value="keeway_rkr">Keeway RKR 150</option>
+                                <option value="yamaha_fz">Yamaha FZ 150</option>
+                                <option value="empire_gt">Empire GT 150</option>
+                                <option value="toro_drak">Toro Drak 150</option>
+                                <option value="md_arizona">MD Arizona 150</option>
+                                <option value="honda_navi">Honda Navi 110</option>
+                                <option value="empire_xpress">Empire Keeway Xpress 150</option>
+                                <option value="empire_outlook">Empire Keeway Outlook 150</option>
+                                <option value="empire_thunder">Empire Keeway Thunder 150</option>
+                                <option value="bera_br150">Bera BR150</option>
+                                <option value="bera_brz">Bera BRZ 250</option>
+                                <option value="tvs_apache">TVS Apache RTR 200</option>
+                                <option value="tvs_hlx">TVS Star HLX 150</option>
+                                <option value="italika_ft">Italika FT150</option>
+                                <option value="italika_dm">Italika DM150</option>
+                                <option value="keeway_rk">Keeway RK 200</option>
+                            </select>
+                        </div>
+
+                        <div class="buscador-motos__filtro">
+                            <label for="select-repuesto"><strong>2. ¿Qué repuesto buscas?</strong></label>
+                            <select id="select-repuesto" class="buscador-motos__select" disabled>
+                                <option value="">-- Selecciona primero una moto --</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="resultado-unico-contenedor" class="buscador-motos__resultado-contenedor">
+                        <p class="buscador-motos__placeholder">Selecciona los datos arriba para mostrar la equivalencia, precios y locales con financiamiento.</p>
+                    </div>
+                </div>
+            </div>
+
             <h2 class="articulo__subtitulo">Por qué muchas motos comparten los mismos repuestos</h2>
             <p class="articulo__texto">
                 Para entender por qué puedes usar un pistón de una marca en otra moto, necesitas conocer un dato fundamental: la mayoría de las motos de 150cc que se venden en Venezuela utilizan el <strong>motor CG150</strong>, una plataforma desarrollada originalmente por Honda y que ha sido replicada y adaptada por docenas de fabricantes en China y otros países asiáticos. Este motor tiene especificaciones mecánicas idénticas o muy similares independientemente de la marca que monte la moto, lo que significa que componentes como el pistón, los aros, el cilindro, los retenedores, los empaques, la cadena de distribución, la bomba de aceite y muchos otros elementos internos son intercambiables.
@@ -401,61 +470,6 @@
                 <img src="img/aceites-lubricantes-moto.jpg" alt="Aceites y lubricantes recomendados para motocicletas 150cc" loading="lazy" class="articulo__imagen">
                 <figcaption class="articulo__pie-foto">Aceites y lubricantes recomendados para motocicletas 150cc</figcaption>
             </figure>
-
-            <h2 class="articulo__subtitulo">Buscador instantáneo de equivalencias</h2>
-            <p class="articulo__texto">
-                Utiliza el buscador interactivo que encontrarás a continuación para identificar la alternativa exacta de repuesto para tu moto, su precio estimado, dónde comprarla a nivel nacional y qué opciones de financiamiento aplican. Solo necesitas seleccionar el modelo de tu moto y el repuesto que buscas:
-            </p>
-
-            <div class="buscador-motos">
-                <div class="buscador-motos__filtros-grupo">
-                    <div class="buscador-motos__filtro">
-                        <label for="select-moto" class="articulo__texto"><strong>1. Modelo de moto:</strong></label>
-                        <select id="select-moto" class="buscador-motos__select">
-                            <option value="">-- Elige un modelo --</option>
-                            <option value="owen">Empire Owen GS 150</option>
-                            <option value="horse">Empire Horse RL / New Horse 150cc</option>
-                            <option value="bera_sbr">Bera SBR 150 / Socialista</option>
-                            <option value="toro_jaguar">Toro Jaguar 150</option>
-                            <option value="md_tucan">MD Haojin Tucán 150</option>
-                            <option value="bera_br200">Bera BR 200 / Milan (Scooter)</option>
-                            <option value="empire_express">Empire Keeway Express 150</option>
-                            <option value="toro_fox">Toro Fox 150</option>
-                            <option value="yamaha_ybr">Yamaha YBR 125 / 150</option>
-                            <option value="honda_cg">Honda CG 125 / 150</option>
-                            <option value="suzuki_gn">Suzuki GN 125</option>
-                            <option value="bera_storm">Bera Storm 150</option>
-                            <option value="keeway_rkr">Keeway RKR 150</option>
-                            <option value="yamaha_fz">Yamaha FZ 150</option>
-                            <option value="empire_gt">Empire GT 150</option>
-                            <option value="toro_drak">Toro Drak 150</option>
-                            <option value="md_arizona">MD Arizona 150</option>
-                            <option value="honda_navi">Honda Navi 110</option>
-                            <option value="empire_xpress">Empire Keeway Xpress 150</option>
-                            <option value="empire_outlook">Empire Keeway Outlook 150</option>
-                            <option value="empire_thunder">Empire Keeway Thunder 150</option>
-                            <option value="bera_br150">Bera BR150</option>
-                            <option value="bera_brz">Bera BRZ 250</option>
-                            <option value="tvs_apache">TVS Apache RTR 200</option>
-                            <option value="tvs_hlx">TVS Star HLX 150</option>
-                            <option value="italika_ft">Italika FT150</option>
-                            <option value="italika_dm">Italika DM150</option>
-                            <option value="keeway_rk">Keeway RK 200</option>
-                        </select>
-                    </div>
-
-                    <div class="buscador-motos__filtro">
-                        <label for="select-repuesto" class="articulo__texto"><strong>2. ¿Qué repuesto buscas?</strong></label>
-                        <select id="select-repuesto" class="buscador-motos__select" disabled>
-                            <option value="">-- Selecciona primero una moto --</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div id="resultado-unico-contenedor" class="buscador-motos__resultado-contenedor">
-                    <p class="buscador-motos__placeholder">Selecciona los datos arriba para mostrar la equivalencia, precios y locales con financiamiento.</p>
-                </div>
-            </div>
 
             <h2 class="articulo__subtitulo">Tabla de equivalencias de repuestos más buscados</h2>
             <p class="articulo__texto">

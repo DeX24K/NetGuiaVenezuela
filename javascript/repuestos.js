@@ -40,6 +40,46 @@ const baseDatosRepuestos = {
             donde: "Zonas comerciales clave (Bello Monte Caracas / Av. La Limpia Maracaibo).",
             pagos: ["cashea"],
             detalle: "Viene listo para montar. Optimiza el consumo de gasolina si el original ya tiene desgaste." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos para motos.",
+            pagos: ["cashea"],
+            detalle: "La bujía estándar para motores CG150. Cámbiala cada 5,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km. El 10W40 es ideal para climas tropicales." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas y tiendas de aceites.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Empire Keeway y grandes pasajes comerciales.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar. Los Horse son más reforzados para carga." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos Redondos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar para motos 150cc." 
         }
     ],
     horse: [
@@ -74,6 +114,54 @@ const baseDatosRepuestos = {
             donde: "Tiendas oficiales EK y grandes pasajes comerciales de repuestos.",
             pagos: ["cashea", "krece"],
             detalle: "Tienen la misma distancia entre ojos. Son ideales si trabajas cargado o haciendo delivery." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Owen", 
+            precio: "$4 - $7", 
+            donde: "Repuesteras de frenos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Calzan en la mordaza estándar del Horse." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Empire Keeway y tiendas multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "Relación 428 estándar. Compatible con todas las marcas." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Suzuki GN 125", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km para el mejor rendimiento." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro, reemplaza el cable." 
         }
     ],
     bera_sbr: [
@@ -108,6 +196,54 @@ const baseDatosRepuestos = {
             donde: "Distribuidoras Bera oficiales y talleres grandes en Quinta Crespo o Av. Constitución (Maracay).",
             pagos: ["cashea", "krece"],
             detalle: "Mismo diámetro y carrera de pasador. Te devuelve la compresión original de fábrica." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Bera y tiendas multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "Relación 428 estándar. Compatible con todas las marcas." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Suzuki GN 125", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la SBR falla en frío, el carburador es lo primero que debes revisar." 
         }
     ],
     toro_jaguar: [
@@ -134,6 +270,62 @@ const baseDatosRepuestos = {
             donde: "Concesionarios Toro y zonas comerciales del eje central del país.",
             pagos: ["cashea", "krece"],
             detalle: "Calce milimétrico idéntico en la mordaza delantera estándar." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Suzuki GN 125 / Toro", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Cámbialo cada 3,000 km para mantener el motor limpio." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km. El 10W40 es ideal para climas tropicales." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas y tiendas de aceites.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables y guayas para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro o no desacopla bien, es hora de cambiar el cable." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Toro y tiendas de amortiguadores.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar. Los Horse son más reforzados para carga." 
+        },
+        { 
+            repuesto: "Farola Delantera (Faro LED)", 
+            marca: "Universal 7 pulgadas", 
+            precio: "$18 - $28", 
+            donde: "Tiendas de accesorios LED y iluminación.",
+            pagos: ["cashea"],
+            detalle: "Calza con soportes estándar. Mejora la visibilidad nocturna un 300%." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos Redondos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar. Asegúrate de que tengan buen ángulo de visión." 
         }
     ],
     md_tucan: [
@@ -152,6 +344,70 @@ const baseDatosRepuestos = {
             donde: "Tiendas multimarcas en la Av. Pedro León Torres (Barquisimeto) y Quinta Crespo.",
             pagos: ["cashea"],
             detalle: "La corona asienta perfecto en la manzana trasera del Tucán." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Owen", 
+            precio: "$4 - $7", 
+            donde: "Repuesteras de frenos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Compatible con las pastillas de la GN 125." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos para motos.",
+            pagos: ["cashea"],
+            detalle: "La bujía estándar para motores CG150. Cámbiala cada 5,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km para mantener el motor protegido." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada o el cable tiene fricción, reemplázalo." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si el Tucán falla en frío o gasta mucha gasolina, el carburador es el culpable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar para motos 150cc." 
         }
     ],
     bera_br200: [
@@ -170,9 +426,72 @@ const baseDatosRepuestos = {
             donde: "Talleres especializados en motos automáticas en las principales ciudades.",
             pagos: ["krece"],
             detalle: "Usa el peso estándar (14 gramos) para mantener el balance perfecto entre salida y velocidad final." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Bera BR200 (originales)", 
+            precio: "$5 - $8", 
+            donde: "Concesionarios Bera y tiendas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "La BR200 tiene freno delantero a disco. Asegúrate de pedir la medida correcta." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK CR8EH-9", 
+            precio: "$2 - $4", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "La bujía estándar para scooters GY6. Cámbiala cada 5,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Bera BR200 (originales)", 
+            precio: "$4 - $7", 
+            donde: "Concesionarios Bera y tiendas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "El filtro de scooter es tipo panel. Cámbialo cada 5,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Los scooters necesitan cambio de aceite cada 1,500-2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal Scooter GY6", 
+            precio: "$3 - $5", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite para mantener el motor limpio." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Bera BR200 (originales)", 
+            precio: "$25 - $35", 
+            donde: "Concesionarios Bera oficiales.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida. Los originales Bera tienen buena durabilidad." 
+        },
+        { 
+            repuesto: "Farola Delantera (Faro LED)", 
+            marca: "Universal Scooter", 
+            precio: "$15 - $25", 
+            donde: "Tiendas de accesorios LED.",
+            pagos: ["cashea"],
+            detalle: "Mejora la visibilidad nocturna. Calza con soportes estándar." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Scooter", 
+            precio: "$5 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales para scooters con rosca estándar." 
         }
     ],
-    // NUEVA MOTO ADICIONADA
     empire_express: [
         { 
             repuesto: "Amortiguadores Traseros", 
@@ -189,9 +508,72 @@ const baseDatosRepuestos = {
             donde: "Cualquier repuestera grande a nivel nacional.",
             pagos: ["cashea"],
             detalle: "Ajustan exacto en la campana trasera de la Express. Te dan un frenado firme sin chirridos." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Empire Keeway y tiendas multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "Relación 428 estándar. Compatible con todas las marcas." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Owen", 
+            precio: "$4 - $7", 
+            donde: "Repuesteras de frenos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Calzan en la mordaza de la Express." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Empire Express (originales)", 
+            precio: "$2 - $4", 
+            donde: "Concesionarios Empire Keeway.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km para el mejor rendimiento." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro, reemplaza el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la Express falla en frío, el carburador es lo primero que debes revisar." 
         }
     ],
-    // NUEVA MOTO ADICIONADA
     toro_fox: [
         { 
             repuesto: "Kit de Arrastre (Cadena/Piñón)", 
@@ -208,6 +590,70 @@ const baseDatosRepuestos = {
             donde: "Tiendas de accesorios de iluminación LED (Av. Baralt / Bello Monte).",
             pagos: ["cashea"],
             detalle: "Calza en los mismos soportes laterales del Toro Fox y mejora radicalmente la iluminación nocturna." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Empire Horse / Owen", 
+            precio: "$4 - $7", 
+            donde: "Repuesteras de frenos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Compatible con las pastillas de la mayoría de motos 150cc." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Toro y tiendas de amortiguadores.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     yamaha_ybr: [
@@ -250,6 +696,46 @@ const baseDatosRepuestos = {
             donde: "Concesionarios Yamaha y tiendas de amortiguadores especializados.",
             pagos: ["cashea", "krece"],
             detalle: "Los de Horse son más rígidos, ideales para carga. Los Bera son más suaves para ciudad." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 428 (Horse/DID)", 
+            precio: "$14 - $20", 
+            donde: "Tiendas oficiales Yamaha y mayoristas de cadenas.",
+            pagos: ["cashea", "krece"],
+            detalle: "Relación 428 estándar. Cadena DID o RK aguantan más que las genéricas." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK CR8EH-9", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras eléctricas y tiendas de motos.",
+            pagos: ["cashea"],
+            detalle: "La CR8EH-9 es la bujía estándar del YBR. Cámbiala cada 5,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km para mantener el motor protegido." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Yamaha YBR (originales)", 
+            precio: "$3 - $6", 
+            donde: "Concesionarios Yamaha y tiendas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "El filtro del YBR es tipo panel. Cámbialo cada 5,000 km." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal YBR", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro o no desacopla bien, reemplaza el cable." 
         }
     ],
     honda_cg: [
@@ -292,6 +778,46 @@ const baseDatosRepuestos = {
             donde: "Repuesteras eléctricas especializadas en motos.",
             pagos: ["cashea"],
             detalle: "Incluye llave, candado y cables. Si tu llave no gira o el interruptor falla, es hora de cambiarlo." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125", 
+            precio: "$4 - $7", 
+            donde: "Repuesteras de frenos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Calzan en la mordaza del Honda CG." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Honda y grandes pasajes comerciales.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar. Los Horse son más duraderos." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Honda CG (originales)", 
+            precio: "$3 - $5", 
+            donde: "Concesionarios Honda y tiendas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "El filtro del CG es tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km para el mejor rendimiento." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite cada 2,000 km." 
         }
     ],
     suzuki_gn: [
@@ -326,6 +852,54 @@ const baseDatosRepuestos = {
             donde: "Concesionarios Suzuki y repuesteras multimarcas.",
             pagos: ["cashea"],
             detalle: "El filtro de GN es tipo espuma. Límpialo cada 3,000 km y reemplázalo cada 10,000 km." 
+        },
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal GN125", 
+            precio: "$10 - $16", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "El motor GN es similar al CG. Los repuestos universales le sirven." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para la GN 125." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal GN125", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal GN125", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal GN125", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la GN falla en frío o gasta mucha gasolina, revisa el carburador." 
         }
     ],
     bera_storm: [
@@ -360,6 +934,54 @@ const baseDatosRepuestos = {
             donde: "Tiendas de accesorios LED y repuestos de iluminación.",
             pagos: ["cashea"],
             detalle: "Calza con soportes estándar. Mejora la visibilidad nocturna un 300%." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Bera y tiendas de amortiguadores.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro, reemplaza el cable." 
         }
     ],
     keeway_rkr: [
@@ -386,6 +1008,62 @@ const baseDatosRepuestos = {
             donde: "Tiendas multimarcas a nivel nacional.",
             pagos: ["cashea"],
             detalle: "La mordaza del RKR es compatible con las pastillas de la GN 125." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Keeway y tiendas de amortiguadores.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la RKR falla en frío, el carburador es lo primero que debes revisar." 
         }
     ],
     yamaha_fz: [
@@ -420,6 +1098,54 @@ const baseDatosRepuestos = {
             donde: "Cualquier tienda de repuestos de motos.",
             pagos: ["cashea"],
             detalle: "Cámbialo cada 2,000 km. Usa siempre filtro de marca para proteger el motor." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 520", 
+            precio: "$16 - $22", 
+            donde: "Tiendas de repuestos para motos deportivas.",
+            pagos: ["cashea", "krece"],
+            detalle: "La FZ usa cadena 520, más gruesa que la 428 de las 150cc estándar." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK CR8EH-9", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras eléctricas.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para la FZ150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Yamaha FZ150 (originales)", 
+            precio: "$4 - $7", 
+            donde: "Concesionarios Yamaha.",
+            pagos: ["cashea"],
+            detalle: "El filtro de la FZ es tipo panel. Cámbialo cada 5,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal FZ150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro, reemplaza el cable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$5 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     empire_gt: [
@@ -454,6 +1180,54 @@ const baseDatosRepuestos = {
             donde: "Concesionarios Empire y grandes pasajes comerciales.",
             pagos: ["cashea", "krece"],
             detalle: "Los Horse son más duraderos para uso intensivo de delivery." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Suzuki GN 125", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     toro_drak: [
@@ -480,6 +1254,62 @@ const baseDatosRepuestos = {
             donde: "Tiendas de accesorios LED.",
             pagos: ["cashea"],
             detalle: "La Drak tiene soporte estándar para faros redondos de 7 pulgadas." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Toro y tiendas de amortiguadores.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     md_arizona: [
@@ -506,6 +1336,62 @@ const baseDatosRepuestos = {
             donde: "Locales de repuestos generales en zonas moteras.",
             pagos: ["cashea", "krece"],
             detalle: "Misma medida estándar. Los Horse son más reforzados para carga." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la Arizona falla en frío, el carburador es lo primero que debes revisar." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     honda_navi: [
@@ -532,6 +1418,62 @@ const baseDatosRepuestos = {
             donde: "Agencias Honda y tiendas multimarcas.",
             pagos: ["cashea"],
             detalle: "La Navi tiene freno delantero a disco y trasero a tambor. Asegúrate de pedir la medida correcta." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK CR7HSA", 
+            precio: "$2 - $4", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para la Navi 110cc." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Honda Navi (originales)", 
+            precio: "$3 - $5", 
+            donde: "Concesionarios Honda.",
+            pagos: ["cashea"],
+            detalle: "El filtro de la Navi es tipo panel. Cámbialo cada 5,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W30", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$5 - $8", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "La Navi usa 10W30. Cámbialo cada 1,500-2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal GY6 110cc", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Honda Navi (originales)", 
+            precio: "$20 - $30", 
+            donde: "Concesionarios Honda.",
+            pagos: ["cashea"],
+            detalle: "Misma medida. Los originales Honda tienen buena durabilidad." 
+        },
+        { 
+            repuesto: "Farola Delantera (Faro LED)", 
+            marca: "Universal Scooter", 
+            precio: "$15 - $25", 
+            donde: "Tiendas de accesorios LED.",
+            pagos: ["cashea"],
+            detalle: "Mejora la visibilidad nocturna de la Navi." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Scooter", 
+            precio: "$4 - $7", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales para scooters con rosca estándar." 
         }
     ],
     // MOTOPOPULARES EN VENEZUELA 2026
@@ -567,6 +1509,54 @@ const baseDatosRepuestos = {
             donde: "Tiendas oficiales EK y grandes pasajes comerciales.",
             pagos: ["cashea", "krece"],
             detalle: "Los Horse son más duraderos para uso intensivo. Los Bera son más suaves para ciudad." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la Xpress falla en frío, el carburador es lo primero que debes revisar." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     empire_outlook: [
@@ -601,6 +1591,54 @@ const baseDatosRepuestos = {
             donde: "Tiendas de accesorios LED.",
             pagos: ["cashea"],
             detalle: "La Outlook tiene soporte estándar para faros redondos de 7 pulgadas." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Empire y tiendas de amortiguadores.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro, reemplaza el cable." 
         }
     ],
     empire_thunder: [
@@ -627,6 +1665,62 @@ const baseDatosRepuestos = {
             donde: "Zonas comerciales de repuestos.",
             pagos: ["cashea"],
             detalle: "Si la Thunder falla en frío, el carburador es lo primero que debes revisar." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Empire y tiendas de amortiguadores.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     bera_br150: [
@@ -661,6 +1755,54 @@ const baseDatosRepuestos = {
             donde: "Concesionarios Bera y grandes pasajes comerciales.",
             pagos: ["cashea", "krece"],
             detalle: "Los Horse son más reforzados para carga. Los Bera más suaves." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la BR150 falla en frío, el carburador es lo primero que debes revisar." 
         }
     ],
     bera_brz: [
@@ -687,6 +1829,62 @@ const baseDatosRepuestos = {
             donde: "Concesionarios Bera y tiendas multimarcas.",
             pagos: ["cashea"],
             detalle: "Cámbialo cada 2,500 km. El motor 250cc es más exigente con la lubricación." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK CR8EH-9", 
+            precio: "$2 - $4", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores 250cc." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Bera BRZ 250 (originales)", 
+            precio: "$4 - $7", 
+            donde: "Concesionarios Bera.",
+            pagos: ["cashea"],
+            detalle: "El filtro de la BRZ es tipo panel. Cámbialo cada 5,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Bera BRZ 250 (originales)", 
+            precio: "$30 - $45", 
+            donde: "Concesionarios Bera oficiales.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida. Los originales Bera tienen buena durabilidad." 
+        },
+        { 
+            repuesto: "Farola Delantera (Faro LED)", 
+            marca: "Universal 7 pulgadas", 
+            precio: "$20 - $30", 
+            donde: "Tiendas de accesorios LED.",
+            pagos: ["cashea"],
+            detalle: "Mejora la visibilidad nocturna. Calza con soportes estándar." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal BRZ250", 
+            precio: "$4 - $6", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro, reemplaza el cable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$5 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     tvs_apache: [
@@ -721,6 +1919,54 @@ const baseDatosRepuestos = {
             donde: "Concesionarios TVS oficiales.",
             pagos: ["cashea", "krece"],
             detalle: "La Apache usa monoshock trasero. No uses amortiguadores de otras motos sin verificar medida." 
+        },
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal 200cc", 
+            precio: "$15 - $22", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "El motor de la Apache es diferente al CG. Asegúrate de indicar modelo exacto." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK CR8EH-9", 
+            precio: "$2 - $4", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para la Apache 200." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal Apache 200", 
+            precio: "$3 - $5", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Embrague", 
+            marca: "Universal Apache 200", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si el embrague se siente duro, reemplaza el cable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "TVS Apache (originales)", 
+            precio: "$8 - $12", 
+            donde: "Concesionarios TVS.",
+            pagos: ["cashea"],
+            detalle: "Los originales TVS tienen mejor ángulo de visión que los universales." 
         }
     ],
     tvs_hlx: [
@@ -747,6 +1993,62 @@ const baseDatosRepuestos = {
             donde: "Repuesteras multimarcas.",
             pagos: ["cashea"],
             detalle: "La HLX 150 usa motor similar al CG. Los repuestos universales le sirven." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Toro", 
+            precio: "$22 - $30", 
+            donde: "Tiendas de repuestos para motos.",
+            pagos: ["cashea"],
+            detalle: "Misma medida estándar." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores 150cc." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "TVS HLX (originales)", 
+            precio: "$3 - $5", 
+            donde: "Concesionarios TVS.",
+            pagos: ["cashea"],
+            detalle: "El filtro es tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la HLX falla en frío, el carburador es lo primero que debes revisar." 
         }
     ],
    italika_ft: [
@@ -781,6 +2083,54 @@ const baseDatosRepuestos = {
             donde: "Tiendas de accesorios y repuestos para motos.",
             pagos: ["cashea"],
             detalle: "Los amortiguadores universales calzan si son los mismos ojos de paso." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la FT falla en frío, el carburador es lo primero que debes revisar." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     italika_dm: [
@@ -807,6 +2157,62 @@ const baseDatosRepuestos = {
             donde: "Zonas comerciales de repuestos.",
             pagos: ["cashea"],
             detalle: "Si la DM falla en frío o gasta mucha gasolina, revisa el carburador." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Toro", 
+            precio: "$22 - $30", 
+            donde: "Tiendas de repuestos para motos.",
+            pagos: ["cashea"],
+            detalle: "Misma medida estándar." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Espejos Retrovisores", 
+            marca: "Universal Motos", 
+            precio: "$4 - $8", 
+            donde: "Tiendas de accesorios para motos.",
+            pagos: ["cashea"],
+            detalle: "Universales con rosca estándar." 
         }
     ],
     keeway_rk: [
@@ -841,6 +2247,54 @@ const baseDatosRepuestos = {
             donde: "Concesionarios Keeway y grandes pasajes.",
             pagos: ["cashea", "krece"],
             detalle: "Misma medida estándar. Los Horse son más reforzados." 
+        },
+        { 
+            repuesto: "Bujía de Encendido", 
+            marca: "NGK D8EA", 
+            precio: "$2 - $3", 
+            donde: "Tiendas de repuestos eléctricos.",
+            pagos: ["cashea"],
+            detalle: "Bujía estándar para motores CG150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Aceite de Motor 10W40", 
+            marca: "Motul 5100 / Repsol 4T", 
+            precio: "$6 - $10", 
+            donde: "Tiendas de aceites y lubricantes.",
+            pagos: ["cashea"],
+            detalle: "Cambia el aceite cada 2,000 km." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Universal CG150", 
+            precio: "$2 - $4", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo junto con el aceite." 
+        },
+        { 
+            repuesto: "Cable de Acelerador", 
+            marca: "Universal CG150", 
+            precio: "$3 - $5", 
+            donde: "Tiendas de cables para motos.",
+            pagos: ["cashea"],
+            detalle: "Si la aceleración se siente pesada, cambia el cable." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la RK falla en frío, el carburador es lo primero que debes revisar." 
         }
     ]
 };
