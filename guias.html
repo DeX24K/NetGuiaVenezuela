@@ -53,7 +53,7 @@
 <header class="cabecera">
     <div class="cabecera__logo">
         <a href="index.html" class="cabecera__logo-link">
-            <img src="img/xds.png" alt="Logo NetGuiaVenezuela" class="cabecera__logo-img">
+            <img src="img/xds.png" alt="Logo NetGuiaVenezuela" class="cabecera__logo-img" loading="lazy">
             <span class="cabecera__logo-texto">NetGuia<strong>Venezuela</strong></span>
         </a>
     </div>
@@ -101,6 +101,10 @@
         <span class="categorias-bar__label">Vivir</span>
     </a>
 </nav>
+
+<div class="guias-buscador">
+    <input type="text" id="buscador-guias" class="guias-buscador__input" placeholder="Buscar guía..." autocomplete="off">
+</div>
 
 <main class="guias-contenido">
 
@@ -208,5 +212,31 @@
 <script src="javascript/dia.js" defer></script>
 <script src="javascript/cookies.js" defer></script>
 <script src="javascript/scrolltop.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const input = document.getElementById('buscador-guias');
+    if (!input) return;
+    const enlaces = document.querySelectorAll('.guia-link');
+
+    input.addEventListener('input', function() {
+        const termino = this.value.toLowerCase().trim();
+        enlaces.forEach(function(enlace) {
+            const texto = enlace.textContent.toLowerCase();
+            const seccion = enlace.closest('.guias-seccion');
+            if (termino === '') {
+                enlace.style.display = '';
+            } else if (texto.includes(termino)) {
+                enlace.style.display = '';
+            } else {
+                enlace.style.display = 'none';
+            }
+        });
+        document.querySelectorAll('.guias-seccion').forEach(function(seccion) {
+            const visibles = seccion.querySelectorAll('.guia-link:not([style*="display: none"])');
+            seccion.style.display = visibles.length === 0 ? 'none' : '';
+        });
+    });
+});
+</script>
 </body>
 </html>

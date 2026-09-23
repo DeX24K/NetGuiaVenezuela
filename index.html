@@ -51,6 +51,21 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://netguiavenezuela.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Trámites", "item": "https://netguiavenezuela.com/guias.html#seccion-tramites"},
+        {"@type": "ListItem", "position": 3, "name": "Motos", "item": "https://netguiavenezuela.com/guias.html#seccion-motos"},
+        {"@type": "ListItem", "position": 4, "name": "Finanzas", "item": "https://netguiavenezuela.com/guias.html#seccion-finanzas"},
+        {"@type": "ListItem", "position": 5, "name": "Gaming", "item": "https://netguiavenezuela.com/guias.html#seccion-gaming"},
+        {"@type": "ListItem", "position": 6, "name": "Vivir", "item": "https://netguiavenezuela.com/guias.html#seccion-vivir"}
+      ]
+    }
+    </script>
+
     <script src="javascript/analytics.js" defer></script>
 </head>
 <body>
@@ -64,7 +79,7 @@
 <header class="cabecera">
     <div class="cabecera__logo">
         <a href="index.html" class="cabecera__logo-link">
-            <img src="img/xds.png" alt="Logo NetGuiaVenezuela" class="cabecera__logo-img">
+            <img src="img/xds.png" alt="Logo NetGuiaVenezuela" class="cabecera__logo-img" loading="lazy">
             <span class="cabecera__logo-texto">NetGuia<strong>Venezuela</strong></span>
         </a>
     </div>
@@ -271,6 +286,43 @@
     </div>
 </section>
 
+<section class="populares animar-entrada">
+    <div class="populares__header">
+        <h2 class="populares__titulo">Lo más leído</h2>
+        <a href="guias.html" class="populares__ver-todas">Ver todas →</a>
+    </div>
+    <div class="populares__grid">
+        <a href="guia-pasaporte.html" class="populares__card">
+            <div class="populares__img" style="background-image: url('img/tramites.png')"></div>
+            <div class="populares__info">
+                <span class="populares__cat">Trámites</span>
+                <h3 class="populares__card-titulo">Cómo sacar el pasaporte 2026</h3>
+            </div>
+        </a>
+        <a href="guia-gnv-moto.html" class="populares__card">
+            <div class="populares__img" style="background-image: url('img/motos.png')"></div>
+            <div class="populares__info">
+                <span class="populares__cat">Motos</span>
+                <h3 class="populares__card-titulo">Kit GNV (metano) para moto</h3>
+            </div>
+        </a>
+        <a href="tasa-bcv-hoy.html" class="populares__card">
+            <div class="populares__img" style="background-image: url('img/billeteras.png')"></div>
+            <div class="populares__info">
+                <span class="populares__cat">Finanzas</span>
+                <h3 class="populares__card-titulo">Tasa BCV hoy (dólar, euro, USDT)</h3>
+            </div>
+        </a>
+        <a href="guia-cashea.html" class="populares__card">
+            <div class="populares__img" style="background-image: url('img/gaming.png')"></div>
+            <div class="populares__info">
+                <span class="populares__cat">Vivir</span>
+                <h3 class="populares__card-titulo">Cómo funciona Cashea</h3>
+            </div>
+        </a>
+    </div>
+</section>
+
 <section class="cta-banner animar-entrada">
     <div class="cta-banner__contenido">
         <h2 class="cta-banner__titulo">Tu guía completa de Venezuela</h2>
@@ -321,6 +373,9 @@
     </div>
 </footer>
 
+<a href="https://wa.me/584141234567?text=Hola,%20tengo%20una%20pregunta%20sobre%20NetGuiaVenezuela" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.054 9.378L1.054 31.2l6.062-1.98A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.332 22.608c-.39 1.1-1.932 2.014-3.162 2.27-.84.174-1.936.312-5.626-1.21-4.726-1.95-7.762-6.75-7.996-7.064-.226-.314-1.876-2.496-1.876-4.762 0-2.264 1.188-3.376 1.61-3.842.39-.428.924-.564 1.23-.564.306 0 .612.002.88.016.282.012.658-.106.884.672.236.812.806 2.802.876 3.014.072.212.12.46.024.742-.096.284-.144.46-.284.708-.14.248-.294.552-.42.744-.14.212-.286.44-.122.868.164.428.73 1.804 1.566 2.924 1.076 1.442 1.984 1.89 2.27 2.098.284.21.666.158.906-.248.306-.516.684-1.32.876-1.772.186-.444.374-.37.634-.222.26.148 1.654.78 1.94.92.284.142.474.212.544.33.072.118.072.69-.318 1.39z"/></svg>
+</a>
 <script src="javascript/ui.js" defer></script>
 <script src="javascript/cookies.js" defer></script>
 <script src="javascript/scrolltop.js" defer></script>

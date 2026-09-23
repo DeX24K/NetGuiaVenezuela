@@ -261,6 +261,28 @@ ol.articulo__lista--ordenada { list-style-type: decimal; }
     opacity: 0.7;
 }
 
+/* ==========================================================================
+   FIGURAS E IMÁGENES DE ARTÍCULOS
+   ========================================================================== */
+.articulo__figura {
+    margin: 2rem 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.articulo__imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.articulo__pie-foto {
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
 /* Media Query de Estructura Básica */
 @media (max-width: 768px) {
     .articulo { margin: 1rem; padding: 1.5rem; }

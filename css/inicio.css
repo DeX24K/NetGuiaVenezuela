@@ -1336,8 +1336,226 @@ body {
     }
 }
 
+/* ==========================================================================
+   21. SECCIÓN "LO MÁS LEÍDO" (populares)
+   ========================================================================== */
+.populares {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.populares__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.populares__titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--color-oscuro);
+    letter-spacing: -0.02em;
+}
+
+.populares__ver-todas {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--color-principal);
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: var(--color-principal-alpha);
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    transition: all 0.25s ease;
+}
+
+.populares__ver-todas:hover {
+    background: var(--color-principal);
+    color: #ffffff;
+    border-color: var(--color-principal);
+}
+
+.populares__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.populares__card {
+    display: block;
+    text-decoration: none;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--color-blanco);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-premium);
+}
+
+.populares__card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 180, 216, 0.15);
+    border-color: rgba(0, 180, 216, 0.3);
+}
+
+.populares__img {
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-oscuro);
+}
+
+.populares__info {
+    padding: 1rem 1.2rem;
+}
+
+.populares__cat {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-principal);
+    background: var(--color-principal-alpha);
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 0.5rem;
+}
+
+.populares__card-titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-oscuro);
+    line-height: 1.3;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+[data-theme="dark"] .populares__card {
+    background: var(--color-card);
+    border-color: var(--color-border);
+}
+
+[data-theme="dark"] .populares__titulo {
+    color: var(--color-oscuro);
+}
+
+[data-theme="dark"] .populares__card-titulo {
+    color: var(--color-oscuro);
+}
+
+/* ==========================================================================
+   22. BUSCADOR EN GUÍAS (guias.html)
+   ========================================================================== */
+.guias-buscador {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.guias-buscador__input {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    font-family: var(--fuente-global);
+    color: var(--color-texto);
+    background: var(--color-blanco);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-premium);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.guias-buscador__input::placeholder {
+    color: var(--color-muted);
+}
+
+.guias-buscador__input:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 4px rgba(0, 180, 216, 0.15), var(--shadow-premium);
+}
+
+[data-theme="dark"] .guias-buscador__input {
+    background: var(--color-card);
+    border-color: var(--color-border);
+    color: var(--color-texto);
+}
+
+[data-theme="dark"] .guias-buscador__input::placeholder {
+    color: var(--color-muted);
+}
+
+/* ==========================================================================
+   RESPONSIVE - POPULARES Y BUSCADOR
+   ========================================================================== */
+@media (max-width: 768px) {
+    .populares {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .populares__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .populares__titulo {
+        font-size: 1.2rem;
+    }
+
+    .populares__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .populares__img {
+        height: 100px;
+    }
+
+    .populares__info {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .populares__card-titulo {
+        font-size: 0.78rem;
+    }
+
+    .populares__cat {
+        font-size: 0.65rem;
+        padding: 2px 8px;
+    }
+
+    .guias-buscador {
+        padding: 0 1rem;
+    }
+
+    .guias-buscador__input {
+        padding: 12px 16px;
+        font-size: 0.88rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .populares__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (min-width: 1025px) {
     .destacadas__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .populares__grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
@@ -1453,7 +1671,39 @@ body {
 }
 
 /* ==========================================================================
-   17. PÁGINA "TODAS LAS GUÍAS" (guias.html)
+   17. BOTÓN WHATSAPP FLOTANTE
+   ========================================================================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
+    z-index: 998;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+}
+
+@media (min-width: 769px) {
+    .whatsapp-float {
+        left: auto;
+        right: 24px;
+    }
+}
+
+/* ==========================================================================
+   18. PÁGINA "TODAS LAS GUÍAS" (guias.html)
    ========================================================================== */
 .guias-hero {
     padding: 3.5rem 1.5rem 3rem;
