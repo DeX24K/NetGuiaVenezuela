@@ -533,6 +533,315 @@ const baseDatosRepuestos = {
             pagos: ["cashea"],
             detalle: "La Navi tiene freno delantero a disco y trasero a tambor. Asegúrate de pedir la medida correcta." 
         }
+    ],
+    // MOTOPOPULARES EN VENEZUELA 2026
+    empire_xpress: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Empire Keeway y tiendas multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "La Xpress es la moto más vendida de EK. Usa la misma relación 428 estándar que todas las 150cc." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Owen", 
+            precio: "$4 - $7", 
+            donde: "Agencias Empire y repuesteras de frenos.",
+            pagos: ["cashea"],
+            detalle: "Las pastillas GN son las más fáciles de conseguir y calzan perfecto en la Xpress." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Empire Xpress 150 (originales)", 
+            precio: "$3 - $5", 
+            donde: "Concesionarios Empire Keeway a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "El filtro de la Xpress es tipo espuma. Límpialo cada 3,000 km para mantener el rendimiento." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Tiendas oficiales EK y grandes pasajes comerciales.",
+            pagos: ["cashea", "krece"],
+            detalle: "Los Horse son más duraderos para uso intensivo. Los Bera son más suaves para ciudad." 
+        }
+    ],
+    empire_outlook: [
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal CG150", 
+            precio: "$12 - $18", 
+            donde: "Repuesteras Empire y tiendas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "La Outlook 150 usa motor CG. Los repuestos universales le funcionan perfecto." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse 428", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Empire Keeway.",
+            pagos: ["cashea", "krece"],
+            detalle: "Relación 428 estándar. Cadena de 108 eslabones." 
+        },
+        { 
+            repuesto: "Pastillas de Freno", 
+            marca: "Suzuki GN 125", 
+            precio: "$4 - $7", 
+            donde: "Tiendas multimarcas a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "La mordaza de la Outlook es compatible con las pastillas de la GN 125." 
+        },
+        { 
+            repuesto: "Farola Delantera (Faro LED)", 
+            marca: "Universal 7 pulgadas", 
+            precio: "$18 - $28", 
+            donde: "Tiendas de accesorios LED.",
+            pagos: ["cashea"],
+            detalle: "La Outlook tiene soporte estándar para faros redondos de 7 pulgadas." 
+        }
+    ],
+    empire_thunder: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Empire Keeway y tiendas multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "La Thunder comparte la misma relación estándar que todas las 150cc de EK." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Owen", 
+            precio: "$4 - $7", 
+            donde: "Agencias Empire y repuesteras de frenos.",
+            pagos: ["cashea"],
+            detalle: "Calzan en la mordaza estándar de la Thunder." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la Thunder falla en frío, el carburador es lo primero que debes revisar." 
+        }
+    ],
+    bera_br150: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Empire Horse (Relación 428)", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Bera y tiendas multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "La BR150 usa la misma relación estándar que todas las motos 150cc." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Empire Owen / Suzuki GN 125", 
+            precio: "$4 - $7", 
+            donde: "Tiendas oficiales Bera y repuesteras.",
+            pagos: ["cashea"],
+            detalle: "La mordaza de la BR150 es igual a la del YBR. Calzan sin problemas." 
+        },
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal CG150", 
+            precio: "$12 - $18", 
+            donde: "Repuesteras multimarcas y talleres especializados.",
+            pagos: ["cashea"],
+            detalle: "El motor CG150 es el mismo. Usa pistón de 57mm para mantener la compresión." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Bera y grandes pasajes comerciales.",
+            pagos: ["cashea", "krece"],
+            detalle: "Los Horse son más reforzados para carga. Los Bera más suaves." 
+        }
+    ],
+    bera_brz: [
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Bera BRZ 250 (originales)", 
+            precio: "$6 - $10", 
+            donde: "Concesionarios Bera oficiales.",
+            pagos: ["cashea", "krece"],
+            detalle: "La BRZ tiene freno delantero a disco doble. Asegúrate de pedir la medida exacta." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 520 (más grueso)", 
+            precio: "$18 - $25", 
+            donde: "Tiendas especializadas en motos de mayor cilindrada.",
+            pagos: ["cashea", "krece"],
+            detalle: "La BRZ usa cadena 520, más gruesa que la 428 de las 150cc. No uses las de 150." 
+        },
+        { 
+            repuesto: "Filtro de Aceite", 
+            marca: "Bera BRZ 250 (originales)", 
+            precio: "$4 - $6", 
+            donde: "Concesionarios Bera y tiendas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "Cámbialo cada 2,500 km. El motor 250cc es más exigente con la lubricación." 
+        }
+    ],
+    tvs_apache: [
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "TVS Apache RTR 200 (originales)", 
+            precio: "$6 - $10", 
+            donde: "Concesionarios TVS oficiales.",
+            pagos: ["cashea", "krece"],
+            detalle: "La Apache tiene freno delantero a disco con ABS. Usa pastillas originales o de marca reconocida." 
+        },
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 520", 
+            precio: "$16 - $22", 
+            donde: "Tiendas de repuestos para motos deportivas.",
+            pagos: ["cashea"],
+            detalle: "La Apache 200 usa cadena 520. Cadena DID o RK son las mejores opciones." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "TVS Apache (originales)", 
+            precio: "$4 - $7", 
+            donde: "Concesionarios TVS y tiendas multimarcas.",
+            pagos: ["cashea"],
+            detalle: "El filtro de la Apache es tipo panel. Cámbialo cada 5,000 km." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "TVS Apache (originales)", 
+            precio: "$30 - $45", 
+            donde: "Concesionarios TVS oficiales.",
+            pagos: ["cashea", "krece"],
+            detalle: "La Apache usa monoshock trasero. No uses amortiguadores de otras motos sin verificar medida." 
+        }
+    ],
+    tvs_hlx: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 428", 
+            precio: "$14 - $20", 
+            donde: "Tiendas multimarcas y concesionarios TVS.",
+            pagos: ["cashea", "krece"],
+            detalle: "La HLX 150 usa relación 428 estándar. Compatible con todas las marcas." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / TVS HLX", 
+            precio: "$4 - $7", 
+            donde: "Repuesteras de frenos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Las pastillas GN calzan en la HLX. Son las más fáciles de conseguir." 
+        },
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal CG150", 
+            precio: "$12 - $18", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "La HLX 150 usa motor similar al CG. Los repuestos universales le sirven." 
+        }
+    ],
+   italika_ft: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 428", 
+            precio: "$14 - $20", 
+            donde: "Tiendas Italika y repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "La FT150 es la moto más popular de Italika. Usa relación 428 estándar." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Italika FT", 
+            precio: "$4 - $7", 
+            donde: "Tiendas Italika y repuesteras de frenos.",
+            pagos: ["cashea"],
+            detalle: "Las pastillas GN son compatibles con la FT150." 
+        },
+        { 
+            repuesto: "Filtro de Aire", 
+            marca: "Italika FT150 (originales)", 
+            precio: "$3 - $5", 
+            donde: "Tiendas Italika oficiales.",
+            pagos: ["cashea"],
+            detalle: "El filtro es tipo espuma. Límpialo cada 3,000 km." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Toro", 
+            precio: "$22 - $30", 
+            donde: "Tiendas de accesorios y repuestos para motos.",
+            pagos: ["cashea"],
+            detalle: "Los amortiguadores universales calzan si son los mismos ojos de paso." 
+        }
+    ],
+    italika_dm: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 428", 
+            precio: "$14 - $20", 
+            donde: "Tiendas Italika y repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "La DM150 usa la misma relación 428 que la FT." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125", 
+            precio: "$4 - $7", 
+            donde: "Repuesteras de frenos a nivel nacional.",
+            pagos: ["cashea"],
+            detalle: "Compatible con las pastillas de la GN 125." 
+        },
+        { 
+            repuesto: "Carburador PZ27", 
+            marca: "Universal CG150", 
+            precio: "$18 - $25", 
+            donde: "Zonas comerciales de repuestos.",
+            pagos: ["cashea"],
+            detalle: "Si la DM falla en frío o gasta mucha gasolina, revisa el carburador." 
+        }
+    ],
+    keeway_rk: [
+        { 
+            repuesto: "Kit de Arrastre (Cadena/Piñón)", 
+            marca: "Universal 428", 
+            precio: "$14 - $20", 
+            donde: "Concesionarios Keeway y tiendas multimarcas.",
+            pagos: ["cashea", "krece"],
+            detalle: "La RK200 usa relación 428 estándar. Compatible con todas las marcas." 
+        },
+        { 
+            repuesto: "Pastillas de Freno Delanteras", 
+            marca: "Suzuki GN 125 / Keeway RK", 
+            precio: "$4 - $7", 
+            donde: "Tiendas Keeway y repuesteras de frenos.",
+            pagos: ["cashea"],
+            detalle: "Las pastillas GN calzan en la mordaza de la RK." 
+        },
+        { 
+            repuesto: "Pistón con Aros", 
+            marca: "Universal CG150", 
+            precio: "$12 - $18", 
+            donde: "Repuesteras multimarcas.",
+            pagos: ["cashea"],
+            detalle: "La RK200 usa motor CG. Los repuestos universales le funcionan perfecto." 
+        },
+        { 
+            repuesto: "Amortiguadores Traseros", 
+            marca: "Empire Horse / Bera SBR", 
+            precio: "$24 - $32", 
+            donde: "Concesionarios Keeway y grandes pasajes.",
+            pagos: ["cashea", "krece"],
+            detalle: "Misma medida estándar. Los Horse son más reforzados." 
+        }
     ]
 };
 
