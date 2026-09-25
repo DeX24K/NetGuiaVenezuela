@@ -1,0 +1,7 @@
+# Redirect www to apex (GitHub Pages handles this via DNS CNAME)
+# Redirect http to https (GitHub Pages handles this automatically)
+# These are fallback rules for clarity
+
+https://www.netguiavenezuela.com/* https://netguiavenezuela.com/:splat 301
+http://www.netguiavenezuela.com/* https://netguiavenezuela.com/:splat 301
+http://netguiavenezuela.com/* https://netguiavenezuela.com/:splat 301
