@@ -64,6 +64,13 @@ const indicePaginas = [
         icono: "🇻🇪"
     },
     {
+        titulo: "KRM Glorious Blaze CODM: Cuánto CP Cuesta",
+        descripcion: "Costo completo de la ruleta KRM Glorious Blaze en CODM. Tiro por tiro, cuánto CP necesitas en Venezuela y cómo ahorrar.",
+        url: "gaming-krm-glorious-blaze.html",
+        palabrasClave: ["krm", "glorious", "blaze", "codm", "call of duty", "ruleta", "cp", "legendaria", "gaming", "danger", "drop", "escopeta"],
+        icono: "🔥"
+    },
+    {
         titulo: "Calculadora de Ruletas CODM (2026)",
         descripcion: "Calcula el costo tiro por tiro de ruletas míticas y legendarias de CODM, y cuánto cuesta maxearlas en Venezuela.",
         url: "gaming-codm.html",
