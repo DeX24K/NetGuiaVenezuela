@@ -1,0 +1,56 @@
+# NetGuiaVenezuela
+
+> Guías prácticas y útiles para venezolanos: trámites, finanzas, gaming, motos, tecnología y vida diaria.
+
+## Secciones principales
+
+- [Inicio](https://netguiavenezuela.com/): Portal principal con las guías más destacadas
+- [Todas las guías](https://netguiavenezuela.com/guias.html): Índice completo de guías organizadas por categoría
+- [Tasa BCV Hoy](https://netguiavenezuela.com/tasa-bcv-hoy.html): Dólar, euro y USDT actualizados
+
+## Dólares y finanzas
+
+- [Dólar Paralelo y BCV](https://netguiavenezuela.com/guia-dolar-paralelo.html): Cómo entender las tasas de cambio
+- [Ahorrar en dólares](https://netguiavenezuela.com/guia-ahorrar-dolares.html): Estrategias para proteger tu dinero
+- [Comprar USDT](https://netguiavenezuela.com/guia-comprar-usdt.html): Guía paso a paso con Binance P2P
+- [Binance y Zinli](https://netguiavenezuela.com/guia-binance-zinli.html): Pasar de Binance a tarjeta virtual
+- [Tarjetas virtuales](https://netguiavenezuela.com/guia-tarjetas-virtuales.html): Pagar en línea desde Venezuela
+- [Recargar Zinli](https://netguiavenezuela.com/guia-recargar-zinli.html): Métodos para cargar tu billetera
+- [Pago Móvil y Biopago](https://netguiavenezuela.com/guia-pago-movil-biopago.html): Transferencias interbancarias
+- [Ubii](https://netguiavenezuela.com/guia-ubii.html): Billetera digital con microcréditos
+- [Cuánto cuesta vivir](https://netguiavenezuela.com/guia-cuanto-cuesta-vivir.html): Presupuesto mensual en Venezuela
+- [Salario mínimo](https://netguiavenezuela.com/guia-sueldo-minimo.html): Salario y cestaticket explicados
+
+## Trámites en Venezuela
+
+- [Pasaporte](https://netguiavenezuela.com/guia-pasaporte.html): Cómo sacar o renovar tu pasaporte
+- [Antecedentes penales](https://netguiavenezuela.com/guia-antecedentes-penales.html): Certificado en línea
+- [Apostillar documentos](https://netguiavenezuela.com/guia-apostillar-documentos.html): Guía de La Haya
+- [Cita ONIDEX](https://netguiavenezuela.com/guia-cita-onidex.html): Trámite de cédula
+- [Licencia de conducir](https://netguiavenezuela.com/guia-licencia-conducir.html): Requisitos y categorías
+- [Título universitario](https://netguiavenezuela.com/guia-gtu-sarem.html): Registro y protocolización
+- [Carnet de la Patria](https://netguiavenezuela.com/guia-carnet-patria.html): Sistema Patria y bonos
+- [Servicios públicos](https://netguiavenezuela.com/guia-servicios-publicos.html): Pagar en línea
+
+## Motos y repuestos
+
+- [Repuestos compatibles](https://netguiavenezuela.com/guia-repuestos-motos.html): Equivalencias y buscador
+- [Marcas de motos](https://netguiavenezuela.com/guia-marcas-motos.html): Comparativa en Venezuela
+- [Matricular moto](https://netguiavenezuela.com/guia-matricular-moto.html): Proceso INTTT
+- [Mantenimiento](https://netguiavenezuela.com/guia-mantenimiento-moto.html): Guía 125/150cc
+- [Vender moto](https://netguiavenezuela.com/guia-vender-moto.html): Consejos para vender
+- [Kit GNV](https://netguiavenezuela.com/guia-gnv-moto.html): Gas natural vehicular
+- [SOAT e inspección](https://netguiavenezuela.com/guia-soat-inspeccion.html): Seguros obligatorios
+- [Metro de Caracas](https://netguiavenezuela.com/guia-metro-caracas.html): Precios y horarios
+
+## Gaming
+
+- [Calculadora CODM](https://netguiavenezuela.com/gaming-codm.html): Costo de ruletas y maxeo
+- [KRM Glorious Blaze](https://netguiavenezuela.com/gaming-krm-glorious-blaze.html): Costo de la ruleta
+- [CP gratis](https://netguiavenezuela.com/gaming-cp-gratis.html): Métodos legales
+- [Juegos gama baja](https://netguiavenezuela.com/gaming-gama-baja.html): Optimización para celulares básicos
+- [Mejorar internet](https://netguiavenezuela.com/gaming-internet-mejorar.html): Reducir ping para gaming
+
+## Servicios
+
+- [Cashea](https://netguiavenezuela.com/guia-cashea.html): Compra en cuotas
