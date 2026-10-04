@@ -230,6 +230,41 @@ const indicePaginas = [
         url: "guia-dolar-paralelo.html",
         palabrasClave: ["dolar paralelo", "dolar negro", "bcv", "dolar", "paralelo", "tasa", "cambio", "conversion", "bolivares"],
         icono: "💰"
+    },
+    {
+        titulo: "Cómo Pagar Netflix desde Venezuela (2026)",
+        descripcion: "Guía completa para pagar Netflix con tarjetas virtuales, Pago Móvil y USDT. Evita bloqueos y mantén tu suscripción activa.",
+        url: "guia-pagar-netflix.html",
+        palabrasClave: ["netflix", "pagar", "suscripcion", "tarjeta", "pago movil", "usdt", "streaming", "servicio", "internacional"],
+        icono: "🎬"
+    },
+    {
+        titulo: "Guía de Binance en Venezuela (2026)",
+        descripcion: "Cómo crear cuenta, verificar identidad, comprar criptomonedas y ahorrar con Binance en Venezuela. Paso a paso completo.",
+        url: "guia-binance-venezuela.html",
+        palabrasClave: ["binance", "criptomonedas", "comprar", "cuenta", "verificacion", "ahorrar", "inversion", "usdt", "bitcoin"],
+        icono: "💰"
+    },
+    {
+        titulo: "Cómo Ahorrar Gasolina en Moto (2026)",
+        descripcion: "Estrategias reales para ahorrar combustible en tu moto: conducción eficiente, mantenimiento y hábitos que reducen el gasto.",
+        url: "guia-ahorrar-gasolina-moto.html",
+        palabrasClave: ["gasolina", "combustible", "ahorrar", "moto", "eficiencia", "mantenimiento", "conduccion", "gasto", "vehiculo"],
+        icono: "⛽"
+    },
+    {
+        titulo: "Apps para Ganar Dinero en Venezuela (2026)",
+        descripcion: "Las mejores apps legítimas para ganar dinero extra: encuestas pagadas, freelancing, cashback y métodos reales que funcionan.",
+        url: "guia-apps-ganar-dinero.html",
+        palabrasClave: ["apps", "ganar dinero", "encuestas", "freelancing", "cashback", "dinero extra", "trabajo", "celular", "ingresos"],
+        icono: "📱"
+    },
+    {
+        titulo: "Suiche 2026: Guía Completa de Vehículos",
+        descripcion: "Cómo consultar tu vehículo, verificar placas, obtener certificados de deuda y actualizar tu registro en Suiche 2026.",
+        url: "guia-suiche-2026.html",
+        palabrasClave: ["suiche", "vehiculo", "placas", "certificado", "deuda", "registro", "soat", "transferencia", "moto", "carro"],
+        icono: "🚗"
     }
 ];
 

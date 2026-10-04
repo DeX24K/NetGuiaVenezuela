@@ -281,4 +281,40 @@
     <priority>0.2</priority>
 </url>
 
+<!-- Artículos nuevos: septiembre 2026 -->
+<url>
+    <loc>https://netguiavenezuela.com/guia-pagar-netflix.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-binance-venezuela.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-ahorrar-gasolina-moto.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-apps-ganar-dinero.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-suiche-2026.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
 </urlset>
