@@ -265,6 +265,27 @@ const indicePaginas = [
         url: "guia-suiche-2026.html",
         palabrasClave: ["suiche", "vehiculo", "placas", "certificado", "deuda", "registro", "soat", "transferencia", "moto", "carro"],
         icono: "🚗"
+    },
+    {
+        titulo: "Cómo Cobrar en Dólares desde Venezuela (2026)",
+        descripcion: "Métodos reales para cobrar en dólares: PayPal, Payoneer, Binance, Western Union. Comisiones, ventajas y cuál elegir.",
+        url: "guia-cobrar-dolares.html",
+        palabrasClave: ["cobrar", "dolares", "payoneer", "paypal", "western union", "remesas", "pagos", "freelancer", "exterior"],
+        icono: "💵"
+    },
+    {
+        titulo: "Trabajo Remoto para Venezolanos (2026)",
+        descripcion: "Plataformas que aceptan Venezuela, áreas mejor pagadas, cómo empezar sin experiencia y cuánto se gana trabajando remoto.",
+        url: "guia-trabajo-remoto.html",
+        palabrasClave: ["trabajo remoto", "freelancer", "teletrabajo", "fiverr", "upwork", "workana", "trabajo desde casa", "gana en dolares"],
+        icono: "💻"
+    },
+    {
+        titulo: "Cómo Emigrar de Venezuela (2026)",
+        descripcion: "Guía completa para emigrar: mejores destinos, requisitos de visa, cuánto dinero necesitas, errores comunes y consejos.",
+        url: "guia-como-emigrar.html",
+        palabrasClave: ["emigrar", "migrar", "vivir en el exterior", "visa", "pasaporte", "españa", "estados unidos", "colombia", "chile"],
+        icono: "✈️"
     }
 ];
 

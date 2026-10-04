@@ -312,9 +312,30 @@
 
 <url>
     <loc>https://netguiavenezuela.com/guia-suiche-2026.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-cobrar-dolares.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-trabajo-remoto.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://netguiavenezuela.com/guia-como-emigrar.html</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
 </url>
 
 </urlset>
