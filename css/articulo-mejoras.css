@@ -208,6 +208,66 @@
     margin-bottom: 1rem;
 }
 
+/* --- CTA Afiliado --- */
+.cta-afiliado {
+    background: #fff;
+    border: 2px solid var(--color-principal);
+    border-radius: 12px;
+    padding: 1.5rem 1.8rem;
+    margin: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.cta-afiliado__titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-oscuro);
+    margin-bottom: 0.4rem;
+}
+
+.cta-afiliado__texto {
+    font-size: 0.95rem;
+    color: var(--color-texto);
+    margin-bottom: 1rem;
+}
+
+.cta-afiliado__boton {
+    display: inline-block;
+    background: var(--color-principal);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-afiliado__boton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.cta-afiliado__nota {
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    margin-top: 0.7rem;
+}
+
+.cta-afiliado--binance .cta-afiliado__boton { background: #f0b90b; }
+.cta-afiliado--binance { border-color: #f0b90b; }
+.cta-afiliado--zinli .cta-afiliado__boton { background: #7f4ef7; }
+.cta-afiliado--zinli { border-color: #7f4ef7; }
+.cta-afiliado--cashea .cta-afiliado__boton { background: #ff6b2b; }
+.cta-afiliado--cashea { border-color: #ff6b2b; }
+
+[data-theme="dark"] .cta-afiliado {
+    background: #1e1e2e;
+    border-color: var(--color-principal);
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
     .breadcrumbs {
