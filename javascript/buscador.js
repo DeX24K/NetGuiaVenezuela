@@ -286,6 +286,13 @@ const indicePaginas = [
         url: "guia-como-emigrar.html",
         palabrasClave: ["emigrar", "migrar", "vivir en el exterior", "visa", "pasaporte", "españa", "estados unidos", "colombia", "chile"],
         icono: "✈️"
+    },
+    {
+        titulo: "Cómo Comprar Acciones en Binance (2026)",
+        descripcion: "Compra acciones reales de Apple, Tesla, Amazon y más de 7,000 empresas en Binance desde Venezuela: desde $5, pagando con USDC.",
+        url: "guia-comprar-acciones-binance.html",
+        palabrasClave: ["acciones", "binance", "bolsa", "invertir", "apple", "tesla", "amazon", "etf", "usdc", "dividendos", "inversion"],
+        icono: "📈"
     }
 ];
 
