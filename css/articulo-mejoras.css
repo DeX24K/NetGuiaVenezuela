@@ -2,6 +2,27 @@
    ARTÍCULO MEJORAS - Progreso, TOC, Compartir, Breadcrumbs
    ========================================================================== */
 
+/* --- Imágenes de artículos (arreglo de desborde) --- */
+.articulo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+}
+.articulo figure {
+    margin: 2rem auto;
+    max-width: 100%;
+}
+.articulo figure img {
+    margin: 0 auto;
+    border-radius: 12px;
+}
+.articulo__figura,
+.articulo figure {
+    overflow: hidden;
+}
+
 /* --- Progress Bar --- */
 .progreso-lectura {
     position: fixed;

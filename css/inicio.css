@@ -646,6 +646,18 @@ body {
     margin-bottom: 0.4rem;
 }
 
+.tarjeta-guia__img {
+    position: relative;
+    width: calc(100% + 3.8rem);
+    height: 130px;
+    margin: -1.8rem -1.9rem 1.2rem;
+    border-radius: 24px 24px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-oscuro);
+    flex-shrink: 0;
+}
+
 .tarjeta-guia__icono {
     display: inline-flex;
     align-items: center;
@@ -1219,6 +1231,13 @@ body {
         border-radius: 18px;
     }
 
+    .tarjeta-guia__img {
+        width: calc(100% + 2.4rem);
+        height: 120px;
+        margin: -1.3rem -1.2rem 1rem;
+        border-radius: 18px 18px 0 0;
+    }
+
     .tarjeta-guia__icono {
         width: 38px;
         height: 38px;
@@ -1455,12 +1474,40 @@ body {
 .guias-buscador {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 1.5rem;
+    position: relative;
+}
+
+.guias-buscador::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 46px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--color-muted);
+    border-radius: 50%;
+    box-sizing: border-box;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.guias-buscador::after {
+    content: '';
+    position: absolute;
+    top: 31px;
+    left: 58px;
+    width: 8px;
+    height: 2px;
+    background: var(--color-muted);
+    transform: rotate(45deg);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .guias-buscador__input {
     width: 100%;
-    padding: 14px 20px;
+    padding: 16px 20px 16px 48px;
     font-size: 0.95rem;
     font-family: var(--fuente-global);
     color: var(--color-texto);
