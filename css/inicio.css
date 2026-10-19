@@ -1820,3 +1820,318 @@ body {
 [data-theme="dark"] .guias-seccion__titulo {
     color: var(--color-oscuro);
 }
+
+/* ==========================================================================
+   23. PARALLAX DEL HERO (capas decorativas que se mueven a distinta velocidad)
+   ========================================================================== */
+.hero > .hero__capa {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    will-change: transform;
+}
+
+/* Grid de puntos: la capa más "fija" -> la que más se nota al hacer scroll */
+.hero__capa--grid {
+    top: -100%;
+    left: -12%;
+    right: -12%;
+    bottom: -100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1.3px, transparent 1.3px);
+    background-size: 26px 26px;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 80%);
+    mask-image: radial-gradient(ellipse at center, #000 30%, transparent 80%);
+}
+
+/* Orbes difusos extra con su propia velocidad */
+.hero__capa--orbe {
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.55;
+}
+
+.hero__capa--a {
+    width: 420px;
+    height: 420px;
+    background: rgba(0, 180, 216, 0.55);
+    top: -120px;
+    left: 8%;
+}
+
+.hero__capa--b {
+    width: 340px;
+    height: 340px;
+    background: rgba(0, 119, 182, 0.55);
+    bottom: -110px;
+    right: 6%;
+}
+
+@media (max-width: 768px) {
+    .hero__capa--grid {
+        background-size: 22px 22px;
+    }
+}
+
+/* ==========================================================================
+   24. ICONOS SVG Y SECCIÓN "GUÍAS NUEVAS"
+   ========================================================================== */
+/* Los iconos SVG heredan el color del contenedor (currentColor) */
+.categorias-bar__icon svg,
+.tarjeta-guia__icono svg,
+.footer__social-link svg {
+    width: 1em;
+    height: 1em;
+    display: block;
+}
+
+.tarjeta-guia__icono {
+    color: var(--color-principal);
+}
+
+.nuevas {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.nuevas__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+@media (max-width: 1024px) {
+    .nuevas__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nuevas {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .nuevas__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   25. REDISEÑO BENTO: ACCESOS RÁPIDOS, MOSAICO DE CATEGORÍAS Y DESTACADAS OVERLAY
+   ========================================================================== */
+/* --- Accesos rápidos bajo el buscador del hero --- */
+.hero__accesos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero__acceso {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    padding: 7px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero__acceso:hover {
+    background: rgba(0, 180, 216, 0.9);
+    border-color: rgba(0, 180, 216, 0.9);
+    transform: translateY(-2px);
+}
+
+/* --- Mosaico Bento de categorías --- */
+.bento-wrap {
+    max-width: 1200px;
+    margin: 3.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.bento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(190px, 1fr);
+    gap: 16px;
+}
+
+.bento__tile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.4rem;
+    border-radius: 24px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-oscuro);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--shadow-premium);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento__tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 180, 216, 0.18);
+}
+
+.bento__tile--grande {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.bento__icono {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: rgba(0, 180, 216, 0.92);
+    color: #ffffff;
+}
+
+.bento__icono svg {
+    width: 24px;
+    height: 24px;
+}
+
+.bento__titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.bento__tile--grande .bento__titulo {
+    font-size: 1.8rem;
+}
+
+.bento__desc {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.45;
+    margin: 0.5rem 0 0;
+}
+
+.bento__mas {
+    margin-top: 0.7rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #90e0ef;
+    transition: color 0.2s ease;
+}
+
+.bento__tile:hover .bento__mas {
+    color: #ffffff;
+}
+
+/* --- Tarjetas "más buscadas" con texto sobre la imagen --- */
+.destacadas__card {
+    position: relative;
+    min-height: 230px;
+}
+
+.destacadas__img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+}
+
+.destacadas__card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(13, 27, 42, 0) 35%, rgba(13, 27, 42, 0.85) 100%);
+    z-index: 1;
+}
+
+.destacadas__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.destacadas__card-titulo {
+    color: #ffffff;
+}
+
+.destacadas__cat {
+    color: #ffffff;
+    background: rgba(0, 180, 216, 0.92);
+}
+
+[data-theme="dark"] .destacadas__card-titulo {
+    color: #ffffff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .bento {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(170px, auto);
+    }
+
+    .bento__tile--grande {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .bento__tile--grande .bento__titulo {
+        font-size: 1.5rem;
+    }
+
+    .destacadas__card {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bento-wrap {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .bento {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .bento__tile--grande {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .bento__tile--grande .bento__titulo {
+        font-size: 1.35rem;
+    }
+
+    .hero__accesos {
+        margin-top: 1.2rem;
+    }
+
+    .destacadas__card {
+        min-height: 160px;
+    }
+}
